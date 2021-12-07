@@ -1,0 +1,21 @@
+<view class="card-trip">
+  <view class="card-trip-infos">
+      <view class="h2">{{name}}</view>
+
+      <text>{{description}}</text>
+
+    <view class="h2" >{{id}}</view>
+  </view>
+</view>
+
+//看到1小时：10分
+
+<view class="card-trip">
+  <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+</view> 
+
+  <view class="card-trip-infos">
+     </view>   
+        <view class="p">Short description here!</view>
+      <view class="h2">Title here kksdhfjisohhaosdhfuishdfiusdhfiusdhfiusdhfisdhfisdhfusihdifhsdiufhsiudhfiusdhfiushdfiuhsduifh</view>
+<button class="btn" bindtap="buttonClicked">Book</button>

@@ -1,0 +1,32 @@
+<view class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1450778869180-41d0601e046e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1286&q=80)">
+    <img src="https://images.unsplash.com/photo-1609830670689-964938ac672f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"/>
+</view>
+
+<view class="h1"> 新人专属优惠 </view>
+    <view class="card-product">
+        <view class="card-product-infos">
+        <view class="h2">Product name</view >
+    </view>
+</view>
+
+<view class="card-product">
+        <view class="card-product-infos">
+        <view class="h2">Product name</view >
+    </view>
+</view>
+
+<view class="card-product">
+        <view class="card-product-infos">
+        <view class="h2">Product name</view >
+    </view>
+</view>
+
+<view class="card-product">
+        <view class="card-product-infos">
+        <view class="h2">Product name</view >
+    </view>
+</view>
+
+
+    <button class="btn" bindtap="buttonClicked">Click here</button>
+ 

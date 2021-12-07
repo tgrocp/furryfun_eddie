@@ -1,0 +1,16 @@
+.cards{
+display:flex;
+}
+
+.card-category{
+
+}
+
+.h1 {
+    font-size: larger;
+}
+
+.model-photo{
+border-image-
+}
+ 
