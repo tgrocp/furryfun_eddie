@@ -3,9 +3,6 @@
 </view>
 
 
-<view class="h1"> 新人专属优惠 </view>
-
-
 <view class="row-1">
     <navigator url="/pages/category-index/category-index">
         <view class="box-1">

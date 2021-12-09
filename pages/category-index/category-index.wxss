@@ -1,11 +1,9 @@
 .cards{
-display: flex
-
+display: flex;
 }
 
 .model-container{
 width:fit-content
-
 }
 
 .h1 {
