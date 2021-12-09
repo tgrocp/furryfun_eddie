@@ -8,8 +8,6 @@
   </view>
 </view>
 
-//看到1小时：10分
-
 <view class="card-trip">
   <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
 </view> 

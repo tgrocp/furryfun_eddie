@@ -1,16 +1,17 @@
 .cards{
-display:flex;
+display: flex
+
 }
 
-.card-category{
+.model-container{
+width:fit-content
 
 }
 
 .h1 {
-    font-size: larger;
+font-size: larger;
 }
 
 .model-photo{
-border-image-
+
 }
- 

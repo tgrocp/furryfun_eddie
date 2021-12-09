@@ -1,8 +1,11 @@
-<!-- <view class="heading">
-    <view class="user-icon" 
-        <view class""
+<picker   
+    range="{{ items }}"
+    bindchange="inputHandler"
+    name="picker"
+    mode="time"
+>
+<view>
+<text>{{pick}}</text>
+</view>
 
-
-    </view>
-</view> -->
-
+</picker>
