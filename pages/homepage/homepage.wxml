@@ -3,27 +3,41 @@
 </view>
 
 <view class="h1"> 新人专属优惠 </view>
-    <view class="card-product">
-        <view class="card-product-infos">
-        <view class="h2">Product name</view >
+
+
+<view class="row-1">
+   <view class="box-1">
+         <view class="card-product">
+            <view class="card-product-infos">
+                <view class="h2">Product name</view >
+            </view>
+        </view>
+    </view>
+
+    <view class="box-2">
+        <view class="card-product">
+            <view class="card-product-infos">
+                <view class="h2">Product name</view >
+            </view>
+        </view>
     </view>
 </view>
 
-<view class="card-product">
-        <view class="card-product-infos">
-        <view class="h2">Product name</view >
+<view class="row-2">
+    <view class="box-3">
+        <view class="card-product">
+            <view class="card-product-infos">
+                <view class="h2">Product name</view >
+            </view>
+        </view>
     </view>
-</view>
-
-<view class="card-product">
-        <view class="card-product-infos">
-        <view class="h2">Product name</view >
-    </view>
-</view>
-
-<view class="card-product">
-        <view class="card-product-infos">
-        <view class="h2">Product name</view >
+    
+    <view class="box-4">
+        <view class="card-product">
+            <view class="card-product-infos">
+                <view class="h2">Product name</view >
+            </view>
+        </view>
     </view>
 </view>
 

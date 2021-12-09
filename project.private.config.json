@@ -23,6 +23,12 @@
                     "pathName": "pages/show-page/show-page",
                     "query": "id=1",
                     "scene": null
+                },
+                {
+                    "name": "pages/service-page/service-page",
+                    "pathName": "pages/service-page/service-page",
+                    "query": "",
+                    "scene": null
                 }
             ]
         }
