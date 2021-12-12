@@ -32,7 +32,7 @@ Page({
     onShow: function () {
 
     },
-
+    
     /**
      * Lifecycle function--Called when page hide
      */

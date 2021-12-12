@@ -1,5 +1,5 @@
 <view class="card-trip">
-  <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+ <image class= "image"src="{{image}}" />
     <view class="card-trip-infos">
       <view class="h2">Name: {{name}}</view>
     <view class="h2" >{{id}}</view>
@@ -7,8 +7,7 @@
 </view>
 
 <view class="card-trip-infos">
-  <text>{{description}}</text>
-    <view class="p">Model Information</view>
-    <view class="description">Title here kksdhfjisohhaosdhfuishdfiusdhfiusdhfiusdhfisdhfisdhfusihdifhsdiufhsiudhfiusdhfiushdfiuhsduifh</view>
-  <button class="btn" bindtap="buttonClicked">Book</button>
+  <text>Model Description:{{description}}</text>
 </view>   
+
+<button class="btn" bindtap="buttonClicked">Book</button>

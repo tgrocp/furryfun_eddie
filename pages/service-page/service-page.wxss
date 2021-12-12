@@ -1,0 +1,50 @@
+page {
+    background-color: #fbf9fe;
+    height: 100%;
+    aligh
+   }
+   .page__hd{
+    padding: 50rpx 50rpx 100rpx 50rpx;
+    text-align: center;
+   }
+   .page__title{
+    display: inline-block;
+    padding: 20rpx 40rpx;
+    font-size: 32rpx;
+    color: #AAAAAA;
+    border-bottom: 1px solid #CCCCCC;
+   }
+   .page__desc{
+    display: none;
+    margin-top: 20rpx;
+    font-size: 26rpx;
+    color: #BBBBBB;
+   }
+   .btn{
+    display: block;
+    margin: auto;
+    width: 60rpx;
+    padding: 50rpx
+    ;
+   }
+   .section__title{
+    margin-bottom: 16rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+   }
+   .picker{
+    padding: 26rpx;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 15rpx rgba(0,0,0,0.2);
+    width: fit-content;
+    border-radius: 4px;
+   }
+   
+   .image{
+
+    display: block;
+    margin: auto;
+    width: 80%;
+    box-shadow: 0 0 15rpx rgba(0,0,0,0.2);
+    border-radius: 8px;
+   }
