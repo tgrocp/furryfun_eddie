@@ -1,2 +1,16 @@
 <!--pages/myaccount/myaccount.wxml-->
-<text>pages/myaccount/myaccount.wxml</text>
+
+<view class="h2">User name用户名 ___________</view>
+
+<view class="h2">Phone电话号码 ___________</view>
+
+
+<view class="myorders">
+   <view class="h2">我的订单 My Orders</view>
+</view>
+
+<view class="myservice">
+  <view class="h2">我的服务My Service</view >
+</view>
+
+

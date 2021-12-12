@@ -39,9 +39,10 @@
 
 
   .h1{
-    font-size: 18px;
-    padding-top: 30px;
-    padding-left: 50px;
+    font-size: 50rpx;
+    padding-top: 50rpx;
+    padding-left: 90rpx;
+    color: #FF862D;
   }
   
   .card-product {

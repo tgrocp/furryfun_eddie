@@ -3,6 +3,7 @@
 </view>
 
 
+
 <view class="row-1">
     <navigator url="/pages/category-index/category-index">
         <view class="box-1">
@@ -20,28 +21,33 @@
                 <view class="card-product-infos">
                     <view class="h2">Therapy</view >
                 </view>
+
             </view>
          </navigator>
     </view>
 </view>
 
 <view class="row-2">
+
     <navigator url="/pages/category-dailycare/category-dailycare">
         <view class="box-3">
             <view class="card-product">
                 <view class="card-product-infos">
                     <view class="h2">Daily Care</view >
                 </view>
+
             </view>
         </view>
     </navigator>
     
+
     <navigator url="/pages/category-boarding/category-boarding">  
         <view class="box-4">
             <view class="card-product">
                 <view class="card-product-infos">
                     <view class="h2">Pet Boarding</view >
                 </view> 
+
             </view>
         </view> 
     </navigator> 
