@@ -20,7 +20,7 @@ App({
       "title": "two year old Golden retriver",
       "name": "momo",
       "description": "many-many year of professional modeling",
-      "photo": "https://ns-strategy.cdn.bcebos.com/ns-strategy/upload/fc_big_pic/part-00518-1011.jpg"
+      "image": "https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg"
       },
 
       {
