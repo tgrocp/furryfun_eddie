@@ -2,45 +2,57 @@
     <img src="https://images.unsplash.com/photo-1609830670689-964938ac672f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"/>
 </view>
 
-<view class="h1"> Welcome To FurryFun </view>
 
 
 <view class="row-1">
-   <view class="box-1">
-         <view class="card-product">
-            <view class="card-product-infos">
-                <view class="h2">Modeling</view >
+    <navigator url="/pages/category-index/category-index">
+        <view class="box-1">
+            <view class="card-product">
+                <view class="card-product-infos">
+                    <view class="h2">Modeling</view >
+                </view>
             </view>
         </view>
-</view>
+    </navigator>
 
     <view class="box-2">
-        <view class="card-product">
-            <view class="card-product-infos">
-                <view class="h2">Therapy</view >
+        <navigator url="/pages/category-index/category-index">
+            <view class="card-product">
+                <view class="card-product-infos">
+                    <view class="h2">Therapy</view >
+                </view>
+
             </view>
-        </view>
+         </navigator>
     </view>
 </view>
 
 <view class="row-2">
-    <view class="box-3">
-        <view class="card-product">
-            <view class="card-product-infos">
-                <view class="h2">Daily Care</view >
+
+    <navigator url="/pages/category-dailycare/category-dailycare">
+        <view class="box-3">
+            <view class="card-product">
+                <view class="card-product-infos">
+                    <view class="h2">Daily Care</view >
+                </view>
+
             </view>
         </view>
-    </view>
+    </navigator>
     
-    <view class="box-4">
-        <view class="card-product">
-            <view class="card-product-infos">
-                <view class="h2">Pet Bording</view >
+
+    <navigator url="/pages/category-boarding/category-boarding">  
+        <view class="box-4">
+            <view class="card-product">
+                <view class="card-product-infos">
+                    <view class="h2">Pet Boarding</view >
+                </view> 
+
             </view>
-        </view>
-    </view>
+        </view> 
+    </navigator> 
 </view>
 
 
-    <button class="btn" bindtap="buttonClicked">Click here</button>
+<button class="btn" bindtap="buttonClicked">Click here</button>
  

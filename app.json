@@ -4,7 +4,9 @@
     "pages/category-index/category-index",
     "pages/show-page/show-page",
     "pages/service-page/service-page",
-    "pages/myaccount/myaccount"
+    "pages/myaccount/myaccount",
+    "pages/category-dailycare/category-dailycare",
+    "pages/category-boarding/category-boarding"
   ],
 
   "window":{

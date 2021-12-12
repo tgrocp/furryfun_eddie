@@ -1,4 +1,4 @@
-// pages/homepage/homepage.js
+// pages/category-dailycare/category-dailycare.js
 Page({
 
     /**
@@ -8,16 +8,12 @@ Page({
 
     },
 
-    
-
-
     /**
      * Lifecycle function--Called when page load
      */
     onLoad: function (options) {
 
     },
-
 
     /**
      * Lifecycle function--Called when page is initially rendered
@@ -68,4 +64,3 @@ Page({
 
     }
 })
-

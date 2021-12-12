@@ -1,4 +1,4 @@
-<picker   
+<!-- <picker   
     range="{{ items }}"
     bindchange="inputHandler"
     name="picker"
@@ -8,4 +8,13 @@
 <text>{{pick}}</text>
 </view>
 
-</picker>
+</picker> -->
+
+<view class="section">
+  <view class="section__title">日期选择器</view>
+  <picker mode="date" value="{{date}}" start="2021-09-01" end="2022-09-01" bindchange="bindDateChange">
+    <view class="picker">
+      当前选择: {{date}}
+    </view>
+  </picker>
+</view>
