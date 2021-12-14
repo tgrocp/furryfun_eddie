@@ -36,12 +36,10 @@
     padding-left: 20rpx;
   }
 
-
-
   .h1{
     font-size: 50rpx;
     padding-top: 50rpx;
-    padding-left: 90rpx;
+    padding-left: 110rpx;
     color: #FF862D;
   }
   

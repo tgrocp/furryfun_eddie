@@ -1,9 +1,13 @@
 /* pages/myaccount/myaccount.wxss */
 
+
+
 .h2{
 font-size: 18px;
 padding-top: 50px;
 padding-left: 50px;
+color: #FF862D;
+font-size: bold;
 }
 
 

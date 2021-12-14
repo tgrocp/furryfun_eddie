@@ -6,14 +6,15 @@
     "pages/service-page/service-page",
     "pages/myaccount/myaccount",
     "pages/category-dailycare/category-dailycare",
-    "pages/category-boarding/category-boarding"
-    
+    "pages/category-boarding/category-boarding",
+    "pages/myaccount/My-Orders",
+    "pages/myaccount/My-Service"
   ],
 
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "FurryFun",
     "navigationBarTextStyle":"black"
   },
   "style": "v2",

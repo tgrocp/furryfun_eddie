@@ -1,0 +1,25 @@
+/* pages/myaccount/My-Service.wxss */
+
+.h1{
+  font-size: large;
+  color: #FF862D;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 10%;
+}
+
+.h2{
+  font-size: medium;
+  color: #10428B;
+  text-align: center;
+}
+
+.container-1 {
+  text-align: center;
+  padding-top: 10%;
+}
+
+.container-2 {
+  text-align: center;
+  padding-top: 10%;
+}
