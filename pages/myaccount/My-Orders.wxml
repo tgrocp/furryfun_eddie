@@ -1,0 +1,15 @@
+<!--pages/myaccount/My-Orders.wxml-->
+<view class="h1"> My Order Details </view> 
+
+<view class="container-1">
+  <image  mode="aspectFill" style="width: 200px; height: 200px;" src='https://images.unsplash.com/photo-1592089416462-2b0cb7da8379?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80'></image>
+ <view class="h2"> Order ID 9999</view>
+</view>
+
+<view class="container-2">
+  <image  mode="aspectFill" style="width: 200px; height: 200px;" src='https://images.unsplash.com/photo-1533743983669-94fa5c4338ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=792&q=80'></image>
+  <view class="h2"> Order ID 1111</view>
+</view>
+
+
+

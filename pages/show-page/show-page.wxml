@@ -1,19 +1,18 @@
+
 <view class="card-trip">
-  <view class="card-trip-infos">
+  <image mode="aspectFill" style="width: 400px; height:300px;" src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80" />
+</view> 
+
+<view class="card-trip-infos">
       <view class="h2">{{name}}</view>
-
       <text>{{description}}</text>
-
     <view class="h2" >{{id}}</view>
-  </view>
 </view>
 
-<view class="card-trip">
-  <image src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
-</view> 
 
   <view class="card-trip-infos">
      </view>   
         <view class="p">Short description here!</view>
-      <view class="h2">Title here kksdhfjisohhaosdhfuishdfiusdhfiusdhfiusdhfisdhfisdhfusihdifhsdiufhsiudhfiusdhfiushdfiuhsduifh</view>
+      <view class="h2">Title here kksdhfjisohhaosdhfuishdfiusdhfiusdhfiusdhfisdhfisdhfusihdifhsdiufhsiudhfiusdhfiushfiuhsduifh</view>
+
 <button class="btn" bindtap="buttonClicked">Book</button>

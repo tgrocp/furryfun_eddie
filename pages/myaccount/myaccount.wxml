@@ -1,16 +1,21 @@
 <!--pages/myaccount/myaccount.wxml-->
 
-<view class="h2">User name用户名 ___________</view>
+<view class="h2"> 👩User name: Roxanne</view>
 
-<view class="h2">Phone电话号码 ___________</view>
+<view class="h2"> 📱Phone : 180 **** 5632 </view>
 
 
 <view class="myorders">
-   <view class="h2">我的订单 My Orders</view>
+  <navigator url="/pages/myaccount/My-Orders">
+   <view class="h2"> 🎫 My Orders</view>
+  </navigator>
 </view>
 
+
 <view class="myservice">
-  <view class="h2">我的服务My Service</view >
+  <navigator url="/pages/myaccount/My-Service">
+  <view class="h2"> ✨My Service</view >
+  </navigator>
 </view>
 
 

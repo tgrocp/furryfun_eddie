@@ -16,9 +16,10 @@ Page({
 
             {
             "id" :2,
-            "title":"three years old another dog",
+            "title":"three years old cat",
             "name":"kim",
-            "description":"kim has so many year expirience with pet modeling"            
+            "description":"kim has so many year expirience with pet modeling",
+            "photo": "https://images.unsplash.com/photo-1511044568932-338cba0ad803?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" 
             },
 
             {
@@ -26,7 +27,8 @@ Page({
             title:"four years old french bulldog",
             name:"Leo",
             description:"kim has so many year expirience with pet modeling"            
-            }
+            },
+
         ]    
         },
 
