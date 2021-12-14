@@ -2,8 +2,6 @@
     <img src="https://images.unsplash.com/photo-1609830670689-964938ac672f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"/>
 </view>
 
-
-
 <view class="row-1">
     <navigator url="/pages/category-index/category-index">
         <view class="box-1">
@@ -47,12 +45,15 @@
                 <view class="card-product-infos">
                     <view class="h2">Pet Boarding</view >
                 </view> 
-
             </view>
         </view> 
     </navigator> 
 </view>
 
+<!-- <open-data type="userAvatarUrl"></open-data>
+<open-data type="userNickName"></open-data>
+<button wx:if="{{canIUse}}" open-type="getUserProfile" bindgetuserinfo="bindGetUserInfo">授权登录</button> -->
 
-<button class="btn" bindtap="buttonClicked">Click here</button>
+<!-- <button class="btn" bindtap="buttonClicked">Click here</button> -->
  
+
