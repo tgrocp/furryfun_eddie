@@ -1,8 +1,14 @@
 .card-trip {
-    box-shadow: 0 0 10rpx rgba(0,0,0,0.2);
-    padding-top: 5%;
-    padding-bottom: 5%;
-    background-color: white;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 0 15rpx rgba(0,0,0,0.2);
+    padding: 24rpx;
+  }
+  
+  .card-trip > img {
+    height: 200rpx;
+    width: 100%;
+    object-fit: cover;
   }
 
   
@@ -19,12 +25,20 @@
   }
   
   
-  .card-trip .card-trip-infos {
+  .card-trip-infos {
     padding: 16rpx;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     position: relative;
+    padding: 48rpx;
   }
   
+  .image{
+    align-content: center;
+    width: 480rpx;
+    margin: auto;
+    display: block;
+    padding-bottom: 24rpx;
+  }
 
