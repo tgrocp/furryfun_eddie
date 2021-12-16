@@ -1,8 +1,0 @@
-<view class="cards">
-<view wx:for="{{models}}" wx:for-item="models" class="card-category" bindtap="onClick" data-id="{{models.id}}">
-      <image mode="aspectFill" class="model-photo" src="{{models.image}}"/>
-      <view class="h1">{{models.name}}</view>
-      <view >{{models.title}}</view>
-      <view>{{models.description}}</view>
-  </view>
-</view>

@@ -16,26 +16,26 @@ App({
   globalData: {
     models: [
       {
-      "id": 1,
-      "title": "two year old Golden retriver",
-      "name": "momo",
-      "description": "many-many year of professional modeling",
+  //     "id": 1,
+  //     "title": "two year old Golden retriver",
+  //     "name": "momo",
+  //     "description": "many-many year of professional modelling",
       "image": "https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-800x825.jpg"
       },
-
       {
-      "id" :2,
-      "title":"three years old another dog",
-      "name":"kim",
-      "description":"kim has so many year expirience with pet modeling"            
+  //     "id" :2,
+  //     "title":"three years old another dog",
+  //     "name":"kim",
+  //     "description":"kim has so many year expirience with pet modeling"   
+         "image":"https://ns-strategy.cdn.bcebos.com/ns-strategy/upload/fc_big_pic/part-00518-1011.jpg"           
       },
-
       {
-      "id" :3,
-      title:"four years old french bulldog",
-      name:"Leo",
-      description:"kim has so many year expirience with pet modeling"            
+  //     "id": 3,
+  //     title: "four years old french bulldog",
+  //     name: "Leo",
+  //     description: "kim has so many year expirienc e with pet modeling"   
+         "image":"https://ns-strategy.cdn.bcebos.com/ns-strategy/upload/fc_big_pic/part-00518-1011.jpg"           
       }
-  ]    
+    ]    
   }
 })
