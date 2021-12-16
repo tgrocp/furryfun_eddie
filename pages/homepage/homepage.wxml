@@ -3,17 +3,18 @@
 </view>
 
 <view class="row-1">
-    <navigator url="/pages/category-index/category-index">
+    <navigator url="/pages/category-modelling/category-modelling">
         <view class="box-1">
             <view class="card-product">
                 <view class="card-product-infos">
-                    <view class="h2">Modeling</view >
+                    <view class="h2">Modelling</view >
+                    <image class="model-icon" src="https://cdn-icons-png.flaticon.com/512/194/194279.png"/>
                 </view>
             </view>
         </view>
     </navigator>
 
-    <view class="box-2">
+    <!-- <view class="box-2">
         <navigator url="/pages/category-index/category-index">
             <view class="card-product">
                 <view class="card-product-infos">
@@ -22,12 +23,12 @@
 
             </view>
          </navigator>
-    </view>
+    </view> -->
 </view>
 
 <view class="row-2">
 
-    <navigator url="/pages/category-dailycare/category-dailycare">
+    <!-- <navigator url="/pages/category-dailycare/category-dailycare">
         <view class="box-3">
             <view class="card-product">
                 <view class="card-product-infos">
@@ -36,10 +37,10 @@
 
             </view>
         </view>
-    </navigator>
+    </navigator> -->
     
 
-    <navigator url="/pages/category-boarding/category-boarding">  
+    <!-- <navigator url="/pages/category-boarding/category-boarding">  
         <view class="box-4">
             <view class="card-product">
                 <view class="card-product-infos">
@@ -47,13 +48,5 @@
                 </view> 
             </view>
         </view> 
-    </navigator> 
+    </navigator>  -->
 </view>
-
-<!-- <open-data type="userAvatarUrl"></open-data>
-<open-data type="userNickName"></open-data>
-<button wx:if="{{canIUse}}" open-type="getUserProfile" bindgetuserinfo="bindGetUserInfo">授权登录</button> -->
-
-<!-- <button class="btn" bindtap="buttonClicked">Click here</button> -->
- 
-
