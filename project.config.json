@@ -9,38 +9,46 @@
     ]
   },
   "setting": {
-    "bundle": false,
-    "userConfirmedBundleSwitch": false,
-    "urlCheck": true,
-    "scopeDataCheck": false,
-    "coverView": true,
+    "urlCheck": false,
     "es6": true,
+    "enhance": true,
     "postcss": true,
-    "compileHotReLoad": false,
-    "lazyloadPlaceholderEnable": false,
     "preloadBackgroundData": false,
     "minified": true,
-    "autoAudits": false,
     "newFeature": false,
-    "uglifyFileName": false,
-    "uploadWithSourceMap": true,
-    "useIsolateContext": true,
+    "coverView": true,
     "nodeModules": false,
-    "enhance": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "lazyloadPlaceholderEnable": false,
     "useMultiFrameRuntime": true,
     "useApiHook": true,
     "useApiHostProcess": true,
-    "showShadowRootInWxmlPanel": true,
-    "packNpmManually": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
     "enableEngineNative": false,
+    "useIsolateContext": true,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
     "packNpmRelationList": [],
     "minifyWXSS": true,
+    "disableUseStrict": false,
+    "minifyWXML": true,
     "showES6CompileOption": false,
-    "minifyWXML": true
+    "useCompilerPlugins": false
   },
   "compileType": "miniprogram",
-  "libVersion": "2.17.0",
-  "appid": "touristappid",
+  "libVersion": "2.19.4",
+  "appid": "wxd24e67ad57429057",
   "projectname": "furryfun_eddie",
   "debugOptions": {
     "hidedInDevtools": []
@@ -98,7 +106,7 @@
     "appid": "wxd24e67ad57429057",
     "projectname": "furryfun_eddie",
     "debugOptions": {
-        "hidedInDevtools": []
+      "hidedInDevtools": [],
       "urlCheck": true,
       "es6": true,
       "enhance": true,
@@ -138,4 +146,6 @@
     },
     "game": {
       "list": []
-    },
+    }
+  }
+}

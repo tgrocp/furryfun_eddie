@@ -3,7 +3,6 @@ const app = getApp()
 // this means that i am calling the app.js file 
 
 Page({
-=======
     /**
      * Lifecycle function--Called when page show
      */
