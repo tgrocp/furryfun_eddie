@@ -9,14 +9,13 @@ App({
             url: `${app.globalData.baseUrl}/login`,
             method: 'POST',
             data: {
-              code: res.code
+            code: res.code
             },
             success(res){
               console.log(res.data)
               wx.setStorageSync('user', res.data.user)
               wx.setStorageSync('headers', res.data.headers)
             }
-          
           })
         } else {
           console.log('Error' + res.errMsg)
