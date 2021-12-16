@@ -1,19 +1,25 @@
-// pages/category-dailycare/category-dailycare.js
-Page({
+Page({ 
 
-    /**
-     * Page initial data
-     */
-    data: {
-
+    onClick: function (e) {
+        const id = e.currentTarget.dataset.id
+        wx.navigateTo({
+        url: `/pages/show-page/show-page?id=${id}`,
+        })
     },
 
-    /**
-     * Lifecycle function--Called when page load
-     */
-    onLoad: function (options) {
+    onLoad() {
+        const page = this;
+        let serviceExist = 
+        wx.request({
+            url: "http://localhost:3000/api/v1/services",
+            method: 'GET',
+            success(res) {
+               page.setData({services: res.data.modelling_services})
+               }
+           })
+       },
 
-    },
+   
 
     /**
      * Lifecycle function--Called when page is initially rendered

@@ -1,13 +1,10 @@
 {
   "pages":[
     "pages/homepage/homepage",
-    "pages/category-index/category-index",
+    "pages/category-modelling/category-modelling",
     "pages/show-page/show-page",
     "pages/service-page/service-page",
-    "pages/myaccount/myaccount",
-    "pages/category-dailycare/category-dailycare",
-    "pages/category-boarding/category-boarding"
-    
+    "pages/myaccount/myaccount" 
   ],
 
   "window":{
