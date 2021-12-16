@@ -54,10 +54,11 @@
     border-radius: 30rpx;
   }
   
-  .card-product .img {
-    height: 100%;
-    width: 120px;
+  .card-product .model-icon{
+    height: 70px;
+    width: 90px;
     object-fit: cover;
+    padding: 5px;
   }
   
   .card-product .h2 {
