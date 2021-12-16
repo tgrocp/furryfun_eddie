@@ -1,31 +1,9 @@
-// pages/homepage/homepage.js
+// pages/stories/index.js
+const app = getApp()
+// this means that i am calling the app.js file 
+
 Page({
-
-    /**
-     * Page initial data
-     */
-    data: {
-
-    },
-
-    
-
-
-    /**
-     * Lifecycle function--Called when page load
-     */
-    onLoad: function (options) {
-
-    },
-
-
-    /**
-     * Lifecycle function--Called when page is initially rendered
-     */
-    onReady: function () {
-
-    },
-
+=======
     /**
      * Lifecycle function--Called when page show
      */
@@ -54,18 +32,28 @@ Page({
 
     },
 
-    /**
-     * Called when page reach bottom
-     */
-    onReachBottom: function () {
 
-    },
+  data: {
+  },
+  onLoad: function (options) {
 
-    /**
-     * Called when user click on the top right corner to share
-     */
-    onShareAppMessage: function () {
+  },
+  onReady: function () {
+  },
 
+  onShow: function () {
+    const page = this
+    const auth = wx.getStorageSync('auth')
+    const header = {
+      'X-User-Email': auth.email,
+      'X-User-Token': auth.token
     }
+    wx.request({
+      url: `${getApp().globalData.baseUrl}/services`,
+      success(res){
+        console.log(res.data)
+        page.setData(res.data)
+      }
+    })
+  },
 })
-
