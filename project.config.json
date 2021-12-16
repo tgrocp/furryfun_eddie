@@ -106,7 +106,7 @@
     "appid": "wxd24e67ad57429057",
     "projectname": "furryfun_eddie",
     "debugOptions": {
-        "hidedInDevtools": []
+      "hidedInDevtools": [],
       "urlCheck": true,
       "es6": true,
       "enhance": true,
@@ -146,4 +146,6 @@
     },
     "game": {
       "list": []
-    },
+    }
+  }
+}
