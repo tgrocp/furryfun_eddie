@@ -1,8 +1,7 @@
 <view class="cards">
-<view wx:for="{{services}}" wx:for-item="service" class="card-category" bindtap="onClick" data-id="{{service.id}}">
-      <image mode="aspectFill" class="model-photo" src="{{models.image}}"/>
-      <view class="h1">{{service.name}}</view>
-      <view class="h2">{{service.title}}</view>
-      <!-- <text>{{service.description}}</text> -->
+<view wx:for="{{ services }}" wx:for-item="service" class="card-category" bindtap="goToShow" data-id="{{ service.id }}">
+      <image mode="aspectFill" class="model-photo" src="{{ globalData.modelling_services.images }}"/>
+      <view class="h1">{{ service.name }}</view>
+      <view class="h2">{{ service.title }}</view>
   </view>
 </view>
