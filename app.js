@@ -28,5 +28,11 @@ App({
   },
   globalData: {
     baseUrl: 'http://localhost:3000/api/v1',
+    // modelling_services: [
+    //   {
+    //     "images": "/images/Corgi.jpg"
+    //   }
+    // ]
+
   }
 })

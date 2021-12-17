@@ -2,23 +2,17 @@
     overflow: hidden;
     background: white;
     box-shadow: 0 0 15rpx rgba(0,0,0,0.2);
-    padding: 24rpx;
+    padding: 20rpx;
   }
   
-  .card-trip > img {
-    height: 200rpx;
-    width: 100%;
-    object-fit: cover;
-  }
-  
-  .card-trip h2 {
-    font-size: 16rpx;
+  .h2 {
+    font-size: 18px;
     font-weight: bold;
     margin: 0;
   }
   
-  .card-trip p {
-    font-size: 12rpx;
+  text {
+    font-size: 13px;
     opacity: .7;
     margin: 0;
   }
@@ -35,9 +29,11 @@
   
   .image{
     align-content: center;
-    width: 480rpx;
     margin: auto;
     display: block;
     padding-bottom: 24rpx;
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
   }
 

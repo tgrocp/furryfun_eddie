@@ -1,13 +1,12 @@
 <view class="card-trip">
- <image class= "image"src="{{image}}" />
-    <view class="card-trip-infos">
-      <view class="h2">Name: {{name}}</view>
-    <view class="h2" >{{id}}</view>
+ <image class= "image"src="{{ models.image }}" />
+  <view class="card-trip-infos">
+    <view class="h2"><strong>Model:</strong> {{ service.name }}</view>
   </view>
 </view>
 
 <view class="card-trip-infos">
-  <text>Model Description:{{description}}</text>
+  <text>Description:<text>\n\n</text> {{ service.description }}</text>
 </view>   
-
+<text>\n</text>
 <button class="btn" bindtap="buttonClicked">Book</button>
