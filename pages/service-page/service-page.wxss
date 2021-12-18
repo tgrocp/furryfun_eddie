@@ -1,11 +1,12 @@
 page {
     background-color: #fbf9fe;
     height: 100%;
-    aligh
    }
+
    .page__hd{
     padding: 50rpx 50rpx 100rpx 50rpx;
     text-align: center;
+
    }
    .page__title{
     display: inline-block;
@@ -14,19 +15,21 @@ page {
     color: #AAAAAA;
     border-bottom: 1px solid #CCCCCC;
    }
+   
    .page__desc{
     display: none;
     margin-top: 20rpx;
     font-size: 26rpx;
     color: #BBBBBB;
    }
+
    .btn{
     display: block;
     margin: auto;
     width: 60rpx;
     padding: 50rpx
-    ;
    }
+
    .section__title{
     margin-bottom: 16rpx;
     padding-left: 30rpx;
@@ -41,7 +44,6 @@ page {
    }
    
    .image{
-
     display: block;
     margin: auto;
     width: 80%;
