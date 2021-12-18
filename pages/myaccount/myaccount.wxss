@@ -1,23 +1,33 @@
 /* pages/myaccount/myaccount.wxss */
+.row-1{
+  padding-top: 60rpx;
+  height: 260px;
+} 
 
 .h2{
-font-size: 18px;
-padding-top: 50px;
-padding-left: 50px;
+font-size: 16px;
+font-weight: bold;
+padding: 16px;
 }
-
 
 .card-myorders {
   overflow: hidden;
-  height: 100px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  width: 250rpx;
-  align-items: center;
 }
   
 .card-myorders .h2 {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
-  margin: 0;
+  align-items: center;
+}
+
+button {
+  background-color: #FFFFFF;
+  box-shadow: 0 0 15rpx rgba(0,0,0,0.2);
+  width: fit-content;
+  border-radius: 4px;
+  display: block;
+  width: 70px;
+  height: 50px;
 }
 

@@ -1,21 +1,21 @@
 {
-  "pages":[
+  "pages": [
     "pages/homepage/homepage",
     "pages/category-modelling/category-modelling",
     "pages/show-page/show-page",
     "pages/service-page/service-page",
-    "pages/myaccount/myaccount" 
+    "pages/myaccount/myaccount",
+    "pages/myaccount/my-orders",
+    "pages/myaccount/my-services"
   ],
-
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Furryfun",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
-
   "tabBar": {
     "color": "black",
     "selectedColor": "#7B1729",
@@ -29,6 +29,5 @@
         "text": "MyAccount(editable)"
       }
     ]
-   }
+  }
 }
-

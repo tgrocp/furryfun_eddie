@@ -12,14 +12,7 @@ Page({
      * Lifecycle function--Called when page load
      */
     onLoad: function (options) {
-        // const id =options.id
-        // const app =getApp()
-        // const globalData = app.globalData
-        // const models =globalData.models
-        
-        // let model = models.filter(model => model.id ==id)
-        // const page = this
-        // page.setData(model[0])
+
         const page = this
         wx.request({
           url: `http://localhost:3000/api/v1/services/${parseInt(options.id)}`,
