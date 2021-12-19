@@ -50,3 +50,7 @@ page {
     box-shadow: 0 0 15rpx rgba(0,0,0,0.2);
     border-radius: 8px;
    }
+
+   .container {
+    margin-bottom: 100rpx; 
+  }

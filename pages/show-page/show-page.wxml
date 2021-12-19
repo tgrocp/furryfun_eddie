@@ -16,3 +16,6 @@
 </view>   
 <text>\n</text>
 <button class="btn" bindtap="buttonClicked">Book</button>
+
+<tabBar></tabBar>
+
