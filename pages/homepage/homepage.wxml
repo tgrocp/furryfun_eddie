@@ -17,7 +17,7 @@
         </view>
     </navigator>
 
-    <!-- <view class="box-2">
+    <view class="box-2">
         <navigator url="/pages/category-index/category-index">
             <view class="card-product">
                 <view class="card-product-infos">
@@ -25,7 +25,7 @@
                 </view>
             </view>
          </navigator>
-    </view> -->
+    </view>
 </view>
 
 <view class="row-2">
