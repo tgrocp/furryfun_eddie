@@ -5,3 +5,5 @@
       <view class="h2">{{ service.title }}</view>
   </view>
 </view>
+
+<tabBar></tabBar>

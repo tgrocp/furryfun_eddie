@@ -15,19 +15,5 @@
     "navigationBarTextStyle": "black"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json",
-  "tabBar": {
-    "color": "black",
-    "selectedColor": "#7B1729",
-    "list": [
-      {
-        "pagePath": "pages/homepage/homepage",
-        "text": "WeChat(editable)"
-      },
-      {
-        "pagePath": "pages/myaccount/myaccount",
-        "text": "MyAccount(editable)"
-      }
-    ]
-  }
+  "sitemapLocation": "sitemap.json"
 }

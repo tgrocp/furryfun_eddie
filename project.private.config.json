@@ -29,6 +29,12 @@
                     "pathName": "pages/service-page/service-page",
                     "query": "",
                     "scene": null
+                },
+                {
+                    "name": "pages/category-modelling/category-modelling",
+                    "pathName": "pages/category-modelling/category-modelling",
+                    "query": "",
+                    "scene": null
                 }
             ]
         }

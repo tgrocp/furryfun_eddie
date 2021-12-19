@@ -18,7 +18,13 @@ Page({
            })
        },
 
+    //    buttonClicked: function(e) {
+    //     wx.navigateTo ({
+    //         url: '/pages/service-page/service-page'
+    //     })
+    //     },
    
+    
 
     /**
      * Lifecycle function--Called when page is initially rendered
@@ -68,4 +74,7 @@ Page({
     onShareAppMessage: function () {
 
     }
+
+    
+    
 })
