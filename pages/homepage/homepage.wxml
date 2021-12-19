@@ -47,4 +47,10 @@
     </navigator> 
 </view>
 
+<<<<<<< HEAD
 
+=======
+<navigator url="/pages/homepage/create-page"> 
+    <button type="primary" plain="true">Create Service</button>
+</navigator>
+>>>>>>> cb580d932f214abf6837b7bc52a239e51bfff063

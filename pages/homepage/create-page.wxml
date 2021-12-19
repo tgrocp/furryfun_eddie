@@ -1,0 +1,19 @@
+<!--pages/homepage/create-page.wxml-->
+<form class="create_page" bindsubmit="bindSubmit">
+    <view class="title_name">Name</view>
+    <view class="name_input_box" style="margin: 30rpx 0" >
+        <input class="name-input" name="name" placeholder="Please input your name" />
+    </view>
+
+    <view class="title_title">Title</view>
+    <view class="title_input_box" style="margin: 30rpx 0" >
+        <input class="title-input" name="title" placeholder="Please input your title" />
+    </view>
+
+    <view class="title_description">Description</view>
+    <view class="description_input_box" style="margin: 30rpx 0" >
+        <input class="title-input" name="description" placeholder="Please input your description" />
+    </view>
+
+    <button form-type="submit">Create</button>
+</form>
