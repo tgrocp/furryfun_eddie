@@ -80,3 +80,6 @@
     margin-top: 50px;
   }
 
+  .container {
+    margin-bottom: 100rpx; 
+  }
