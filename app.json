@@ -23,11 +23,11 @@
     "list": [
       {
         "pagePath": "pages/homepage/homepage",
-        "text": "WeChat(editable)"
+        "text": "WeChat"
       },
       {
         "pagePath": "pages/myaccount/myaccount",
-        "text": "MyAccount(editable)"
+        "text": "My Account"
       }
     ]
   }

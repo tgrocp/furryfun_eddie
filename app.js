@@ -3,7 +3,7 @@ App({
     const app = this
     wx.login({
       success (res) {
-        console.log(res.code)
+        console.log("code", res.code)
         if (res.code) {
           wx.request({
             url: `${app.globalData.baseUrl}/login`,
