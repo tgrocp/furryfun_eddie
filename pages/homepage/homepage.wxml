@@ -49,8 +49,7 @@
 
 
 
-<navigator url="/pages/homepage/create-page"> 
-    <button type="primary" plain="true">Create Service</button>
+<navigator url="/pages/homepage/create-page" class="btnCreate"> 
+    <button type="default" plain="summit">Create Service</button>
 </navigator>
-
 <tabBar></tabBar>
