@@ -1,6 +1,5 @@
 Page({ 
-
-    onClick: function (e) {
+    goToShow: function (e) {
         const id = e.currentTarget.dataset.id
         wx.navigateTo({
         url: `/pages/show-page/show-page?id=${id}`,
@@ -9,6 +8,8 @@ Page({
 
     onLoad() {
         const page = this;
+        let images = getApp().globalData.modelling_services
+        page.setData({ images: images })
         let serviceExist = 
         wx.request({
             url: "http://localhost:3000/api/v1/services",
@@ -19,7 +20,13 @@ Page({
            })
        },
 
+    //    buttonClicked: function(e) {
+    //     wx.navigateTo ({
+    //         url: '/pages/service-page/service-page'
+    //     })
+    //     },
    
+    
 
     /**
      * Lifecycle function--Called when page is initially rendered
@@ -69,4 +76,7 @@ Page({
     onShareAppMessage: function () {
 
     }
+
+    
+    
 })

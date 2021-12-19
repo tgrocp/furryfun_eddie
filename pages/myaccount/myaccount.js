@@ -1,65 +1,52 @@
 // pages/myaccount/myaccount.js
 Page({
+    goToMyOrders: function (e) {
+        const id = e.currentTarget.dataset.id
+        wx.navigateTo({
+        url: `/pages/myaccount/my-orders?id=${id}`,
+        })
+     },
 
-    /**
-     * Page initial data
-     */
-    data: {
+     goToMyServices: function (e) {
+        const id = e.currentTarget.dataset.id
+        wx.navigateTo({
+        url: `/pages/myaccount/my-services?id=${id}`,
+        })
+     },
 
-    },
-
-    /**
-     * Lifecycle function--Called when page load
-     */
     onLoad: function (options) {
-
+       
+        const page = this;
+        page.setData({ user: getApp().globalData.user })
+        // console.log(page.data)
+       
     },
 
-    /**
-     * Lifecycle function--Called when page is initially rendered
-     */
     onReady: function () {
 
     },
 
-    /**
-     * Lifecycle function--Called when page show
-     */
     onShow: function () {
 
     },
 
-    /**
-     * Lifecycle function--Called when page hide
-     */
     onHide: function () {
 
     },
 
-    /**
-     * Lifecycle function--Called when page unload
-     */
     onUnload: function () {
 
     },
 
-    /**
-     * Page event handler function--Called when user drop down
-     */
     onPullDownRefresh: function () {
 
     },
 
-    /**
-     * Called when page reach bottom
-     */
+
     onReachBottom: function () {
 
     },
 
-    /**
-     * Called when user click on the top right corner to share
-     */
     onShareAppMessage: function () {
 
     }

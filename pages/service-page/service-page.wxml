@@ -7,10 +7,11 @@
   <view class="section">
     <picker mode="date" value="{{date}}" start="2021-09-01" end="2022-09-01" bindchange="bindDateChange">
       <view class="picker">
-        Book Now: {{date}}
+        Book Now {{date}}
       </view>
     </picker>
   </view>
  </button>
-
 </view>
+
+<tabBar></tabBar>

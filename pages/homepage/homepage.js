@@ -1,37 +1,23 @@
-// pages/stories/index.js
 const app = getApp()
 // this means that i am calling the app.js file 
 
 Page({
-=======
-    /**
-     * Lifecycle function--Called when page show
-     */
+
     onShow: function () {
 
     },
-    
-    /**
-     * Lifecycle function--Called when page hide
-     */
+  
     onHide: function () {
 
     },
 
-    /**
-     * Lifecycle function--Called when page unload
-     */
     onUnload: function () {
 
     },
 
-    /**
-     * Page event handler function--Called when user drop down
-     */
     onPullDownRefresh: function () {
 
     },
-
 
   data: {
   },
@@ -40,6 +26,28 @@ Page({
   },
   onReady: function () {
   },
+
+// bindSubmit: function (e) {
+//   let name = e.detail.value.name;
+//   let title = e.detail.value.title;
+//   let description = e.detail.value.description;
+//   let service = {
+//     name: name,
+//     title: title,
+//     description: description, 
+//   }
+
+//   wx.request({
+//     url: `http://localhost:3000/api/v1/services`,
+//     method: 'POST',
+//     data: service,
+//       success() {
+//         wx.redirectTo({
+//           url: '/pages/index/index'
+//         });
+//       }
+//   });
+// },
 
   onShow: function () {
     const page = this
@@ -51,7 +59,7 @@ Page({
     wx.request({
       url: `${getApp().globalData.baseUrl}/services`,
       success(res){
-        console.log(res.data)
+        console.log("services", res.data)
         page.setData(res.data)
       }
     })
