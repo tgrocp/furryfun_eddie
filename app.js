@@ -13,8 +13,13 @@ App({
             },
             success(res){
               console.log(res.data)
-              wx.setStorageSync('user', res.data.user)
-              wx.setStorageSync('headers', res.data.headers)
+              // wx.setStorageSync('user', res.data.user)
+              // wx.setStorageSync('headers', res.data.headers)
+              app.globalData.header = res.data.headers
+              app.globalData.user = res.data.user
+              console.log(res.data.user)
+              console.log(app.globalData)
+      
             }
           })
         } else {
@@ -28,11 +33,19 @@ App({
   },
   globalData: {
     baseUrl: 'http://localhost:3000/api/v1',
-    // modelling_services: [
-    //   {
-    //     "images": "/images/Corgi.jpg"
-    //   }
-    // ]
-
+    modelling_services: [
+      {
+        "image": "/images/Golden-retriever.jpg"
+      },
+      {
+        "image": "/images/Chinese-rural-dog.jpg"
+      },
+      {
+        "image": "/images/British-shorthair.jpg"
+      },
+      {
+        "image": "/images/Alpaca.jpg"
+      }
+    ]
   }
 })
