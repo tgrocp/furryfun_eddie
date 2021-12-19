@@ -27,11 +27,19 @@ App({
   },
   globalData: {
     baseUrl: 'http://localhost:3000/api/v1',
-    // modelling_services: [
-    //   {
-    //     "images": "/images/Corgi.jpg"
-    //   }
-    // ]
-
+    modelling_services: [
+      {
+        "image": "/images/Golden-retriever.jpg"
+      },
+      {
+        "image": "/images/Chinese-rural-dog.jpg"
+      },
+      {
+        "image": "/images/British-shorthair.jpg"
+      },
+      {
+        "image": "/images/Alpaca.jpg"
+      }
+    ]
   }
 })
