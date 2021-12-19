@@ -13,12 +13,12 @@ Component({
         {
           "pagePath": "../../pages/homepage/homepage",
           "text": "wechat",
-          "iconPath": "../../images/index_icon.png" // 因为子页面点击图标的不需要变化，因为直接跳转到首页了
+          "iconPath": "../../images/home.png" // 因为子页面点击图标的不需要变化，因为直接跳转到首页了
         },
         {
           "pagePath": "../../pages/myaccount/myaccount",
           "text": "My Account",
-          "iconPath": "../../images/user_icon.png"
+          "iconPath": "../../images/myaccount.png"
         }
 
         
