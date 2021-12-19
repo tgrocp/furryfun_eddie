@@ -37,3 +37,8 @@
     object-fit: cover;
   }
 
+  
+.container {
+  margin-bottom: 100rpx; 
+}
+

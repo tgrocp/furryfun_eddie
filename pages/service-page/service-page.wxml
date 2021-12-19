@@ -12,5 +12,6 @@
     </picker>
   </view>
  </button>
-
 </view>
+
+<tabBar></tabBar>
