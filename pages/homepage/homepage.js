@@ -37,7 +37,7 @@ Page({
     wx.request({
       url: `${getApp().globalData.baseUrl}/services`,
       success(res){
-        console.log(res.data)
+        console.log("services", res.data)
         page.setData(res.data)
       }
     })
