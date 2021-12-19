@@ -14,8 +14,13 @@ Page({
     onLoad: function (options) {
 
         const page = this
+        let images = getApp().globalData.modelling_services
+        page.setData({ images: images })
+        
         wx.request({
-          url: `http://localhost:3000/api/v1/services/${parseInt(options.id)}`,
+       
+        //   url: `http://localhost:3000/api/v1/services/${parseInt(options.id)}`,
+        url: `${getApp().globalData.baseUrl}/services/${parseInt(options.id)}`,
           method: 'GET',
           success (res) {
               console.log(res.data.modelling_service)
