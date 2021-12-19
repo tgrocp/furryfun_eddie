@@ -12,7 +12,6 @@ App({
             code: res.code
             },
             success(res){
-              console.log(res.data)
               wx.setStorageSync('user', res.data.user)
               wx.setStorageSync('headers', res.data.headers)
             }
