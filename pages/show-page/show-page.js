@@ -1,6 +1,23 @@
 // pages/show-page/show-page.js
 Page({
 
+    deleteModel(e) {
+        console.log("clickon")
+        const id = e.currentTarget.dataset.id;
+        const header = getApp().globalData.header;
+        console.log(getApp().globalData)
+        wx.request({
+            url: `http://localhost:3000/api/v1/services/${parseInt(id)}`,
+            method: 'DELETE',
+            header: header,
+            success() {
+                wx.redirectTo({
+                    url: '/pages/category-modelling/category-modelling'
+                  });
+                }
+              });
+            },
+    
     /**
      * Page initial data
      */

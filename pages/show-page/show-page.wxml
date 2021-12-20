@@ -10,6 +10,7 @@
 </view>   
 <text>\n</text>
 <button class="btn" bindtap="buttonClicked">Book</button>
+<button class="btn" bindtap="deleteModel" data-id="{{service.id}}">Delete</button>
 
 <tabBar></tabBar>
 

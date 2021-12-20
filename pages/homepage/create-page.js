@@ -19,6 +19,19 @@ Page({
             }
         });
       },
+
+    //   deleteStory(e) {
+    //     const data = e.currentTarget.dataset;
+    //     wx.request({
+    //       url: `http://localhost:3000/api/v1/services/${data.id}`,
+    //       method: 'DELETE',
+    //       success() {
+    //         wx.redirectTo({
+    //         url: '/pages/category-modelling/category-modelling'
+    //       });
+    //     }
+    //   });
+    // },
       
     /**
      * 页面的初始数据
