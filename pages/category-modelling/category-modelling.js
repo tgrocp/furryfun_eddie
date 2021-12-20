@@ -10,7 +10,6 @@ Page({
         const page = this;
         let images = getApp().globalData.modelling_services
         page.setData({ images: images })
-        let serviceExist = 
         wx.request({
             url: "http://localhost:3000/api/v1/services",
             method: 'GET',
