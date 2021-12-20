@@ -1,11 +1,5 @@
 <view class="card-trip">
-
-  <!-- <view wx:for="{{ services }}" wx:for-item="service" class="card-category" data-id="{{ service.id }}"> -->
-      <image mode="aspectFill" class="model-photo" src="{{ images[service.id - 1].image }}"/>
-  <!-- </view> -->
-
- <!-- <image class= "image" wx:for="{{ images }}" wx:for-item="image" src="{{ images[index].image }}" /> -->
-
+ <image class= "image"src="{{ models.image }}" />
   <view class="card-trip-infos">
     <view class="h2"><strong>Model:</strong> {{ service.name }}</view>
   </view>
@@ -16,6 +10,7 @@
 </view>   
 <text>\n</text>
 <button class="btn" bindtap="buttonClicked">Book</button>
+<button class="btn" bindtap="deleteModel" data-id="{{service.id}}">Delete</button>
 
 <tabBar></tabBar>
 

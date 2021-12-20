@@ -1,1 +1,10 @@
-/* pages/myaccount/my-services.wxss */
+.container {
+    border-color: black;
+    box-shadow: rgb(197, 47, 47);
+    padding: 50rpx;
+  }
+  
+  .h1{
+    padding: 50rpx;
+    font: large;
+  }

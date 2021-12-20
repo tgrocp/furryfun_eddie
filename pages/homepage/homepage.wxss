@@ -83,8 +83,3 @@
   .container {
     margin-bottom: 100rpx; 
   }
-
-  .btnCreate{
-padding-top: 32rpx;
-border-radius:  32rpx;
-}
