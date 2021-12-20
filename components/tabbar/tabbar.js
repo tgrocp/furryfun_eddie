@@ -19,6 +19,7 @@ Component({
           "pagePath": "../../pages/myaccount/myaccount",
           "text": "My Account",
           "iconPath": "../../images/user_icon.png"
+
         }
 
         

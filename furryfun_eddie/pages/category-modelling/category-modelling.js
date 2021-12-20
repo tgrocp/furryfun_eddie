@@ -1,25 +1,6 @@
-// pages/homepage/create-page.js
+// pages/category-modelling/category-modelling.js
 Page({
-    bindSubmit: function (e) {
-        console.log("event", e)
-        let service = e.detail.value
-        const headers = wx.getStorageSync('headers')
 
-        console.log(service)
-      
-        wx.request({
-          url: `http://localhost:3000/api/v1/services`,
-          method: 'POST',
-          header: headers,
-          data: { service: service },
-            success() {
-              wx.redirectTo({
-                url: '/pages/category-modelling/category-modelling'
-              });
-            }
-        });
-      },
-      
     /**
      * 页面的初始数据
      */
