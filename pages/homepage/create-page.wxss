@@ -1,1 +1,4 @@
 /* pages/homepage/create-page.wxss */
+.create_page {
+  padding-left: 10px;
+}
