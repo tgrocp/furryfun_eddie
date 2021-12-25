@@ -1,8 +1,11 @@
+<view class="h1">My Orders</view >
+<view class="container">
+  <image style="width: 200px; height: 200px;" mode="{{item.mode}}" src="https://images.unsplash.com/photo-1613318286980-4b3dd8475772?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"></image>
+  Order ID 123456
+</view>
 
-
-
-
-<view class="card-product-infos">
-      <image class="image" width="200px" height="200px"  src="https://images.unsplash.com/photo-1589182337358-2cb63099350c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"/>
+<view class="container">
+  <image style="width: 200px; height: 200px;" mode="{{item.mode}}" src="https://images.unsplash.com/photo-1613318286980-4b3dd8475772?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"></image>
+  Order ID *****
 </view>
 

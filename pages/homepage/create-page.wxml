@@ -15,5 +15,5 @@
         <input class="title-input" name="description" placeholder="Please input your description" />
     </view>
 
-    <button form-type="submit">Create</button>
+    <button type="primary" form-type="submit">Create</button>
 </form>

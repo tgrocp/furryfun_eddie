@@ -12,8 +12,12 @@ App({
             code: res.code
             },
             success(res){
-              wx.setStorageSync('user', res.data.user)
-              wx.setStorageSync('headers', res.data.headers)
+              // wx.setStorageSync('user', res.data.user)
+              // wx.setStorageSync('headers', res.data.headers)
+              app.globalData.header = res.data.headers
+              app.globalData.user = res.data.user
+              // console.log(res.data.user)
+              // console.log(app.globalData)
             }
           })
         } else {
@@ -26,8 +30,7 @@ App({
     })
   },
   globalData: {
-    // baseUrl: 'http://localhost:3000/api/v1',
-    baseUrl: 'https://furryfun.herokuapp.com/api/v1',
+    baseUrl: 'http://localhost:3000/api/v1',
     modelling_services: [
       {
         "image": "/images/Golden-retriever.jpg"
