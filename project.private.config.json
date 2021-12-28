@@ -35,6 +35,12 @@
                     "pathName": "pages/category-modelling/category-modelling",
                     "query": "",
                     "scene": null
+                },
+                {
+                    "name": "pages/homepage/create-page",
+                    "pathName": "pages/homepage/create-page",
+                    "query": "",
+                    "scene": null
                 }
             ]
         }
