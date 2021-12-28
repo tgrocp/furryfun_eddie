@@ -1,0 +1,17 @@
+/* pages/show-page/confirmation.wxss */
+
+.h1 {
+  font-size: 34;
+  font-family: Sen;
+  color: #F3D4D0;
+  font-weight: bold;
+}
+
+.title {
+  padding: 34rpx;
+  text-align: center;
+}
+
+.name {
+  background-color: ;
+}

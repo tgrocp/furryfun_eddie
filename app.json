@@ -3,6 +3,7 @@
     "pages/homepage/homepage",
     "pages/category-modelling/category-modelling",
     "pages/show-page/show-page",
+    "pages/show-page/confirmation",
     "pages/service-page/service-page",
     "pages/myaccount/myaccount",
     "pages/myaccount/my-orders",

@@ -1,0 +1,17 @@
+<!--pages/show-page/confirmation.wxml-->
+
+<view class="title">
+ <view class="h1">Please Confirm Your Info</view >
+</view >
+
+<view class="name">
+  <view class="h1">name</view >
+ <view class="h1">——————————————</view >
+</view >
+
+<view class="Phone_number">
+<view class="h1">phone_number</view >
+ <view class="h1">——————————————</view >
+</view >
+
+<button size="normal" bindtap="missingInfo">Confirm</button>
