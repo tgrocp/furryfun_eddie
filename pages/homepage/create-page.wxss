@@ -2,3 +2,7 @@
 .create_page {
   padding-left: 10px;
 }
+
+.container {
+width:32rpx;
+}

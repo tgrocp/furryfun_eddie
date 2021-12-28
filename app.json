@@ -8,6 +8,7 @@
     "pages/myaccount/my-orders",
     "pages/myaccount/my-services",
     "pages/homepage/create-page"
+    
   ],
   "window": {
     "backgroundTextStyle": "light",
