@@ -1,11 +1,10 @@
 <view class="container">
   <view class="title">
     <text class="h1">FurryFun</text>
-    <view>\n</view>
+    <text>\n</text>
     <text>your pets playground</text>
   </view>
-
-  <view class="row-1">
+  <view class="row">
     <view class="card-product">
       <view class="box">
       <navigator url="/pages/category-modelling/category-modelling">
@@ -29,7 +28,7 @@
     </view>
   </view>
 
-  <view class="row-2">
+  <view class="row">
     <view class="card-product">
       <view class="box">
       <navigator url="/pages/category-dailycare/category-dailycare">
@@ -53,3 +52,5 @@
     </view>    
   </view>
 </view>
+
+<tabBar></tabBar>

@@ -1,0 +1,9 @@
+<view class="container">
+  <image class="cat-pink" src="/images/cat-pink.png"/>
+  <view class="text">
+    <view class="h1">Furry FUN</view>
+    <view class="p">Let your pet be a super star</view>
+  </view>
+  <navigator class="btn-pink">Let's Start</navigator>
+</view>
+
