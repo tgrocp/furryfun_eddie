@@ -1,37 +1,54 @@
-<!--pages/homepage/create-page.wxml-->
-<form class="create_page" bindsubmit="bindSubmit">
-    <view class="title_name">Your pet's name</view>
+<view class="create_page">
+
+<view class="header">
+    <view class="header-text">
+        <view class="h3">Create Your service </view>
+            <view class="text">with simple stpes</view>
+        </view>
+    <image class="header-icon" src="/icons/puddle_dog.png"/> 
+</view>
+
+<image class="avatar"style="margin: 16rpx 0"src="/icons/avata_example.png"/>
+
+
+    <view class="title_name">Pet's name</view>
         <view class="name_input_box" style="margin: 30rpx 0" >
             <input class="name-input" name="name" placeholder="Please input your pet's name" />
     </view>
 
 
-<radio-group bindchange="radioChange" style="margin: 30rpx 0">
+<radio-group bindchange="radioChange" style="margin: 40rpx 0,">
     <view style="padding-bottom: 12rpx;">Category</view>
-    <label class="modeling">
-        <radio value="thrapy" checked="true"/>Modeling
-    </label>
-    <label class="therapy">
-        <radio value="thrapy" />Therapy
-    </label>
-    <label class="dailyCare">
-        <radio value="dailyCare" />Dailycare
-    </label> 
-    <label class="boarding">
-        <radio value="boarding" />Boarding
-    </label>
+        <view class="selection">
+            <label class="modeling">
+                <radio value="thrapy" checked="true"/>Modeling
+            </label>
+
+            <label class="therapy">
+                <radio value="thrapy" />Therapy
+            </label>
+
+             <label class="dailyCare">
+                <radio value="dailyCare" />Dailycare
+            </label> 
+
+            <label class="boarding">
+                <radio value="boarding" />Boarding
+            </label>
+        </view>
 </radio-group>
 
-<!-- <view class="title_location">location</view>
+<view class="title_location">location</view>
         <view class="location_input_box" style="margin: 30rpx 0" >
-            <input class="title-input" name="location" placeholder="Please choose your location" />
-        </view> -->
+            <input class="title-input" name="location" placeholder="Please enter your location" />
+        </view>
+        <!-- 关于LOCATION这一块需要点时间去开发 ，暂时通过Input去解决-->
 
 <radio-group bindchange="radioChange" style="margin: 30rpx 0">
     <view style="padding-bottom: 12rpx;">Gender</view>
-    <label class="radio">
-        <radio value="male" checked="true"/>Male
-    </label>
+        <label class="radio">
+            <radio value="male" checked="true"/>Male
+        </label>
     <label class="radio">
         <radio value="female" />female
     </label>
@@ -40,35 +57,31 @@
 
 <radio-group bindchange="radioChange" style="margin: 30rpx 0">
     <view style="padding-bottom: 12rpx;">Pet Types</view>
-    <label class="radio">
-        <radio value="dog" checked="true"/>Dog
-    </label>
+        <label class="radio">
+            <radio value="dog" checked="true"/>Dog
+        </label>
 
-    <label class="radio">
-        <radio value="Cat" />cat
-    </label>
+        <label class="radio">
+            <radio value="Cat" />cat
+        </label>
 
-    <label class="radio">
-        <radio value="others" />others
-    </label>
+        <label class="radio">
+            <radio value="others" />others
+        </label>
 </radio-group>
     
- 
-<view class="container">
-  <button bindtap='chooseImageTap'>Upload photo</button>
+<view class="btn_summit" style="padding: 16rpx;">
+Upload Image
+  <button bindtap='chooseImageTap'>click to upload</button>
 </view>
 
-<view class="title_description"style="margin: 38rpx 0"> Description
-<input class="weui-input" name="input" placeholder="Please Enter Your Description here" />
+<view class="section">
+    <view class="section__title">Description</view>
+    <textarea name="content" placeholder="please write your description here" ></textarea>
+  </view>
+
+<view class="btn-summit">
+<button bindtap='bindSubmit'>summit</button>
 </view>
 
-
-
-        
-
-
-
-
-
-    <button type="primary" form-type="submit">Create</button>
-</form>
+</view>
