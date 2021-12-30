@@ -55,7 +55,7 @@
     
  
 <view class="container">
-  <button bindtap='chooseImageTap'>上传图片</button>
+  <button bindtap='chooseImageTap'>Upload photo</button>
 </view>
 
 <view class="title_description"style="margin: 38rpx 0"> Description
