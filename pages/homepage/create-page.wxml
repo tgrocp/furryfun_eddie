@@ -70,7 +70,6 @@
         </label>
 </radio-group>
     
- 
 <view class="btn_summit" style="padding: 16rpx;">
 Upload Image
   <button bindtap='chooseImageTap'>click to upload</button>

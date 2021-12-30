@@ -25,7 +25,7 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/homepage/landing",
+        "pagePath": "pages/category-modelling/category-modelling",
         "iconPath": "/icons/home.png",
         "selectedIconPath": "/icons/home.png"
       },

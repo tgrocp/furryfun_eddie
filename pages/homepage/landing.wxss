@@ -16,12 +16,13 @@
 
 .text {
   margin-top: 30px;
-  margin-bottom: 100px;
+  margin-bottom: 90px;
 }
 
 .cat-pink {
   width: 285px;
   height: 270px;
+  margin-top: 10px;
 }
 
 .btn-pink {
@@ -33,7 +34,6 @@
   align-items: center;
   justify-content: center; 
   margin-left: 65px;
-  margin-top: 40px;
   font-size: 22px;
   font-family: 'Open Sans';
   font-weight: bold;

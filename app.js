@@ -30,8 +30,8 @@ App({
     })
   },
   globalData: {
-    // baseUrl: 'http://localhost:3000/api/v1',
-    baseUrl: "https://furryfun.herokuapp.com/api/v1",
+    baseUrl: 'http://localhost:3000/api/v1',
+    // baseUrl: "https://furryfun.herokuapp.com/api/v1",
     modelling_services: [
       {
         "image": "/images/Golden-retriever.jpg"
