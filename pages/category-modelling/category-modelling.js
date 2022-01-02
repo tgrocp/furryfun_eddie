@@ -1,5 +1,4 @@
 Page({ 
-    
     goToShow: function (e) {
         console.log("hihihihi")
         console.log(e)
@@ -17,7 +16,8 @@ Page({
           url: `${getApp().globalData.baseUrl}/pets`,
           method: 'GET',
           success(res) {
-              page.setData({ pets: res.data.pets })
+              console.log(res.data)
+              page.setData({pets: res.data.pets})
            }
         })
       },

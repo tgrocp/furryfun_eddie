@@ -4,84 +4,129 @@
     <view class="header-text">
         <view class="h3">Create Your service </view>
             <view class="text">with simple stpes</view>
+          
+                <view class="userinfo">
+                    <view class="userinfo-avatar">
+                        <open-data  type="userAvatarUrl"></open-data>
+                    </view>
+                        <open-data type="userNickName"></open-data>
+                </view>
         </view>
     <image class="header-icon" src="/icons/puddle_dog.png"/> 
 </view>
 
-<image class="avatar"style="margin: 16rpx 0"src="/icons/avata_example.png"/>
-
-
+<view class="content">
     <view class="title_name">Pet's name</view>
-        <view class="name_input_box" style="margin: 30rpx 0" >
-            <input class="name-input" name="name" placeholder="Please input your pet's name" />
+        <view class="name_input_box" style="margin: 24rpx 0" >
+            <input class="name-input" name="name" placeholder="Please input your pet's name" style="padding-left: 8px " />
     </view>
 
 
-<radio-group bindchange="radioChange" style="margin: 40rpx 0,">
-    <view style="padding-bottom: 12rpx;">Category</view>
-        <view class="selection">
-            <label class="modeling">
-                <radio value="thrapy" checked="true"/>Modeling
-            </label>
+    <radio-group bindchange="radioChange">
+        <view style="margin:24rpx 0">Category</view>
+            <view class="selection">
+                <label class="modeling">
+                    <radio value="thrapy" checked="true"/>Modeling
+                </label>
 
-            <label class="therapy">
-                <radio value="thrapy" />Therapy
-            </label>
+                <label class="therapy">
+                    <radio value="thrapy" />Therapy
+                </label>
 
-             <label class="dailyCare">
-                <radio value="dailyCare" />Dailycare
-            </label> 
+                <label class="dailyCare">
+                    <radio value="dailyCare" />Dailycare
+                </label> 
 
-            <label class="boarding">
-                <radio value="boarding" />Boarding
-            </label>
+                <label class="boarding">
+                    <radio value="boarding" />Boarding
+                </label>
         </view>
-</radio-group>
+    </radio-group>
 
-<view class="title_location">location</view>
-        <view class="location_input_box" style="margin: 30rpx 0" >
-            <input class="title-input" name="location" placeholder="Please enter your location" />
+    <!-- <view class="title_location">location</view>
+        <view class="location_input_box"  >
+            <input class="location-input" name="location" placeholder="Please enter your location" style="padding: 8px "/>
         </view>
-        <!-- 关于LOCATION这一块需要点时间去开发 ，暂时通过Input去解决-->
+        关于LOCATION这一块需要点时间去开发 ，暂时通过Input去解决 -->
 
-<radio-group bindchange="radioChange" style="margin: 30rpx 0">
-    <view style="padding-bottom: 12rpx;">Gender</view>
-        <label class="radio">
-            <radio value="male" checked="true"/>Male
-        </label>
-    <label class="radio">
-        <radio value="female" />female
-    </label>
-</radio-group>
- 
+        <!-- <view class="location-section">
+            <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+                 <view class="picker">
+                         <view class="location-row">
+                            <view class="sign"></view>
+                            <input placeholder="请选择省份" value="{{region[0]}}"></input>
+                          </view>
 
-<radio-group bindchange="radioChange" style="margin: 30rpx 0">
-    <view style="padding-bottom: 12rpx;">Pet Types</view>
-        <label class="radio">
-            <radio value="dog" checked="true"/>Dog
-        </label>
+                          <view class="location-row" wx:if="{{city==true}}">
+                            <view class="sign"></view>
+                            <input placeholder="请选择城市" value="{{region[1]}}"></input>
+                          </view>
 
-        <label class="radio">
-            <radio value="Cat" />cat
-        </label>
-
-        <label class="radio">
-            <radio value="others" />others
-        </label>
-</radio-group>
-    
-<view class="btn_summit" style="padding: 16rpx;">
-Upload Image
-  <button bindtap='chooseImageTap'>click to upload</button>
-</view>
+                          <view class="location-row" wx:if="{{city==true}}">
+                            <view class="sign"></view>
+                            <input placeholder="请选择区县"  value="{{region[2]}}"></input>
+                          </view>
+                 </view>
+           </picker>
+      </view> -->
 
 <view class="section">
-    <view class="section__title">Description</view>
-    <textarea name="content" placeholder="please write your description here" ></textarea>
-  </view>
+  <view class="section-location"style="margin:24rpx 0">Location</view>
+    <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="location-picker">
+           Your Location: {{region[0]}}        {{region[1]}}       {{region[2]}}
+        </view>
+    </picker>
+</view>
 
-<view class="btn-summit">
-<button bindtap='bindSubmit'>summit</button>
+
+
+
+
+    <radio-group bindchange="radioChange" style="margin: 30rpx 0">
+        <view style="padding-bottom: 12rpx;">Gender</view>
+            <label class="radio">
+                <radio value="male" checked="true"/>Male
+            </label>
+        <label class="radio">
+            <radio value="female" />female
+        </label>
+    </radio-group>
+ 
+
+    <radio-group bindchange="radioChange" style="margin: 30rpx 0">
+        <view style="padding-bottom: 12rpx;">Pet Types</view>
+            <label class="radio">
+                <radio value="dog" checked="true"/>Dog
+            </label>
+
+            <label class="radio">
+                <radio value="Cat" />cat
+            </label>
+
+            <label class="radio">
+                <radio value="others" />others
+            </label>
+    </radio-group>
+    
+    <view class="upload-image" style="padding-bottom: 16rpx;">
+            Upload Image
+        <view class="btn-summit" style="padding-top: 16rpx;">
+            <button bindtap='chooseImageTap'>click to upload</button>
+        </view>
+    </view>
+
+
+    <view class="section">
+        Description
+        <view class="section__title">
+            <textarea name="content" placeholder="please write your pet'sdescription here" ></textarea>
+        </view>
+    </view>
+
+    <view class="btn-summit">
+        <button bindtap='bindSubmit'>summit</button>
+    </view>
 </view>
 
 </view>

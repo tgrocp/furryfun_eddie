@@ -1,0 +1,48 @@
+/* pages/show-page/successfully-booked.wxss */
+
+.h1 {
+  font-size: 40rpx;
+  font-family: Sen;
+  color: #F3D4D0;
+  font-weight: bold;
+  text-align: center;
+}
+
+input {
+  height: 80rpx;
+  border-bottom: 1px solid black;
+}
+
+.title {
+  padding: 34rpx;
+  text-align: center;
+}
+
+
+.container{
+  padding: 10%;
+  font-size: 40rpx;
+}
+
+.section__title {
+  font-size: larger;
+}
+
+.section1{
+  padding: 10%;
+  font-size: 30rpx;
+  border-style: soild;
+}
+
+.section2{
+  padding: 10%;
+  font-size: 30rpx;
+}
+
+
+.h2 button {
+  background-color: #F3D4D0;
+  font-size: 40rpx;
+  width: 600rpx !important;
+  border-radius: 20rpx;
+}

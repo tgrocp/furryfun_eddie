@@ -1,0 +1,43 @@
+/* pages/show-page/confirmation.wxss */
+input {
+  height: 80rpx;
+  border-bottom: 1px solid black;
+}
+
+.h1 {
+  font-size: 40rpx;
+  color: #F3D4D0;
+  font-weight: bold;
+}
+
+.title {
+  padding: 34rpx;
+  text-align: center;
+}
+
+
+.container{
+  padding: 10%;
+  font-size: 40rpx;
+}
+
+.section__title {
+  font-size: larger;
+}
+
+.section1{
+  padding: 10%;
+  font-size: 30rpx;
+}
+
+.section2{
+  padding: 10%;
+  font-size: 30rpx;
+}
+
+.h2 button {
+  background-color: #F3D4D0;
+  font-size: 40rpx;
+  width: 600rpx !important;
+  border-radius: 20rpx;
+}
