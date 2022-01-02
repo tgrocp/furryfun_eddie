@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/landing/landing",
     "pages/homepage/homepage",
     "pages/category-modelling/category-modelling",
     "pages/show-page/show-page",
@@ -17,8 +18,31 @@
     "navigationBarTitleText": "Furryfun",
     "navigationBarTextStyle": "black"
   },
+  "tabBar": {
+    "custom": true,
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/category-modelling/category-modelling",
+        "iconPath": "/icons/home.png",
+        "selectedIconPath": "/icons/home.png"
+      },
+      {
+        "pagePath": "pages/homepage/create-page",
+        "iconPath": "/icons/plus.png",
+        "selectedIconPath": "/icons/plus.png"
+      },
+      {
+        "pagePath": "pages/myaccount/myaccount",
+        "iconPath": "/icons/user.png",
+        "selectedIconPath": "/icons/user.png"
+      }
+    ]
+  },
   "style": "v2",
-
-  "sitemapLocation": "sitemap.json"
-
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
 }

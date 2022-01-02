@@ -6,77 +6,20 @@ Page({
         })
     },
 
-    onLoad() {
+    onShow() {
+      console.log("onShow")
         const page = this;
         let images = getApp().globalData.modelling_services
         page.setData({ images: images })
         wx.request({
-            url: `${getApp().globalData.baseUrl}/services`,
-            method: 'GET',
-            success(res) {
-                console.log(res.data)
-               page.setData({services: res.data.modelling_services})
-               }
-           })
-       },
-
-    //    buttonClicked: function(e) {
-    //     wx.navigateTo ({
-    //         url: '/pages/service-page/service-page'
-    //     })
-    //     },
-   
-    
-
-    /**
-     * Lifecycle function--Called when page is initially rendered
-     */
-    onReady: function () {
-
-    },
-
-    /**
-     * Lifecycle function--Called when page show
-     */
-    onShow: function () {
-
-    },
-
-    /**
-     * Lifecycle function--Called when page hide
-     */
-    onHide: function () {
-
-    },
-
-    /**
-     * Lifecycle function--Called when page unload
-     */
-    onUnload: function () {
-
-    },
-
-    /**
-     * Page event handler function--Called when user drop down
-     */
-    onPullDownRefresh: function () {
-
-    },
-
-    /**
-     * Called when page reach bottom
-     */
-    onReachBottom: function () {
-
-    },
-
-    /**
-     * Called when user click on the top right corner to share
-     */
-    onShareAppMessage: function () {
-
-    }
-
-    
-    
+          url: `${getApp().globalData.baseUrl}/pets`,
+          method: 'GET',
+          success(res) {
+              console.log(res.data)
+              page.setData({pets: res.data.pets, services: res.data.services})
+           }
+        })
+      },
 })
+
+  
