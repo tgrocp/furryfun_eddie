@@ -49,8 +49,9 @@ Page({
     },
 
     buttonClicked: function(e) {
+        console.log(e)
         wx.navigateTo ({
-            url: '/pages/service-page/service-page'
+            url: '/pages/service-page/service-page?serviceId='+e.mark.serviceId
         })
     },
 
