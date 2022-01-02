@@ -7,7 +7,7 @@ Page({
         const header = getApp().globalData.header;
         console.log(getApp().globalData)
         wx.request({
-            url: `http://localhost:3000/api/v1/services/${parseInt(id)}`,
+            url: `http://localhost:3000/api/v1/pets/${parseInt(id)}`,
             method: 'DELETE',
             header: header,
             success() {
@@ -29,14 +29,17 @@ Page({
      * Lifecycle function--Called when page load
      */
     onLoad: function (options) {
-
-        const page = this
+        const page = this;
+        let images = getApp().globalData.modelling_services
+        let models = page.setData({ images: images })
+        console.log(models)
+        
         wx.request({
-          url: `http://localhost:3000/api/v1/services/${parseInt(options.id)}`,
+          url: `${getApp().globalData.baseUrl}/pets/${parseInt(options.id)}`,
           method: 'GET',
           success (res) {
-              console.log(res.data.modelling_service)
-              page.setData({ service: res.data.modelling_service })
+            //   console.log(res.data.pets)
+              page.setData({ pet: res.data.pets })
           }
        })
     },
@@ -53,6 +56,7 @@ Page({
     },
 
     onShow: function () {
+
 
     },
 
@@ -74,7 +78,5 @@ Page({
 
     onShareAppMessage: function () {
 
-    }
-
-    
+    } 
 })
