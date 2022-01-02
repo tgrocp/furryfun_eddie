@@ -4,6 +4,7 @@
     "pages/category-modelling/category-modelling",
     "pages/show-page/show-page",
     "pages/show-page/confirmation",
+    "pages/show-page/successfully-booked",
     "pages/service-page/service-page",
     "pages/myaccount/myaccount",
     "pages/myaccount/my-orders",

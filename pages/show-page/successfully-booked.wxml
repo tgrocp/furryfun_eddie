@@ -1,0 +1,23 @@
+<!--pages/show-page/confirmation.wxml-->
+
+<view class="container">
+ <view class="h1">You have successfully booked the service</view >
+</view >
+
+<view class="section2">
+    <view class="section__title">Name</view>
+    <input name="Name"/>
+</view>
+
+<view class="section1">
+    <view class="section__title">Phone Number</view>
+    <input name="Phone"/>
+</view>
+
+
+<view class="h2">
+    <button bindtap="Cancel">Cancel</button>
+</view>
+
+
+

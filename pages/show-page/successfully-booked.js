@@ -1,29 +1,11 @@
-// pages/show-page/confirmation.js
+// pages/show-page/successfully-booked.js
 Page({
+
   /**
    * Page initial data
    */
   data: {
-  
-  },
 
-
-  formSubmit: function (e) {
-    console.log('form发生了submit事件，携带数据为：', e.detail.value);
-    let name = e.detail.value.name;
-    let phone = e.detail.value.phone
-    if ( name && phone ) {
-      console.log('all have values')
-      wx.navigateTo({
-        url: '/pages/show-page/successfully-booked',
-      })
-    } else {
-      wx.showToast({
-        title: 'Please fill the form',
-        icon: "none",
-        duration:2000,
-      })
-    }
   },
 
   /**
@@ -78,6 +60,7 @@ Page({
   /**
    * Called when user click on the top right corner to share
    */
+  onShareAppMessage: function () {
 
-  
+  }
 })
