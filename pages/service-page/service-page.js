@@ -14,15 +14,18 @@ Page({
   //     })
   // },
 bindDateChange: function(e) {
+    const id = e.currentTarget.dataset;
+    console.log(id)
     this.setData({
       date: e.detail.value
     })
-    let time = e.detail.value.time;
+
+    let time = e.detail.value;
     let booking = {
       time:time,
     }
     wx.request({
-      url: `http://localhost:3000/api/v1/services/${parseInt(e.mark.serviceId)}/bookings`,
+      url: `http://localhost:3000/api/v1/services/${id}/bookings`,
       method: 'POST',
       data: booking,
       success() {
