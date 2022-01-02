@@ -1,9 +1,18 @@
-<view class="cards">
-<view wx:for="{{ services }}" wx:for-item="service" class="card-category" bindtap="goToShow" data-id="{{ service.id }}">
-      <image mode="aspectFill" class="model-photo" src="{{ images[index].image }}"/>
-      <view class="h1">{{ service.name }}</view>
-      <view class="h2">{{ service.title }}</view>
+<view class="container">
+  <view class="filters">
+    <view class="filter">Dogs</view>
+    <view class="filter">Cats</view>
+    <view class="filter">Others</view>
   </view>
+
+  <view class="cards">
+    <view class="card-category" wx:for="{{ pets }}" wx:for-item="pet" bindtap="goToShow" data-id="{{ pet.id }}">
+      <image mode="aspectFill" class="model-photo" src="{{ images[index].image }}"/>
+      <view class="h2">{{ pet.pet_name }}</view>
+      <view class="gender-icon">{{ pet.gender }}</view>
+      <view class="p">{{ service.title }}</view>
+      <view class="h2">{{ pet.location }}</view>
+    </view>
+  </view> 
 </view>
 
-<tabBar></tabBar>
