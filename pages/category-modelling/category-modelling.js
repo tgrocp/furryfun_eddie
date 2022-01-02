@@ -1,8 +1,7 @@
 Page({ 
-  data: {
-
-  },
     goToShow: function (e) {
+        console.log("hihihihi")
+        console.log(e)
         const id = e.currentTarget.dataset.id
         wx.navigateTo({
         url: `/pages/show-page/show-page?id=${id}`,

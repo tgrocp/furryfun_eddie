@@ -1,59 +1,51 @@
 // pages/show-page/show-page.js
 Page({
-
-    deleteModel(e) {
-        console.log("clickon")
-        const id = e.currentTarget.dataset.id;
-        const header = getApp().globalData.header;
-        console.log(getApp().globalData)
-        wx.request({
-            url: `http://localhost:3000/api/v1/pets/${parseInt(id)}`,
-            method: 'DELETE',
-            header: header,
-            success() {
-                wx.redirectTo({
-                    url: '/pages/category-modelling/category-modelling'
-                  });
-                }
-              });
-            },
-    
-    /**
-     * Page initial data
-     */
-    data: {
-
-    },
-
-    /**
-     * Lifecycle function--Called when page load
-     */
     onLoad: function (options) {
+        // console.log(options)
         const page = this;
         let images = getApp().globalData.modelling_services
         let models = page.setData({ images: images })
-        console.log(models)
         
         wx.request({
           url: `${getApp().globalData.baseUrl}/pets/${parseInt(options.id)}`,
-          method: 'GET',
+          method: 'GET', 
           success (res) {
-            //   console.log(res.data.pets)
-              page.setData({ pet: res.data.pets })
+            page.setData({ pet: res.data.pets })
           }
        })
     },
+
+  bindDateChange: function(e) {
+    console.log(e)
+    const data = e.currentTarget.dataset;
+    const time = e.detail.value;
+    let booking = {
+      time: time
+    }
+
+    wx.request({
+      url: `http://localhost:3000/api/v1/pets/${data.id}/bookings`,
+      method: 'POST',
+      data: booking,
+      success() {
+          // redirect to index page when done
+        wx.redirectTo({
+          url: "/pages/show-page/show-page"
+        });
+      }
+    });
+  },  
 
     onReady: function () {
 
     },
 
-    buttonClicked: function(e) {
-        console.log(e)
-        wx.navigateTo ({
-            url: '/pages/service-page/service-page?serviceId='+e.mark.serviceId
-        })
-    },
+    // buttonClicked: function(e) {
+    //   console.log(e)
+    //   wx.navigateTo ({
+    //     url: '/pages/service-page/service-page'
+    //   })
+    // },
 
     onShow: function () {
 
