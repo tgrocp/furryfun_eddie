@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/homepage/landing",
+    "pages/landing/landing",
     "pages/homepage/homepage",
     "pages/category-modelling/category-modelling",
     "pages/show-page/show-page",
@@ -9,7 +9,6 @@
     "pages/myaccount/my-orders",
     "pages/myaccount/my-services",
     "pages/homepage/create-page"
-    
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -42,5 +41,6 @@
     ]
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
 }

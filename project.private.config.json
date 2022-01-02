@@ -1,48 +1,54 @@
 {
-    "setting": {},
-    "condition": {
-        "plugin": {
-            "list": []
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/category-index/category-index",
+          "pathName": "pages/category-index/category-index",
+          "query": "",
+          "scene": null
         },
-        "game": {
-            "list": []
+        {
+          "name": "pages/show-page/show-page",
+          "pathName": "pages/show-page/show-page",
+          "query": "id=1",
+          "scene": null
         },
-        "gamePlugin": {
-            "list": []
+        {
+          "name": "pages/service-page/service-page",
+          "pathName": "pages/service-page/service-page",
+          "query": "",
+          "scene": null
         },
-        "miniprogram": {
-            "list": [
-                {
-                    "name": "pages/category-index/category-index",
-                    "pathName": "pages/category-index/category-index",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/show-page/show-page",
-                    "pathName": "pages/show-page/show-page",
-                    "query": "id=1",
-                    "scene": null
-                },
-                {
-                    "name": "pages/service-page/service-page",
-                    "pathName": "pages/service-page/service-page",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/category-modelling/category-modelling",
-                    "pathName": "pages/category-modelling/category-modelling",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/homepage/create-page",
-                    "pathName": "pages/homepage/create-page",
-                    "query": "",
-                    "scene": null
-                }
-            ]
+        {
+          "name": "pages/category-modelling/category-modelling",
+          "pathName": "pages/category-modelling/category-modelling",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/homepage/create-page",
+          "pathName": "pages/homepage/create-page",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/landing/landing",
+          "pathName": "pages/landing/landing",
+          "query": "",
+          "scene": null
         }
+      ]
     }
+  }
 }

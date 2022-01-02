@@ -6,66 +6,20 @@ Page({
         })
     },
 
-    onLoad() {
+    onShow() {
+      console.log("onShow")
         const page = this;
         let images = getApp().globalData.modelling_services
         page.setData({ images: images })
         wx.request({
-            url: `${getApp().globalData.baseUrl}/services`,
-            method: 'GET',
-            success(res) {
-                console.log(res.data)
-               page.setData({services: res.data.modelling_services})
-               }
-           })
-       },
-
-    //    buttonClicked: function(e) {
-    //     wx.navigateTo ({
-    //         url: '/pages/service-page/service-page'
-    //     })
-    //     },
-   
-
-    onReady: function () {
-
-    },
-
-    onShow: function () {
-
-    },
-
-    onHide: function () {
-
-    },
-
-    onUnload: function () {
-
-    },
-
-    onPullDownRefresh: function () {
-
-    },
-
-    onReachBottom: function () {
-
-    },
-
-    onShareAppMessage: function () {
-
-    }  
+          url: `${getApp().globalData.baseUrl}/pets`,
+          method: 'GET',
+          success(res) {
+              console.log(res.data)
+              page.setData({pets: res.data.pets, services: res.data.services})
+           }
+        })
+      },
 })
 
-Component({
-    pageLifetimes: {
-      show() {
-        if (typeof this.getTabBar === 'function' &&
-          this.getTabBar()) {
-          this.getTabBar().setData({
-            selected: 1
-          })
-        }
-      }
-    }
-  })
   
