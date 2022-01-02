@@ -9,7 +9,7 @@
   <text>Description:<text>\n\n</text> {{ service.description }}</text>
 </view>   
 <text>\n</text>
-<button class="btn" bindtap="buttonClicked">Book</button>
+<button class="btn" bindtap="buttonClicked" mark:serviceId = "{{service.id}}">Book</button>
 <button class="btn" bindtap="deleteModel" data-id="{{service.id}}">Delete</button>
 
 <tabBar></tabBar>
