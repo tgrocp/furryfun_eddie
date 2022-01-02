@@ -1,8 +1,27 @@
-.cards{
+.filters {
+    /* margin: 2px */
+}
+
+.filter {
+    display: flex;
+    background-color:  rgba(234,179,171,0.8);
+    border-radius: 35px;
+    width: 100px;
+    height: 44px;
+    align-items: center;
+    justify-content: center; 
+    margin-left: 65px;
+    font-size: 12px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    box-shadow: 1px 1px 5px #9999;
+}
+
+.cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32rpx;
-    grid-auto-rows: minmax(100px, auto);
+    /* grid-auto-rows: minmax(100px, auto); */
     padding: 32rpx;
 }
 
@@ -11,8 +30,10 @@
     background: white;
     box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
     border-radius: 4px;
-    padding: 8rpx;
+    padding: 8px;
     box-sizing: border-box;
+    width: 150px;
+    align-items: center;
 }
 
 .container{

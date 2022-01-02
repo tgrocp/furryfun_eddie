@@ -1,5 +1,4 @@
 const app = getApp()
-// this means that i am calling the app.js file 
 
 Page({
 
