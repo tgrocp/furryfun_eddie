@@ -1,4 +1,7 @@
 Page({ 
+  data: {
+
+  },
     goToShow: function (e) {
         const id = e.currentTarget.dataset.id
         wx.navigateTo({
@@ -7,7 +10,6 @@ Page({
     },
 
     onShow() {
-      console.log("onShow")
         const page = this;
         let images = getApp().globalData.modelling_services
         page.setData({ images: images })
@@ -16,7 +18,7 @@ Page({
           method: 'GET',
           success(res) {
               console.log(res.data)
-              page.setData({pets: res.data.pets, services: res.data.services})
+              page.setData({pets: res.data.pets})
            }
         })
       },
