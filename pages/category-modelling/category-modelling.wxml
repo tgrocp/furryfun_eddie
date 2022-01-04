@@ -1,22 +1,24 @@
 <view class="container">
   <view class="filters">
-    <view class="filter"><image class="filter-icon" src="/icons/dog.png"/>Dogs</view>
-    <view class="filter"><image class="filter-icon" src="/icons/cat.png"/>Cats</view>
-    <view class="filter">Others</view>
+    <view class="filter" bindtap="filterAnimal" mark:animal="dog"><image class="filter-icon-dog" src="/icons/dog.png"/>Dogs</view>
+    <view class="filter" bindtap="filterAnimal" mark:animal="cat"><image class="filter-icon-cat" src="/icons/cat.png"/>Cats</view>
+    <view class="filter" bindtap="filterAnimal" mark:animal="others">Others</view>
   </view>
 
   <view class="cards">
-    <view class="card-category" wx:for="{{ pets }}" wx:for-item="pet" bindtap="goToShow" data-id="{{ pet.id }}">
+    <view class="card-category" wx:for="{{ isFilter? animalList : pets }}" wx:for-item="pet" bindtap="goToShow" data-id="{{ pet.id }}">
       <image mode="aspectFill" class="model-photo" src="{{ images[index].image }}"/>
         <view class="retangular_box">
           <view class="name_gender">
             <view class="h2">{{ pet.pet_name }}</view>
-            <view class="gender-icon">{{ pet.gender }}</view>
+            <view class="gender">
+              <image class="gender-icon" src="/icons/male.png" src="{{pet.gender === 'male'?'/icons/male.png' : '/icons/female.png' }}"/>
+            </view>
           </view>  
           <view class="p">{{ pet.title }}</view>
           <view class="location">
-            <image class="location_icon" src="/icons/location.png"/>
-            <view class="location_font">{{ pet.location }}</view>
+            <image class="location-icon" src="/icons/location.png"/>
+            <view class="location-font">{{ pet.location }}</view>
           </view>
         </view>
     </view> 
