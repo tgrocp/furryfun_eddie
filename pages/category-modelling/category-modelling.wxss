@@ -5,6 +5,21 @@
 
 .filter {
     display: flex;
+    background-color:  #F9F7F8;
+    border-radius: 35px;
+    width: 95px;
+    height: 44px;
+    align-items: center;
+    justify-content: center; 
+    margin: 10px;
+    color: #34342B;
+    font-size: 12px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    box-shadow: 1px 1px 5px #9999;
+}
+.filter:hover {
+    display: flex;
     background-color:  rgba(234,179,171,0.8);
     border-radius: 35px;
     width: 95px;
@@ -12,17 +27,23 @@
     align-items: center;
     justify-content: center; 
     margin: 10px;
+    color: #FCF6F5;
     font-size: 12px;
     font-family: 'Open Sans';
     font-weight: bold;
     box-shadow: 1px 1px 5px #9999;
 }
 
-.filter-icon {
+.filter-icon-dog {
   height: 25px;
   width: 25px;
   padding-right: 5px;
 }
+.filter-icon-cat {
+    height: 22px;
+    width: 22px;
+    padding-right: 5px;
+  }
 
 .cards {
     display: grid;
@@ -43,7 +64,7 @@
     background: rgba(241, 244, 249, 0.3);
     box-shadow: 3px 3px 6px rgba(0,0,0,0.2);
     border-radius: 20px;
-    padding: 8px;
+    padding: 6px;
     box-sizing: border-box;
     width: 160px;
     height: 90px;
@@ -54,7 +75,7 @@
 
 .name_gender {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between;  */
 }
 
 .container{
@@ -68,27 +89,40 @@
 }
 
 .h2 {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     color: white;
+    font-family: fantasy;
 }
 .p {
-    font-size: 11px;
+    font-size: 12px;
+    color: #34342B;
+    font-weight: bold;
+    /* font-family: cursive; */
+    /* font-family: sans-serif; */
+    font-family: serif;
+    /* font-family: 'Open Sans'; */
 }
 
 .location {
     display: flex;
     padding-top: 5px;
 }
-.location_font {
-    font-size: 12px;
+.location-font {
+    font-size: 10px;
     font-weight: bold;
-    color: white;
+    color: #34342B;
 }
-.location_icon {
-    width: 20px;
-    height: 20px;
+.location-icon {
+    width: 14px;
+    height: 14px;
     padding-right: 5px;
+}
+
+.gender-icon {
+    width: 13px;
+    height: 13px;
+    padding-left: 6px;
 }
 
 
