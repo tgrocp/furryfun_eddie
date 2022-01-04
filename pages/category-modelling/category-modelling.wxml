@@ -12,7 +12,7 @@
           <view class="name_gender">
             <view class="h2">{{ pet.pet_name }}</view>
             <view class="gender">
-              <image class="gender-icon" src="/icons/male.png" src="{{pet.gender === 'male'?'/icons/male.png' : '/icons/female.png' }}"/>
+              <image class="gender-icon" src="{{pet.gender === 'male'?'/icons/male.png' : '/icons/female.png' }}"/>
             </view>
           </view>  
           <view class="p">{{ pet.title }}</view>
