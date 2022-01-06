@@ -9,8 +9,14 @@
   <text>Description:<text>\n\n</text> {{ pet.description }}</text>
 </view>   
 <text>\n</text>
-<button class="btn" bindtap="buttonClicked" mark:serviceId = "{{service.id}}">Book</button>
-<button class="btn" bindtap="deleteModel" data-id="{{service.id}}">Delete</button>
+
+
+<picker mode="date" value="{{date}}" start="2021-09-01" end="2022-09-01" bindtap="bindDateChange" data-id="{{ pet.id }}">
+  <button> 
+    Book Now {{date}}
+  </button>
+</picker>
+
 
 <tabBar></tabBar>
 
