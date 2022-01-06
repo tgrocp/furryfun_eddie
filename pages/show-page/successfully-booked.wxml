@@ -1,16 +1,16 @@
-<!--pages/show-page/confirmation.wxml-->
+<!--pages/show-page/sucessfully-booked.wxml-->
 
 <view class="container">
  <view class="h1">You have successfully booked the service</view >
-</view >
+</view>
 
 <view class="section2">
-    <view class="section__title">Name</view>
-    <input name="Name"/>
+    <view class="section__title">Name:</view>
+    <text class="userinfo-name"> {{userinfo.name}}</text>
 </view>
 
 <view class="section1">
-    <view class="section__title">Phone Number</view>
+    <view class="section__title">Phone Number:</view>
     <input name="Phone"/>
 </view>
 

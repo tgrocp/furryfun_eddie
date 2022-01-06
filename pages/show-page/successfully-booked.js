@@ -12,6 +12,21 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    let page = this;
+
+    wx.request({
+      url: `${getApp().globalData.baseUrl}/users/${parseInt(options.id)}`, 
+      method: 'GET',
+      success(res) {
+        var confirmation = res.data;
+        console.log(res);
+        // Update local data
+        page.setData(
+          confirmation
+        );
+        wx.hideToast();
+      }
+    });
 
   },
 

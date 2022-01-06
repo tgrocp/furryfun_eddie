@@ -6,19 +6,34 @@ Page({
   data: {
     name: null,
     phone: null,
-  },
-
- 
+  }, 
 
   formSubmit: function (e) {
-    console.log('form发生了submit事件，携带数据为：', e.detail.value);
+    console.log(e)
+    // console.log('form发生了submit事件，携带数据为：', e.detail.value);
     let name = e.detail.value.name;
     let phone = e.detail.value.phone
+
+    let confirmation = {
+      id: id,
+      name: name,
+      phone: phone
+    }
+    console.log({confirmation})
+
     if ( name && phone ) {
       console.log('all have values')
-      wx.navigateTo({
-        url: '/pages/show-page/successfully-booked',
+      wx.request({
+        url: `${getApp().globalData.baseUrl}/users`,
+        method: 'POST',
+        data: confirmation,
+        success() {
+          wx.redirectTo({
+            url: '/pages/show-page/successfully-booked'
+          });
+        }
       })
+
     } else {
       wx.showToast({
         title: 'Please fill the form',
