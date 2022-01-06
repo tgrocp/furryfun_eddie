@@ -19,11 +19,17 @@
     <view class="title_name">1. Pet's name</view>
         <view class="name_input_box" style="margin: 24rpx 0" >
             <input class="name-input" name="name" placeholder="Please input your pet's name" style="padding-left: 8px " />
-    </view>
+</view>
+
+
+    <view class="title_title">2. Pet's title</view>
+        <view class="name_input_box" style="margin: 24rpx 0" >
+            <input class="name-input" name="name" placeholder="Please input your pet's title" style="padding-left: 8px " />
+        </view>
 
 
     <radio-group bindchange="radioChange">
-        <view style="margin:24rpx 0">2. Category</view>
+        <view style="margin:24rpx 0">3. Category</view>
             <view class="selection">
                 <label class="modeling">
                     <radio value="thrapy" checked="true"/>Modeling
@@ -71,7 +77,7 @@
       </view> -->
 
 <view class="section">
-  <view class="section-location"style="margin:24rpx 0">3. Location</view>
+  <view class="section-location"style="margin:24rpx 0">4. Location</view>
     <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
         <view class="location-picker">
            Your Location: {{region[0]}}        {{region[1]}}       {{region[2]}}
@@ -84,7 +90,7 @@
 
 
     <radio-group bindchange="radioChange" style="margin: 30rpx 0">
-        <view style="padding-bottom: 12rpx;">4. Gender</view>
+        <view style="padding-bottom: 12rpx;">5. Gender</view>
             <label class="radio">
                 <radio value="male" checked="true"/>Male
             </label>
@@ -95,7 +101,7 @@
  
 
     <radio-group bindchange="radioChange" style="margin: 30rpx 0">
-        <view style="padding-bottom: 12rpx;">5. Pet Type</view>
+        <view style="padding-bottom: 12rpx;">6. Pet Type</view>
             <label class="radio">
                 <radio value="dog" checked="true"/>Dog
             </label>
@@ -110,7 +116,7 @@
     </radio-group>
     
     <view class="upload-image" style="padding-bottom: 16rpx;">
-            6. Upload Image
+            7. Upload Image
         <view class="btn-summit" style="padding-top: 16rpx;">
             <button bindtap='chooseImageTap'>click to upload</button>
         </view>
@@ -118,7 +124,7 @@
 
 
     <view class="section">
-        7. Description
+        8. Description
         <view class="section__title">
             <textarea name="content" placeholder="please write your pet'sdescription here" ></textarea>
         </view>
