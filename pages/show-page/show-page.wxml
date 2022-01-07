@@ -1,22 +1,30 @@
 <view class="card-trip">
- <image class= "image"src="{{ images.image }}" />
   <view class="card-trip-infos">
-    <view class="h2"><strong>Model:</strong> {{ pet.pet_name }}</view>
+    <view class="name_gender">
+            <view class="h2">{{ pet.pet_name }}</view>
+            <view class="gender">
+              <image class="gender-icon" src="/icons/male.png" src="{{pet.gender === 'male'?'/icons/male.png' : '/icons/female.png' }}"/>
+            </view>
+          </view>  
   </view>
+  <image class= "image"src="{{ images.image }}"/>
 </view>
 
 <view class="card-trip-infos">
-  <text>Description:<text>\n\n</text> {{ pet.description }}</text>
+  <view class="h2">Description:</view>
+  <view class="p">{{ pet.description }}</view>
+  <view class="location">
+    <image class="location-icon" src="/icons/location.png"/>
+    <view class="location-font">{{ pet.location }}</view>
+  </view>
 </view>   
-<text>\n</text>
-
 
 <picker mode="date" value="{{date}}" start="2021-09-01" end="2022-09-01" bindtap="bindDateChange" data-id="{{ pet.id }}">
-  <button> 
+  <button class="btn-pink"> 
     Book Now {{date}}
   </button>
 </picker>
 
 
-<tabBar></tabBar>
+
 

@@ -30,7 +30,7 @@ Page({
       success() {
           // redirect to index page when done
         wx.redirectTo({
-          url: "/pages/show-page/show-page"
+          url: "/pages/show-page/confirmation"
         });
       }
     });

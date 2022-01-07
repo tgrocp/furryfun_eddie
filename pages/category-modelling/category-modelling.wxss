@@ -98,10 +98,8 @@
     font-size: 12px;
     color: #34342B;
     font-weight: bold;
-    /* font-family: cursive; */
-    /* font-family: sans-serif; */
     font-family: serif;
-    /* font-family: 'Open Sans'; */
+    padding-top: 10px;
 }
 
 .location {
