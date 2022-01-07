@@ -7,7 +7,8 @@
 
   <view class="cards">
     <view class="card-category" wx:for="{{ isFilter? animalList : pets }}" wx:for-item="pet" bindtap="goToShow" data-id="{{ pet.id }}">
-      <image mode="aspectFill" class="model-photo" src="{{ images[index].image }}"/>
+      <!-- <image mode="aspectFill" class="model-photo" src="{{ images[index].image }}"/> -->
+      <image mode="aspectFill" class="model-photo" src="{{ pet.photo }}"/>
         <view class="retangular_box">
           <view class="name_gender">
             <view class="h2">{{ pet.pet_name }}</view>
