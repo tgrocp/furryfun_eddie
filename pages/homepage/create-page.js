@@ -1,17 +1,11 @@
 // pages/homepage/create-page.js
 Page({
-    
-    
-
-
-
     bindSubmit: function (e) {
         console.log("event", e)
         let service = e.detail.value
         const headers = wx.getStorageSync('headers')
-
         console.log(service)
-      
+        
         wx.request({
           url: `http://localhost:3000/api/v1/services`,
           method: 'POST',
