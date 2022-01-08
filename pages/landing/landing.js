@@ -1,9 +1,10 @@
 const app = getApp()
 
 Page({
-
   data: {
+    hasUserInfo: false
   },
+
   goToModelling() {
     wx.switchTab({
       url: '/pages/category-modelling/category-modelling',
