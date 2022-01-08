@@ -8,8 +8,7 @@ App({
 
     wx.login({
       success: res => {
-        console.log(res)
-        console.log(app.globalData)
+        console.log("code", res.code)
         wx.request({
           url: `${app.globalData.baseUrl}/login`,
           method: 'POST',
