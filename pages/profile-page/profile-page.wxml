@@ -34,7 +34,7 @@
             <view class="pet-info">
                 <image mode="aspectFill" class="model-photo" src="{{ pet.photo }}"/>
                     <view class="info">
-                        <view class="h2">momo</view>  
+                        <view class="h2">{{pet.pet_name}}</view>  
                             <view class="gender">
                             <image class="gender-icon" src="/icons/male.png" src="{{pet.gender === 'male'?'/icons/male.png' : '/icons/female.png' }}"/>
                         </view>
@@ -45,7 +45,7 @@
                 </text>
         </view>
         <view wx:else>
-        
+        sdfsdfsdf
         </view>
 
 </view>
