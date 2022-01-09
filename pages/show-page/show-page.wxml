@@ -19,11 +19,13 @@
   </view>
 </view>   
 
-<picker mode="date" value="{{date}}" start="2021-09-01" end="2022-09-01" bindtap="bindDateChange" data-id="{{ pet.id }}">
-  <button class="btn-pink"> 
-    Book Now {{date}}
-  </button>
-</picker>
+<view class="section">
+  <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange" data-id = "{{ pet.id }}">
+    <btn  class="btn-pink">
+      Booking now {{date}}
+    </btn>
+  </picker>
+</view>
 
 
 
