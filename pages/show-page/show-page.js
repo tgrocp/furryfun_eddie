@@ -1,10 +1,10 @@
 // pages/show-page/show-page.js
 Page({
     onLoad: function (options) {
-        // console.log(options)
+        console.log(options)
         const page = this;
-        let images = getApp().globalData.modelling_services
-        let models = page.setData({ images: images })
+        // let images = getApp().globalData.modelling_services
+        // let models = page.setData({ images: images })
         
         wx.request({
           url: `${getApp().globalData.baseUrl}/pets/${parseInt(options.id)}`,
