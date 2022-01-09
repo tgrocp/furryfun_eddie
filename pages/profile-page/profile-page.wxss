@@ -1,0 +1,121 @@
+
+.container{
+padding: 12rpx;
+}
+
+
+.user-info{
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+    margin-top: 80rpx;
+}  
+
+.p{
+font-size: small;
+padding: 16rpx;
+}
+
+.userinfo-avatar {
+overflow:hidden;  
+border: 1px solid #000000;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 125px;
+width: 139px;
+height: 140.01px;
+left: 126px;
+top: 144px;
+}
+
+.divLine{
+    background: #E0E3DA;
+    width: 100%;
+    height: 2rpx;
+    
+   }
+
+
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter {
+    display: flex;
+    background-color:  #ffffff;
+    border-radius: 35px;
+    width: 95px;
+    height: 22px;
+    align-items: center;
+    justify-content: center; 
+    margin: 10px;
+    color: #34342B;
+    font-size: 12px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    box-shadow: 1px 1px 5px #9999;
+}
+.filter:hover {
+    display: flex;
+    background-color:  rgba(234,179,171,0.8);
+    border-radius: 35px;
+    width: 95px;
+    height: 22px;
+    align-items: center;
+    justify-content: center; 
+    margin: 10px;
+    color: #FCF6F5;
+    font-size: 12px;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    box-shadow: 1px 1px 5px #9999;
+}
+
+
+.gender-icon {
+    width: 13px;
+    height: 13px;
+    padding-left: 6px;
+}
+
+.model-photo {
+width: 65px;
+height: 60px;
+}
+
+.card-pet{
+    display: flex;
+    flex-direction: row;
+    width: 360px;
+    height: 90px;
+    left: 28px;
+    top: 455px;
+    background: #F3D4D0;
+    border-radius: 15px;
+}
+
+.pet-info {
+    display: flex;  
+    flex-direction: row;  
+    padding-left: 12rpx;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+}
+
+.description{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    padding-top: 56rpx;
+    padding-left: 16rpx;
+}
+
+.h2{
+    font-weight: 50;
+}
