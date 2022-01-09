@@ -15,7 +15,7 @@ Page({
     let phone = e.detail.value.phone
 
     let confirmation = {
-      id: id,
+      // id: id,
       name: name,
       phone: phone
     }
