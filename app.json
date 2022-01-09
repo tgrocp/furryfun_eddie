@@ -10,7 +10,8 @@
     "pages/myaccount/myaccount",
     "pages/myaccount/my-orders",
     "pages/myaccount/my-services",
-    "pages/homepage/create-page"
+    "pages/homepage/create-page",
+    "pages/profile-page/profile-page"
   ],
   "window": {
     "backgroundTextStyle": "light",

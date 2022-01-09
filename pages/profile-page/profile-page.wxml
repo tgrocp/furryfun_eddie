@@ -1,0 +1,51 @@
+
+<view class="container">
+
+        <view class="user-info">
+            <view class="userinfo-avatar">
+                <open-data  type="userAvatarUrl"></open-data>
+                <open-data type="userNickName"></open-data>
+            </view>
+
+            <view class="userNickName">
+                <open-data type="userNickName"></open-data>
+            </view>
+                <!-- <view>{{users.location}}</view> -->
+                <text class="p">San Fransisco </text>
+
+  <view class="divLine"></view>
+        </view>
+
+        <view class="filters">
+            <view class="filter" bindtap="filterAnimal" mark:animal="dog">My Pets</view>
+            <view class="filter" bindtap="filterAnimal" mark:animal="others">My Booking</view>
+        </view>
+
+    <!-- <view wx:for="{{pets}}" wx:for-item="pet" class="petInfo">
+        <view class="card-pet">
+        <view class="h2">{{pet.name}}</view>  
+        <text class="p">
+            {{pet.description}}
+        </text>
+        </view>
+    </view> -->
+
+        <view class="card-pet" wx:if= "{{pet}}" >
+            <view class="pet-info">
+                <image mode="aspectFill" class="model-photo" src="{{ pet.photo }}"/>
+                    <view class="info">
+                        <view class="h2">{{pet.pet_name}}</view>  
+                            <view class="gender">
+                            <image class="gender-icon" src="/icons/male.png" src="{{pet.gender === 'male'?'/icons/male.png' : '/icons/female.png' }}"/>
+                        </view>
+                    </view>
+            </view>
+                <text class="description">
+                     has many many year of expirience
+                </text>
+        </view>
+        <view wx:else>
+        sdfsdfsdf
+        </view>
+
+</view>

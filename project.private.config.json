@@ -10,6 +10,7 @@
         "gamePlugin": {
             "list": []
         },
+
         "miniprogram": {
             "list": [
                 {
@@ -31,6 +32,7 @@
                     "scene": null
                 }
             ]
+
         }
     }
 }
