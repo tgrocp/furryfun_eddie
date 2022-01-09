@@ -10,9 +10,20 @@
         "gamePlugin": {
             "list": []
         },
-
         "miniprogram": {
             "list": [
+                {
+                    "name": "pages/category-index/category-index",
+                    "pathName": "pages/category-index/category-index",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/show-page/show-page",
+                    "pathName": "pages/show-page/show-page",
+                    "query": "id=1",
+                    "scene": null
+                },
                 {
                     "name": "pages/service-page/service-page",
                     "pathName": "pages/service-page/service-page",
@@ -20,14 +31,27 @@
                     "scene": null
                 },
                 {
-                    "name": "pages/show-page/confirmation",
-                    "pathName": "pages/show-page/confirmation",
+                    "name": "pages/category-modelling/category-modelling",
+                    "pathName": "pages/category-modelling/category-modelling",
                     "query": "",
                     "scene": null
                 },
                 {
-                    "name": "pages/show-page/show-page",
-                    "pathName": "pages/show-page/show-page",
+                    "name": "",
+                    "pathName": "/pages/show-page/confirmation",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "/pages/show-page/sucessfully-booked",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "pages/profile-page/profile-page",
+                    "pathName": "pages/profile-page/profile-page",
+
                     "query": "",
                     "scene": null
                 }
