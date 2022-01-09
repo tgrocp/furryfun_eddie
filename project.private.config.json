@@ -51,10 +51,12 @@
                 {
                     "name": "pages/profile-page/profile-page",
                     "pathName": "pages/profile-page/profile-page",
+
                     "query": "",
                     "scene": null
                 }
             ]
+
         }
     }
 }
