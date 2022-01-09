@@ -37,30 +37,14 @@
           "scene": null
         },
         {
-<<<<<<< HEAD
           "name": "",
-          "pathName": "pages/homepage/homepage",
-=======
-          "name": "pages/homepage/create-page",
-          "pathName": "pages/homepage/create-page",
->>>>>>> e333e9804f96aa4af29be2aebb495e66e2a5411d
-          "query": "",
-          "scene": null
-        },
-        {
-<<<<<<< HEAD
-          "name": "pages/show-page/confirmation",
-          "pathName": "pages/show-page/confirmation",
+          "pathName": "/pages/show-page/confirmation",
           "query": "",
           "scene": null
         },
         {
           "name": "",
-          "pathName": "pages/show-page/successfully-booked",
-=======
-          "name": "pages/landing/landing",
-          "pathName": "pages/landing/landing",
->>>>>>> e333e9804f96aa4af29be2aebb495e66e2a5411d
+          "pathName": "/pages/show-page/sucessfully-booked",
           "query": "",
           "scene": null
         }

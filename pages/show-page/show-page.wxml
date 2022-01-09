@@ -7,7 +7,7 @@
             </view>
           </view>  
   </view>
-  <image class= "image"src="{{ images.image }}"/>
+  <image class= "image" src="{{ pet.url }}"/>
 </view>
 
 <view class="card-trip-infos">
