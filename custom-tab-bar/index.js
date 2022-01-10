@@ -4,7 +4,7 @@ Component({
     color: "#7A7E83",
     selectedColor: "#3cc51f",
     list: [{
-      "pagePath": "pages/category-modelling/category-modelling",
+      "pagePath": "pages/landing/landing",
       "iconPath": "/icons/home.png",
       "selectedIconPath": "/icons/home.png"
     }, {
@@ -12,7 +12,7 @@ Component({
       "iconPath": "/icons/plus.png",
       "selectedIconPath": "/icons/plus.png"
     }, {
-      "pagePath": "pages/myaccount/myaccount",
+      "pagePath": "pages/profile-page/profile-page",
       "iconPath": "/icons/user.png",
       "selectedIconPath": "/icons/user.png"
       

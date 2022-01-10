@@ -32,8 +32,8 @@
 
         <view class="card-pet" wx:if= "{{ pets }}" >
             <view class="pet-info">
-                <!-- <image mode="aspectFill" class="model-photo" src="{{ pet.url }}"/> -->
-            <image class="model-photo" scr="/images/Bulldog.jpg"/>
+            <image mode="aspectFill" class="model-photo" src="{{ pet.url }}"/>
+                <!-- <image class="model-photo" scr="/images/Bulldog.jpg"/> -->
                     <view class="info">
                         <view class="h2">{{ pet.pet_name }}</view>  
                             <view class="gender">

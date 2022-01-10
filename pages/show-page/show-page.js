@@ -34,6 +34,9 @@ Page({
       data: booking,
       success() {
           // redirect to index page when done
+          wx.redirectTo({
+            url: '/pages/show-page/confirmation',
+          })
       }
     });
   },  

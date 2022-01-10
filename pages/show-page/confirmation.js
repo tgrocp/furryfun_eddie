@@ -1,18 +1,23 @@
 // pages/show-page/confirmation.js
+let app = getApp()
 Page({
-  /**
-   * Page initial data
-   */
+
+  onLoad:function(options){
+    wx.getStorageInfo({
+      success: (res) => {
+        console.log(res)
+      },
+    })
+  },
+
   data: {
     name: null,
-    phone: null,
+    phone: null
   }, 
 
   formSubmit: function (e) {
-    console.log(e)
-    // console.log('form发生了submit事件，携带数据为：', e.detail.value);
-    let name = e.detail.value.name;
-    let phone = e.detail.value.phone
+    const name = e.detail.value.name;
+    const phone = e.detail.value.phone
 
     let confirmation = {
       // id: id,
@@ -25,7 +30,7 @@ Page({
       console.log('all have values')
       wx.request({
         url: `${getApp().globalData.baseUrl}/users`,
-        method: 'POST',
+        method: 'PUT',
         data: confirmation,
         success() {
           wx.redirectTo({
@@ -33,7 +38,6 @@ Page({
           });
         }
       })
-
     } else {
       wx.showToast({
         title: 'Please fill the form',
@@ -46,9 +50,7 @@ Page({
   /**
    * Lifecycle function--Called when page load
    */
-  onLoad: function (options) {
-
-  },
+ 
 
   /**
    * Lifecycle function--Called when page is initially rendered
@@ -74,9 +76,7 @@ Page({
   /**
    * Lifecycle function--Called when page unload
    */
-  onUnload: function () {
 
-  },
 
   /**
    * Page event handler function--Called when user drop down
