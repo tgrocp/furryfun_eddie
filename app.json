@@ -6,10 +6,6 @@
     "pages/show-page/show-page",
     "pages/show-page/confirmation",
     "pages/show-page/successfully-booked",
-    "pages/service-page/service-page",
-    "pages/myaccount/myaccount",
-    "pages/myaccount/my-orders",
-    "pages/myaccount/my-services",
     "pages/homepage/create-page",
     "pages/profile-page/profile-page"
   ],
@@ -27,17 +23,17 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/category-modelling/category-modelling",
+        "pagePath": "pages/landing/landing",
         "iconPath": "/icons/home.png",
         "selectedIconPath": "/icons/home.png"
       },
       {
-        "pagePath": "pages/homepage/create-page",
+        "pagePath": "pages/profile-page/profile-page",
         "iconPath": "/icons/plus.png",
         "selectedIconPath": "/icons/plus.png"
       },
       {
-        "pagePath": "pages/myaccount/myaccount",
+        "pagePath": "pages/homepage/create-page",
         "iconPath": "/icons/user.png",
         "selectedIconPath": "/icons/user.png"
       }
