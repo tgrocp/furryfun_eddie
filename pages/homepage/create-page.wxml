@@ -124,8 +124,8 @@
         </view>
     </view>
 
-    <view class="btn-pink">
-        <view bindtap='bindSubmit'>Submit</view>
+    <view class="btn-pink" bindtap="bindSubmit">
+        <view >Submit</view>
     </view>
 </view>
 
