@@ -25,8 +25,10 @@
           "scene": null
         },
         {
+
           "name": "show-page",
           "pathName": "pages/show-page/show-page",
+
           "query": "",
           "scene": null
         },
@@ -37,8 +39,11 @@
           "scene": null
         },
         {
+
+
           "name": "profile page",
           "pathName": "pages/profile-page/profile-page",
+
           "query": "",
           "scene": null
         }

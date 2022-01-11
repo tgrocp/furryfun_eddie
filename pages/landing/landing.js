@@ -33,7 +33,7 @@ Page({
 },
 
   goToModelling() {
-    wx.redirectTo({
+    wx.switchTab({
       url: '/pages/category-modelling/category-modelling',
     })
   },
