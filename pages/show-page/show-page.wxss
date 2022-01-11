@@ -18,13 +18,14 @@
     color: rgba(234,179,171,1.0);
     font-size: 18px;
     font-weight: bold;
+    font-family: monospace;
     margin: 0;
   }
   
   .p {
     color: #34342B;
     font-weight: bold;
-    font-family: serif;
+    font-family: monospace;
     padding-top: 10px;
     padding-bottom: 10px;
   }

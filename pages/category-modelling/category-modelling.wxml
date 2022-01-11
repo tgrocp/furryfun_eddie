@@ -2,7 +2,7 @@
   <view class="filters">
     <view class="filter" bindtap="filterAnimal" mark:animal="dog"><image class="filter-icon-dog" src="/icons/dog.png"/>Dogs</view>
     <view class="filter" bindtap="filterAnimal" mark:animal="cat"><image class="filter-icon-cat" src="/icons/cat.png"/>Cats</view>
-    <view class="filter" bindtap="filterAnimal" mark:animal="others">Others</view>
+    <view class="filter" bindtap="filterAnimal" mark:animal="others"><image class="filter-icon-koala" src="/icons/koala.png"/>Others</view>
   </view>
 
   <view class="cards">

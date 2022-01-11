@@ -32,7 +32,7 @@
   justify-content: center; 
   margin-left: 65px;
   font-size: 22px;
-  font-family: 'Open Sans';
+  font-family: monospace;
   font-weight: bold;
   box-shadow: 1px 1px 5px #9999;
 }
