@@ -15,6 +15,7 @@ Component({
       "pagePath": "pages/myaccount/myaccount",
       "iconPath": "/icons/user.png",
       "selectedIconPath": "/icons/user.png"
+      
     }]
   },
   attached() {

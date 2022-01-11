@@ -21,9 +21,6 @@ Component({
           "iconPath": "../../images/user_icon.png"
 
         }
-
-        
-
       ]
     },
   
