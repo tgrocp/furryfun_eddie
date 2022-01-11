@@ -5,30 +5,26 @@ Page({
    * Page initial data
    */
   data: {
-
+   
   },
 
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    console.log(options)
     let page = this;
 
-    wx.request({
-      url: `${getApp().globalData.baseUrl}/users/${parseInt(options.id)}`, 
-      method: 'GET',
-      success(res) {
-        var confirmation = res.data;
-        console.log(res);
-        // Update local data
-        page.setData(
-          confirmation
-        );
-        wx.hideToast();
-      }
-    });
+      wx.request({
+        url: `${getApp().globalData.baseUrl}/pets/${options.id}`,
+        method: 'GET', 
+        success (res) {
+          console.log(res)
+          page.setData({ pet: res.data.pets })
+        }
+      })
+    },
 
-  },
 
   /**
    * Lifecycle function--Called when page is initially rendered
