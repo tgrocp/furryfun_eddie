@@ -6,12 +6,12 @@
 
     <view class="section2">
         <view class="section__title">Name</view>
-        <input name="name"/>
+        <input name="name" value = "{{ name }}"/>
     </view>
 
     <view class="section1">
         <view class="section__title">Phone Number</view>
-        <input name="phone" />
+        <input name="phone" value ="{{ phone }}" />
     </view>
 
     <view class="h2">

@@ -31,19 +31,19 @@
         <view style="margin: 22rpx 0">3. Category</view>
             <view class="selection">
                 <label class="modeling">
-                    <radio value="thrapy" checked="true"/>Modeling
+                    <radio value="thrapy" checked="true" color = "#F3D4D0"/>Modeling
                 </label>
 
                 <label class="therapy">
-                    <radio value="thrapy" />Therapy
+                    <radio value="thrapy" color = "#F3D4D0"/>Therapy
                 </label>
 
                 <label class="dailyCare">
-                    <radio value="dailyCare" />Dailycare
+                    <radio value="dailyCare" color = "#F3D4D0"/>Dailycare
                 </label> 
 
                 <label class="boarding">
-                    <radio value="boarding" />Boarding
+                    <radio value="boarding" color = "#F3D4D0"/>Boarding
                 </label>
         </view>
     </radio-group>
