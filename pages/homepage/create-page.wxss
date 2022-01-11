@@ -53,6 +53,10 @@ line-height: 19px;
 color: #FFFFFF;
 }
 
+label {
+  padding-right: 6px;
+}
+
 .header-icon{
   width: 111px;
   height: 117px;
