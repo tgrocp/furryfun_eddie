@@ -14,8 +14,6 @@
         <image class="header-icon" src="/icons/puddle_dog.png"/> 
     </view>
 
-
-
     <view class="content">
       <view class="title_name">1. Pet's name</view>
         <view class="name_input_box" style="margin: 22rpx 0">
@@ -60,7 +58,7 @@
           <label class="radio"><radio value="others"/>others</label>
       </radio-group>
     
-      <view class="upload-image" style="padding-bottom: 14rpx;">
+        <view class="upload-image" style="padding-bottom: 14rpx;">
             7. Upload Image
         <view class="btn-submit" style="padding-top: 14rpx;">
           <button bindtap='chooseImageTap'>Click to upload</button>
@@ -72,13 +70,12 @@
         <view class="section__title">
           <textarea name="content"  placeholder="please write your pet's description here" ></textarea>
         </view>
+
       <button class="btn-pink" formType="submit">
       Submit
       </button>
       </view> 
     </view>
-    
-
     <!-- <button formType="submit">Submit</button> -->
   </form>
 </view>

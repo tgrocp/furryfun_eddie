@@ -43,8 +43,9 @@
           "scene": null
         },
         {
-          "name": "",
-          "pathName": "pages/landing/landing",
+
+          "name": "create page",
+          "pathName": "pages/homepage/create-page",
           "query": "",
           "scene": null
         }
