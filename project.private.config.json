@@ -35,6 +35,13 @@
                     "pathName": "pages/show-page/confirmation",
                     "query": "",
                     "scene": null
+                },
+                {
+                    "name": "success booked",
+                    "pathName": "pages/show-page/successfully-booked",
+                    "query": "",
+                    "scene": null,
+                    "launchMode": "default"
                 }
             ]
         }

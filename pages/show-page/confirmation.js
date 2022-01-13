@@ -9,13 +9,14 @@ Page({
         const name = res.data.user_name
         const phone = res.data.phone_number
         const id = res.data.id
+        
         page.setData({
           name: name,
           phone: phone,
           id: id
-        })
-      },
-    })
+        }) 
+    },
+  })
   },
 
 
@@ -27,19 +28,24 @@ Page({
     let phone = e.detail.value.phone;
     let id = this.data.id;
 
-    let confirmation = {
+    let user = {
       id: id,
-      name: name,
-      phone: phone
+      user_name: name,
+      phone_number: phone
     }
-    console.log({confirmation})
+    console.log(user)
+
+    // wx.request({
+    //   url: `${getApp().globalData.baseUrl}/users/${id}`,
+    //   method: 'GET',
+    // })
 
     if ( name && phone ) {
       console.log('all have values')
       wx.request({
         url: `${getApp().globalData.baseUrl}/users/${id}`,
         method: 'PUT',
-        data: confirmation,
+        data: {user},
         success() {
           wx.redirectTo({
             url: '/pages/show-page/successfully-booked'
