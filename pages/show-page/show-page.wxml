@@ -11,7 +11,12 @@
 </view>
 
 <view class="card-trip-infos">
-  <view class="h2">Description:</view>
+  <view class="card-trip-title">
+    <view class="h2">Description:</view>
+      <button class='share' id="shareBtn" open-type="share" type="primary" hover-class="other-button-hover">Share</button>
+   
+    </view>
+
   <view class="p">{{ pet.description }}</view>
   <view class="location">
     <image class="location-icon" src="/icons/location.png"/>
