@@ -34,6 +34,12 @@
     padding: 16rpx;
     position: relative;
   }
+
+  .card-trip-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   
   .image{
     align-content: center;
@@ -84,4 +90,25 @@
 .btn-pink:hover {
   background-color:  rgba(234,179,171,1.0);
   color: #9999;
+}
+
+.share{
+  background-color:  rgba(234,179,171,1.0) !important;
+  align-items: center !important;
+  border-radius: 40rpx !important;
+  width: auto !important;
+  font-size: small;
+  font-weight: 200;
+  box-shadow: 1px 1px 5px #9999;
+  margin-right: 8rpx !important;
+}
+
+.share:hover{
+  align-items: center !important;
+  border-radius: 40rpx !important;
+  width: auto !important;
+  font-size: small;
+  font-weight: 200;
+  box-shadow: 1px 1px 5px #9999;
+  margin-right: 8rpx !important;
 }
