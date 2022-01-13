@@ -2,7 +2,7 @@
   <form bindsubmit="formSubmit">
     <view class="header">
         <view class="header-text">
-          <view class="h3">Create Your service </view>
+          <view class="h3">Create Your Service </view>
           <view class="text">with simple stpes</view>
         </view>
         <view class="userinfo">
@@ -17,65 +17,72 @@
     <view class="content">
       <view class="title_name">1. Pet's name</view>
         <view class="name_input_box" style="margin: 22rpx 0">
-            <input class="name-input" name="name" placeholder="Please input your pet's name" style="padding-left: 8px"/>
+            <input class="name-input" name="pet_name" placeholder="Please write your pet's name here" style="padding-left: 8px"/>
         </view>
 
-      <view class="title_title">2. Pet's title</view>
+      <view class="title_name">2. Pet's title</view>
         <view class="name_input_box" style="margin: 22rpx 0">
-            <input class="name-input" name="name" placeholder="Please input your pet's title" style="padding-left: 8px"/>
+            <input class="name-input" name="title" placeholder="Please write your pet's title here" style="padding-left: 8px"/>
         </view>
 
-      <radio-group bindchange="radioChange">
-        <view style="margin: 22rpx 0">3. Category</view>
+      <radio-group name="category" bindchange="radioChange">
+        <view class="title_name" style="margin: 22rpx 0">3. Category</view>
           <view class="selection">
-            <label class="modeling">
-                <radio value="thrapy" checked="true" color="#F3D4D0"/>Modeling</label>
-            <label class="therapy"><radio value="thrapy"/>Therapy</label>
-            <label class="dailyCare"><radio value="dailyCare"/>Dailycare</label> 
-            <label class="boarding"><radio value="boarding" />Boarding</label>
+            <label class="modeling"><radio value="modelling" checked="true" color="#F3D4D0"/>Modeling</label>
+            <label class="therapy"><radio value="therapy" color="#F3D4D0"/>Therapy</label>
+            <label class="dailyCare"><radio value="dailyCare" color="#F3D4D0"/>Dailycare</label> 
+            <label class="boarding"><radio value="boarding" color="#F3D4D0"/>Boarding</label>
           </view>
       </radio-group>
  
       <view class="section">
-        <view class="section-location"style="margin: 22rpx 0">4. Location</view>
-          <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
-            <view class="location-picker">
+        <view class="title_name" style="margin: 22rpx 0">4. Location</view>
+          <picker name="location" mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+            <view class="name-input" class="location-picker" color="#F3D4D0">
               Your Location: {{region[0]}}  {{region[1]}}  {{region[2]}}
             </view>
           </picker>
       </view>
 
-      <radio-group bindchange="radioChange" style="margin: 30rpx 0">
-        <view style="padding-bottom: 12rpx;">5. Gender</view>
-          <label class="radio"><radio value="male" checked="true"/>Male</label>
-          <label class="radio"><radio value="female" />female</label>
+      <radio-group name="gender" bindchange="radioChange" style="margin: 30rpx 0">
+        <view class="title_name" style="padding-bottom: 12rpx;">5. Gender</view>
+          <view class="selection">
+            <label class="radio"><radio value="male" checked="true" color="#F3D4D0"/>Male</label>
+            <label class="radio"><radio value="female" color="#F3D4D0" style="padding-left: 10px;"/>Female</label>
+          </view>
       </radio-group>
  
-      <radio-group bindchange="radioChange" style="margin: 30rpx 0">
-        <view style="padding-bottom: 12rpx;">6. Pet Type</view>
-          <label class="radio"><radio value="dog" checked="true"/>Dog</label>
-          <label class="radio"><radio value="Cat"/>cat</label>
-          <label class="radio"><radio value="others"/>others</label>
+      <radio-group name="pet_type" bindchange="radioChange" style="margin: 30rpx 0">
+        <view class="title_name" style="padding-bottom: 12rpx;">6. Pet Type</view>
+          <view class="selection">
+            <label class="radio"><radio value="dog" color="#F3D4D0" checked="true"/>Dog</label>
+            <label class="radio"><radio value="Cat" color="#F3D4D0" style="padding-left: 10px;"/>Cat</label>
+            <label class="radio"><radio value="others" color="#F3D4D0" style="padding-left: 10px;"/>others</label>
+          </view>
       </radio-group>
     
-        <view class="upload-image" style="padding-bottom: 14rpx;">
+        <view class="title_name" style="padding-bottom: 12rpx;">
             7. Upload Image
-        <view class="btn-submit" style="padding-top: 14rpx;">
-          <button bindtap='chooseImageTap'>Click to upload</button>
+        <view class="btn-upload" style="padding-top: 12rpx;">
+          <view bindtap="chooseImageTap" >Click to upload</view>
         </view>
+        <view class="image-url">{{uploadedImage}}</view>
       </view>
-
-      <view class="section">
+      
+      <view class="title_name">
         8. Description
-        <view class="section__title">
-          <textarea name="content"  placeholder="please write your pet's description here" ></textarea>
+        <view class="section_title">
+          <input name="description" placeholder="Please write your pet's description here" style="padding-left: 8px"/>
         </view>
-
-      <button class="btn-pink" formType="submit">
-      Submit
-      </button>
+        <button class="btn-pink" formType="submit">Submit</button>
+        <view class="footer">....................................................................................................</view>
+        <view class="footer">....................................................................................................</view>
+        <view class="footer">....................................................................................................</view>
       </view> 
+      
     </view>
-    <!-- <button formType="submit">Submit</button> -->
+    
+    
   </form>
+  
 </view>
