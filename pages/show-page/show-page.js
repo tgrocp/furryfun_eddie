@@ -4,17 +4,35 @@ Page({
     onLoad: function (options) {
         console.log(options)
         const page = this;
-        let images = getApp().globalData.modelling_services
-        let models = page.setData({ images: images })
-        
         wx.request({
           url: `${getApp().globalData.baseUrl}/pets/${parseInt(options.id)}`,
           method: 'GET', 
           success (res) {
-            page.setData({ pet: res.data.pets })
+            page.setData({ pet: res.data.pets})
           }
        })
     },
+
+    onShareAppMessage: function (res) {
+      if (res.from === 'button') {
+        // 来自页面内转发按钮
+        console.log(res.target)
+      }
+      return {
+        title: '自定义转发标题',
+        path: 'pages/show-page/show-page',
+        success: function(res) {
+          // 转发成功
+        },
+        fail: function(res) {
+          // 转发失败
+        }
+      }
+    },
+   
+
+
+    
 
   bindDateChange: function(e) {
     console.log(e)
@@ -73,6 +91,8 @@ Page({
 
     },
 
+ 
+    
     onShareAppMessage: function () {
 
     } 

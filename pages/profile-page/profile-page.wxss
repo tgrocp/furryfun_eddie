@@ -39,20 +39,22 @@ top: 144px;
 .filters {
     display: flex;
     justify-content: space-between;
+    padding-right: 50rpx;
+    padding-left: 50rpx;
 }
 
 .filter {
     display: flex;
     background-color:  #ffffff;
     border-radius: 35px;
-    width: 95px;
-    height: 22px;
+    width: 100px;
+    height: 33px;
     align-items: center;
     justify-content: center; 
     margin: 10px;
     color: #34342B;
-    font-size: 12px;
-    font-family: 'Open Sans';
+    font-size: 13px;
+    font-family: 'monospace';
     font-weight: bold;
     box-shadow: 1px 1px 5px #9999;
 }
@@ -60,8 +62,8 @@ top: 144px;
     display: flex;
     background-color:  rgba(234,179,171,0.8);
     border-radius: 35px;
-    width: 95px;
-    height: 22px;
+    width: 100px;
+    height: 30px;
     align-items: center;
     justify-content: center; 
     margin: 10px;

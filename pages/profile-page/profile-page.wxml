@@ -45,8 +45,9 @@
                      has many many year of expirience
                 </text>
         </view>
-        <view wx:else>
-        sdfsdfsdf
-        </view>
 
+    <view  wx:else>
+            sdfsdfsdf
+    </view>
+    
 </view>

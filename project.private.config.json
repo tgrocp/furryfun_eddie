@@ -1,15 +1,36 @@
 {
-    "setting": {},
-    "condition": {
-        "plugin": {
-            "list": []
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "my services",
+          "pathName": "pages/myaccount/my-services",
+          "query": "",
+          "scene": null
         },
-        "game": {
-            "list": []
+        {
+          "name": "category modelling",
+          "pathName": "pages/category-modelling/category-modelling",
+          "query": "",
+          "scene": null
         },
-        "gamePlugin": {
-            "list": []
+        {
+          "name": "show-page",
+          "pathName": "pages/show-page/show-page",
+          "query": "",
+          "scene": null
         },
+
         "miniprogram": {
             "list": [
                 {
@@ -44,6 +65,6 @@
                     "launchMode": "default"
                 }
             ]
-        }
     }
+  }
 }

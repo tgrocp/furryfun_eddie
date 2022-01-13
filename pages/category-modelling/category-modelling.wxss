@@ -45,6 +45,13 @@
     padding-right: 5px;
   }
 
+  .filter-icon-koala {
+    height: 25px;
+    width: 25px;
+    padding-right: 5px;
+  }
+
+
 .cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -78,9 +85,9 @@
     /* justify-content: space-between;  */
 }
 
-.container{
+/* .container { */
 /* width:fit-content */
-}
+ 
 
 .model-photo{
     width: 160px;

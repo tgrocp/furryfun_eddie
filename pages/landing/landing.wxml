@@ -1,7 +1,7 @@
 <view class="container">
   <image class="cat-pink" src="/images/cat-pink.png"/>
   <view class="text">
-    <view class="h1">Furry FUN</view>
+    <view class="h1">Furry Fun</view>
     <view class="p">Let your pet be a super star</view>
   </view>
   <view class="btn-pink" bindtap="getUserProfile">Let's Start</view>
