@@ -30,26 +30,41 @@
           "query": "",
           "scene": null
         },
-        {
-          "name": "confirmation page",
-          "pathName": "pages/show-page/confirmation",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "profile page",
-          "pathName": "pages/profile-page/profile-page",
-          "query": "",
-          "scene": null
-        },
-        {
 
-          "name": "create page",
-          "pathName": "pages/homepage/create-page",
-          "query": "",
-          "scene": null
-        }
-      ]
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "my services",
+                    "pathName": "pages/myaccount/my-services",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "category modelling",
+                    "pathName": "pages/category-modelling/category-modelling",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "landing page",
+                    "pathName": "pages/landing/landing",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "confirmation page",
+                    "pathName": "pages/show-page/confirmation",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "success booked",
+                    "pathName": "pages/show-page/successfully-booked",
+                    "query": "",
+                    "scene": null,
+                    "launchMode": "default"
+                }
+            ]
     }
   }
 }

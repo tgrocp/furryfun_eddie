@@ -1,37 +1,51 @@
 // pages/show-page/confirmation.js
 let app = getApp()
 Page({
-
   onLoad:function(options){
-    wx.getStorageInfo({
+    let page = this;
+    wx.getStorage({
+      key: "user",
       success: (res) => {
-        console.log(res)
-      },
-    })
+        const name = res.data.user_name
+        const phone = res.data.phone_number
+        const id = res.data.id
+        
+        page.setData({
+          name: name,
+          phone: phone,
+          id: id
+        }) 
+    },
+  })
   },
 
-  data: {
-    name: null,
-    phone: null
-  }, 
 
   formSubmit: function (e) {
-    const name = e.detail.value.name;
-    const phone = e.detail.value.phone
+    console.log(e.detail.value)
+    console.log(this.data.id)
+    // console.log('form发生了submit事件，携带数据为：', e.detail.value);
+    let name = e.detail.value.name;
+    let phone = e.detail.value.phone;
+    let id = this.data.id;
 
-    let confirmation = {
-      // id: id,
-      name: name,
-      phone: phone
+    let user = {
+      id: id,
+      user_name: name,
+      phone_number: phone
     }
-    console.log({confirmation})
+    console.log(user)
+
+    // wx.request({
+    //   url: `${getApp().globalData.baseUrl}/users/${id}`,
+    //   method: 'GET',
+    // })
 
     if ( name && phone ) {
       console.log('all have values')
       wx.request({
-        url: `${getApp().globalData.baseUrl}/users`,
+        url: `${getApp().globalData.baseUrl}/users/${id}`,
         method: 'PUT',
-        data: confirmation,
+        data: {user},
         success() {
           wx.redirectTo({
             url: '/pages/show-page/successfully-booked'
@@ -45,56 +59,5 @@ Page({
         duration:2000,
       })
     }
-  },
-
-  /**
-   * Lifecycle function--Called when page load
-   */
- 
-
-  /**
-   * Lifecycle function--Called when page is initially rendered
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page show
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page hide
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page unload
-   */
-
-
-  /**
-   * Page event handler function--Called when user drop down
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * Called when page reach bottom
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * Called when user click on the top right corner to share
-   */
-
-  
+  }
 })
