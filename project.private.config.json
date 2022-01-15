@@ -1,70 +1,46 @@
 {
-  "setting": {},
-  "condition": {
-    "plugin": {
-      "list": []
-    },
-    "game": {
-      "list": []
-    },
-    "gamePlugin": {
-      "list": []
-    },
-    "miniprogram": {
-      "list": [
-        {
-          "name": "my services",
-          "pathName": "pages/myaccount/my-services",
-          "query": "",
-          "scene": null
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
         },
-        {
-          "name": "category modelling",
-          "pathName": "pages/category-modelling/category-modelling",
-          "query": "",
-          "scene": null
+        "game": {
+            "list": []
         },
-        {
-          "name": "show-page",
-          "pathName": "pages/show-page/show-page",
-          "query": "",
-          "scene": null
+        "gamePlugin": {
+            "list": []
         },
-
         "miniprogram": {
             "list": [
                 {
-                    "name": "my services",
-                    "pathName": "pages/myaccount/my-services",
+                    "name": "profile page",
+                    "pathName": "pages/profile-page/profile-page",
                     "query": "",
+                    "launchMode": "default",
                     "scene": null
                 },
                 {
-                    "name": "category modelling",
-                    "pathName": "pages/category-modelling/category-modelling",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "landing page",
-                    "pathName": "pages/landing/landing",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "confirmation page",
-                    "pathName": "pages/show-page/confirmation",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "success booked",
+                    "name": "booking",
                     "pathName": "pages/show-page/successfully-booked",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "show-page",
+                    "pathName": "pages/show-page/show-page",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "show",
+                    "pathName": "pages/show-page/show-page",
                     "query": "",
                     "scene": null,
                     "launchMode": "default"
                 }
             ]
+        }
     }
-  }
 }
