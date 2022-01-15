@@ -13,12 +13,12 @@
                 <!-- <view>{{users.location}}</view> -->
                 <text class="p"> San Fransisco </text>
 
-  <view class="divLine"></view>
+<view class="divLine"></view>
         </view>
 
-        <view class="filters">
-            <view class="filter" bindtap="filterAnimal" mark:animal="dog">My Pets</view>
-            <view class="filter" bindtap="filterAnimal" mark:animal="others">My Booking</view>
+        <view class='topTabSwiper'>
+            <button class='tab  {{currentData == 0 ? "tabBorer" : ""}}'  data-current = "0" bindtap='checkCurrent'>My Pets</button>
+            <button class='tab  {{currentData == 1 ? "tabBorer" : ""}}'  data-current = "1" bindtap='checkCurrent'>My Bookings</button>
         </view>
 
     <!-- <view wx:for="{{pets}}" wx:for-item="pet" class="petInfo">
@@ -30,7 +30,8 @@
         </view>
     </view> -->
 
-        <view class="card-pet" wx:if= "{{ pets }}" >
+    <swiper current="{{currentData}}" class='swiper' bindchange="bindchange">
+        <swiper-item><view class="card-pet" wx:for="{{ pets }}" wx:for-item="pet" >
             <view class="pet-info">
             <image mode="aspectFill" class="model-photo" src="{{ pet.url }}"/>
                 <!-- <image class="model-photo" scr="/images/Bulldog.jpg"/> -->
@@ -41,13 +42,19 @@
                         </view>
                     </view>
             </view>
-                <text class="description">
-                     has many many year of expirience
-                </text>
+            <text class="description">
+                {{ pet.title }}
+            </text>
         </view>
+        </swiper-item>
 
-    <view  wx:else>
-            sdfsdfsdf
-    </view>
-    
+        <swiper-item><view class="card-pet" wx:for="{{ bookings }}" wx:for-item="booking">
+            <view class="pet-info">
+                    <view class="info">
+                        <view class="h2">{{ booking.time }}</view>  
+                    </view>
+            </view>
+            </view>
+        </swiper-item>
+    </swiper>
 </view>

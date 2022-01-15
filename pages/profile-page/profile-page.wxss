@@ -36,34 +36,36 @@ top: 144px;
 
 
 
-.filters {
+.topTabSwiper{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
     padding-right: 50rpx;
     padding-left: 50rpx;
 }
 
-.filter {
-    display: flex;
-    background-color:  #ffffff;
+.tab {
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 35px;
-    width: 100px;
+    border-color:#000000;
+    width: 150px;
     height: 33px;
     align-items: center;
     justify-content: center; 
     margin: 10px;
-    color: #34342B;
+    color: #ffffff;
     font-size: 13px;
     font-family: 'monospace';
     font-weight: bold;
     box-shadow: 1px 1px 5px #9999;
 }
-.filter:hover {
+.tab:hover {
     display: flex;
     background-color:  rgba(234,179,171,0.8);
+    border-color: rgba(234,179,171,0.8);
     border-radius: 35px;
-    width: 100px;
-    height: 30px;
+    width: 150px;
+    height: 33px;
     align-items: center;
     justify-content: center; 
     margin: 10px;
@@ -82,19 +84,26 @@ top: 144px;
 }
 
 .model-photo {
-width: 65px;
-height: 60px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50px; 
+}
+
+.swiper {
+    height: 100vh;
+    align-items: center;
 }
 
 .card-pet{
     display: flex;
-    flex-direction: row;
+    align-items: center;
     width: 360px;
     height: 90px;
-    left: 28px;
     top: 455px;
+    padding: 8px, 10px;
     background: #F3D4D0;
     border-radius: 15px;
+    margin-bottom: 8px;
 }
 
 .pet-info {
@@ -114,8 +123,10 @@ height: 60px;
     font-weight: normal;
     font-size: 13px;
     line-height: 15px;
-    padding-top: 56rpx;
-    padding-left: 16rpx;
+    /* padding-top: 30rpx;
+    padding-left: 0rpx; */
+    flex-grow: 1;
+    padding: 0 24px;
 }
 
 .h2{

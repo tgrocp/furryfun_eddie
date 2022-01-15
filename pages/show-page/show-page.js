@@ -47,7 +47,7 @@ Page({
     }
 
     wx.request({
-      url: `${getApp().globalData.baseUrl}/pets/${data.id}/bookings`,
+      url: `${getApp().globalData.baseUrl}/users/${userId}/bookings`,
       method: 'POST',
       data: booking,
       success() {
