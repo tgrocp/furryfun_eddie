@@ -77,9 +77,8 @@ Page({
         data: { pet: pet },
         success(res) {
             console.log(res)
-            
             wx.uploadFile({
-              url: `${app.globalData.baseUrl}/update_photo`,
+              url: `${app.globalData.baseUrl}/pets/${petId}/update_photo`,
               filePath: photoFile,
               name: 'petPhoto',
               success(res) {
