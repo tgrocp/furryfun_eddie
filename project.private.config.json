@@ -47,6 +47,12 @@
                     "pathName": "pages/show-page/successfully-booked",
                     "query": "",
                     "scene": null
+                },
+                {
+                    "name": "pages/show-page/successfully-booked",
+                    "pathName": "pages/show-page/successfully-booked",
+                    "query": "",
+                    "scene": null
                 }
             ]
         }
