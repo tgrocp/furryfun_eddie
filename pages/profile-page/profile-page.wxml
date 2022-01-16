@@ -51,10 +51,15 @@
         <swiper-item><view class="card-pet" wx:for="{{ bookings }}" wx:for-item="booking">
             <view class="pet-info">
                     <view class="info">
-                        <view class="h2">{{ booking.time }}</view>  
+                        <image mode="aspectFill" class="model-photo" src="{{ booking.url }}"/>
+                        <view class="h2">{{ booking.pet_name }}</view>  
                     </view>
             </view>
+            <text class="description">
+                Booking time: {{ booking.time }}
+            </text>
             </view>
+            
         </swiper-item>
     </swiper>
 </view>
