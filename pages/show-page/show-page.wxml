@@ -7,7 +7,7 @@
             </view>
           </view>  
   </view>
-  <image class= "image" src="{{ pet.url }}"/>
+  <image class= "image" src="{{ pet.url }}" mode="aspectFill"/>
 </view>
 
 <view class="card-trip-infos">
