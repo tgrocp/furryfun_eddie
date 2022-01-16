@@ -16,6 +16,10 @@ font-size: small;
 padding: 16rpx;
 }
 
+.userNickName{
+    padding: 32rpx;
+}
+
 .userinfo-avatar {
 overflow:hidden;  
 border: 1px solid #000000;

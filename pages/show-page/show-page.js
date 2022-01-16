@@ -50,11 +50,19 @@ Page({
       url: `${getApp().globalData.baseUrl}/users/${userId}/bookings`,
       method: 'POST',
       data: booking,
-      success() {
+      success(res) {
+          console.log(res.data.booking)
+          if(res.data.booking) {
+          const bookId = res.data.booking.id;
           // redirect to index page when done
           wx.redirectTo({
-            url: '/pages/show-page/confirmation',
+            url: `/pages/show-page/confirmation?bookId=${bookId}`,
           })
+        } else {
+          wx.showToast({
+            title: 'time unavailable',
+          })
+        }
       }
     });
   },  
