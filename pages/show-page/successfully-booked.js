@@ -12,15 +12,30 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    wx.getStorage({
+      key: "user",
+      success: (res) => {
+        const name = res.data.user_name
+        const phone = res.data.phone_number
+        const id = res.data.id
+        
+        page.setData({
+          name: name,
+          phone: phone,
+          id: id
+        })
+      }
+  });
+  
     console.log(options)
     let page = this;
 
       wx.request({
-        url: `${getApp().globalData.baseUrl}/pets/${options.id}`,
+        url: `${getApp().globalData.baseUrl}/bookings/${options.bookId}`,
         method: 'GET', 
         success (res) {
           console.log(res)
-          page.setData({ pet: res.data.pets })
+          page.setData({ pet: res.data.bookings.pet, date: res.data.bookings.date })
         }
       })
     },

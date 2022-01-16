@@ -37,6 +37,13 @@
                     "name": "show",
                     "pathName": "pages/show-page/show-page",
                     "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "edit page",
+                    "pathName": "pages/profile-page/edit-page",
+                    "query": "",
                     "scene": null,
                     "launchMode": "default"
                 }
