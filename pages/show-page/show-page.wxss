@@ -1,8 +1,7 @@
 .card-trip {
     overflow: hidden;
     background: white;
-    box-shadow: 0 0 15rpx rgba(0,0,0,0.2);
-    padding: 20rpx;
+    padding-bottom: 72rpx;
   }
 
   .name_gender {
@@ -18,8 +17,7 @@
     color: rgba(234,179,171,1.0);
     font-size: 18px;
     font-weight: bold;
-    font-family: monospace;
-    margin: 0;
+    font-family:sans-serif
   }
   
   .p {
@@ -28,11 +26,13 @@
     font-family: monospace;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-family:sans-serif
   }
   
   .card-trip-infos {
-    padding: 16rpx;
+    padding: 24rpx;
     position: relative;
+
   }
 
   .card-trip-title{
@@ -46,10 +46,13 @@
     margin: auto;
     display: block;
     /* padding-bottom: 24rpx; */
-    height: 330px;
-    width: 300px;
+    width: 249px;
+    height: 189px;
+    left: 26px;
+    top: 119px;
     border-radius: 20px; 
-    object-fit: cover;
+    object-fit:aspectfill;
+    border: #34342B;
   }
  
 .container {
@@ -62,6 +65,7 @@
 }
 .location-font {
   font-size: 10px;
+  font-family:sans-serif
   font-weight: bold;
   color: #34342B;
 }
@@ -74,15 +78,15 @@
 .btn-pink {
   display: flex;
   background-color:  rgba(234,179,171,0.8);
+  margin: auto;
   color: #FFFFFF;
   border-radius: 25px;
   width: 155px;
   height: 50px;
   align-items: center;
   justify-content: center; 
-  margin-left: 65px;
   font-size: 20px;
-  font-family: 'Open Sans';
+  font-family:sans-serif;
   font-weight: bold;
   box-shadow: 1px 1px 5px #9999;
   margin-top: 30px;
@@ -97,6 +101,7 @@
   align-items: center !important;
   border-radius: 40rpx !important;
   width: auto !important;
+  font-family:sans-serif;
   font-size: small;
   font-weight: 200;
   box-shadow: 1px 1px 5px #9999;
