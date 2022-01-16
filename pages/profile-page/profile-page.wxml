@@ -30,7 +30,7 @@
     </view> -->
 
     <swiper current="{{currentData}}" class='swiper' bindchange="bindchange">
-        <swiper-item><view class="card-pet" wx:for="{{ pets }}" wx:for-item="pet" data-id = "{{ pet.id }}">
+        <swiper-item><view class="card-pet" wx:for="{{ pets }}" wx:for-item="pet">
             <view class="pet-info">
             <image mode="aspectFill" class="model-photo" src="{{ pet.url }}"/>
                 <!-- <image class="model-photo" scr="/images/Bulldog.jpg"/> -->

@@ -63,9 +63,6 @@ Page({
     },
 
     bindchange:function(e){
-        wx.redirectTo({
-          url: '/pages/profile-page/edit-page',
-        })
         const that  = this;
         that.setData({
           currentData: e.detail.current
@@ -83,6 +80,14 @@ Page({
           currentData: e.target.dataset.current
         })
       }
+    },
+
+    editFunction: function(e){
+      console.log(e.target.dataset.id)
+      const petId = e.target.dataset.id
+      wx.redirectTo({
+        url: `/pages/profile-page/edit-page?petId=${petId}`,
+      })
     },
     /**
      * 生命周期函数--监听页面显示
