@@ -27,7 +27,7 @@
 <view class="section">
   <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange" data-id = "{{ pet.id }}">
     <btn  class="btn-pink">
-      Booking now {{date}}
+      Book now {{date}}
     </btn>
   </picker>
 </view>
