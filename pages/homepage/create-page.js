@@ -64,7 +64,6 @@ Page({
       data: { pet: pet },
       success(res) {
         console.log(res)
-        const petId = res.data.pet.id
         
         wx.uploadFile({
           url: `${app.globalData.baseUrl}/update_photo`,

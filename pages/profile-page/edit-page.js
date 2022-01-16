@@ -131,58 +131,50 @@ Page({
   
     //选择图片tap
     chooseImageTap: function () {
-      var that = this;
-      wx.showActionSheet({
-        itemList: ['Choose from the album'],
-        itemColor: "#00000",
-        success: function (res) {
-          if (!res.cancel) {
-            if (res.tapIndex == 0) {
-              that.chooseWxImage('album')
-            } else if (res.tapIndex == 1) {
-              that.chooseWxImage('camera')
+        const page = this 
+        wx.chooseImage({
+            count: 1,
+            sizeType: ['original', 'compressed'],
+            sourceType: ['album', 'camera'],
+            success(res) {
+            const tempFilePaths = res.tempFilePaths[0]
+            page.setData({tempFilePaths})
+        // console.log(tempFilePaths)
             }
-          }
-        }
-      })
+        })
     },
     //选择图片
-    chooseWxImage: function (type) {
-      var that = this;
-      var imgsPaths = that.data.imgs;
-      wx.chooseImage({
-        sizeType: ['original', 'compressed'],
-        sourceType: [type],
-        success: function (res) {
-          that.setData({uploadedImage: res.tempFilePaths[0]})
-          console.log(res.tempFilePaths[0]);
-          console.log(res)
-          that.upImgs(res.tempFilePaths[0], 0) //调用上传方法
-        }
-      })
-    },
+    // chooseWxImage: function (type) {
+    //   var that = this;
+    //   var imgsPaths = that.data.imgs;
+    //   wx.chooseImage({
+    //     sizeType: ['original', 'compressed'],
+    //     sourceType: [type],
+    //     success: function (res) {
+    //       that.setData({uploadedImage: res.tempFilePaths[0]})
+    //       console.log(res.tempFilePaths[0]);
+    //       console.log(res)
+    //       that.upImgs(res.tempFilePaths[0], 0) //调用上传方法
+    //     }
+    //   })
+    // },
   
     //上传服务器
     upImgs: function (imgurl, index) {
-      var that = this;
-      wx.uploadFile({
-        url: 'https://xxxxxxxxxxxxxxxxxxxxxxxxxxxx',//
-        filePath: imgurl,
-        name: 'file',
-        header: {
-          'content-type': 'multipart/form-data'
-        },
-        formData: null,
-        success: function (res) {
-          console.log(res) //接口返回网络路径
-          var data = JSON.parse(res.data)
-          that.data.picPaths.push(data['msg'])
-          that.setData({
-            picPaths: that.data.picPaths
-          })
-          console.log(that.data.picPaths)
-        }
-      })
+        console.log("update Status")
+        wx.uploadFile({
+            url: `${app.globalData.baseUrl}/pets/${id}/update_photo`,
+            filePath: imgurl,
+            name: 'petPhoto',
+            id: 'id',
+            success(res) {
+                console.log(res.data)
+                wx.showToast({
+                title: 'uploaded',
+                icon: 'success'
+                })
+            }
+        })
     },
   
     /**
