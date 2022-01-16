@@ -3,7 +3,6 @@
 padding: 12rpx;
 }
 
-
 .user-info{
     display: flex;  
     flex-direction: column;  
@@ -87,8 +86,9 @@ top: 144px;
 }
 
 .model-photo {
-    width: 65px;
-    height: 65px;
+    align-self: auto;
+    width: 70px;
+    height: 70px;
     border-radius: 50px; 
 }
 
@@ -101,7 +101,7 @@ top: 144px;
     display: flex;
     align-items: center;
     width: 360px;
-    height: 90px;
+    height: 100px;
     top: 455px;
     padding: 8px, 10px;
     background: #F3D4D0;
@@ -111,8 +111,8 @@ top: 144px;
 }
 
 .pet-info {
-    display: flex;  
-    flex-direction: column;  
+    display: flex;
+    flex-direction: column;
     vertical-align: auto;
     padding-left: 12rpx;
 }
@@ -123,17 +123,34 @@ top: 144px;
 }
 
 .description{
-    font-family: Roboto;
+   
+    font-family:sans-serif;  
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
-    line-height: 15px;
+    line-height: 20px;
     /* padding-top: 30rpx;
     padding-left: 0rpx; */
-    flex-grow: 1;
-    padding: 0 24px;
+    padding-left: 24rpx;
 }
 
 .h2{
     font-weight: 50;
+    font-size: 12px;
+    padding-left: 2px;
+}
+
+.mini-btn{
+        color: #FFFFFF;
+        border-radius: 25px;
+        width: 36px !important;
+        height: 24px;
+        font-size: 10px !important ;
+        font-weight: bold;
+        font-family:sans-serif;
+        border: 1px solid;
+        box-shadow: 3px 3px #888888;
+        padding-left: 8px !important;
+        right: 28px;
+        bottom: 8px;
 }

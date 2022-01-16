@@ -1,6 +1,11 @@
+.container{
+  padding:18rpx;
+}
+
+
 .card-trip {
     overflow: hidden;
-    background: white;
+    background: rgb(255, 255, 255);
     padding-bottom: 72rpx;
   }
 
