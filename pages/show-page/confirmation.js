@@ -25,7 +25,7 @@ Page({
     console.log(this.data.id)
     // console.log('form发生了submit事件，携带数据为：', e.detail.value);
     let name = e.detail.value.name;
-    let phone = e.detail.value.phone;
+    let phone = parseInt(e.detail.value.phone);
     let id = this.data.id;
 
     let user = {
