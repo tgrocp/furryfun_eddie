@@ -1,26 +1,28 @@
 // pages/homepage/create-page.js
+let app = getApp()
 Page({
 
     data: {
         city: false,
         region: ['', '', ''],
         customItem: '全部',
-      imgs: [],//本地图片地址数组
-      picPaths: [],//网络路径
-  
-      userInfo: {},//user
-      hasUserInfo: false,
-      canIUse: wx.canIUse('button.open-type.getUserInfo'),
-      canIUseGetUserProfile: false,
-      canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') // 如需尝试获取用户信息可改为fals
+
+        imgs: [],//本地图片地址数组
+        picPaths: [],//网络路径
+
+        userInfo: {},//user
+        hasUserInfo: false,
+        canIUse: wx.canIUse('button.open-type.getUserInfo'),
+        canIUseGetUserProfile: false,
+        canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') // 如需尝试获取用户信息可改为fals
     },
   
     bindRegionChange: function (e) {
-      console.log('picker发送选择改变，携带值为', e.detail.value)
-      this.setData({
-        region: e.detail.value,
-        city: true
-      })
+        console.log(e.detail.value)
+        this.setData({
+          region: e.detail.value.join("-"),
+          city: true
+        })
     },
   
     bindViewTap() {
@@ -32,13 +34,13 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-      if (wx.getUserProfile) {
-        this.setData({
-          canIUseGetUserProfile: true
-        })
-      }
-      
-      let page = this;
+        if (wx.getUserProfile) {
+            this.setData({
+              canIUseGetUserProfile: true
+            })
+        }
+
+        let page = this;
         console.log(options)
         const petId = options.petId
         wx.request({
@@ -52,21 +54,48 @@ Page({
       },
 
     formSubmit: function (e) {
-      const page = this;
-      const petId = this.data.pets.id
-      console.log(e)
-      let pet = e.detail.value
-      const headers = wx.getStorageSync('headers')
-  
+        console.log(e)
+        let pet = e.detail.value
+        const userId = app.globalData.user.id
+        pet = {...pet, 
+          location: this.data.region, 
+          user_id: userId
+        }
+        console.log(pet)
+        const headers = wx.getStorageSync('headers')
+        console.log(pet)
+        console.log(this.data.tempFilePaths)
+        const photoFile = this.data.tempFilePaths
+        const upImgs = this.upImgs
+        console.log(upImgs)
+        const petId = this.data.pets.id
+
       wx.request({
-        url: `${getApp().globalData.baseUrl}/pets/${petId}`,
+        url: `${getApp().globalData.baseUrl}/users/${userId}/pets/${petId}`,
         method: 'PUT',
         header: headers,
         data: { pet: pet },
-        success() {
-        //   wx.switchTab({
-        //     url: '/pages/profile-page/profile-page'
-        //   });
+        success(res) {
+            console.log(res)
+            
+            wx.uploadFile({
+              url: `${app.globalData.baseUrl}/update_photo`,
+              filePath: photoFile,
+              name: 'petPhoto',
+              success(res) {
+                // console.log(res.data)
+                wx.showToast({
+                  title: 'uploaded',
+                  icon: 'success'
+                })
+              }, fail(e){ 
+                console.log(e)
+              }
+            })
+            console.log("end")
+            // wx.switchTab({
+            // //   url: '/pages/category-modelling/category-modelling'
+            // });
         }
       });
     },
