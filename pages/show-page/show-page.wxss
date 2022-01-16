@@ -1,6 +1,11 @@
+.container{
+  padding:18rpx;
+}
+
+
 .card-trip {
     overflow: hidden;
-    background: white;
+    background: rgb(255, 255, 255);
     padding-bottom: 72rpx;
   }
 
@@ -90,7 +95,7 @@
   font-weight: bold;
   border: 1px solid;
   padding: 10px;
-  box-shadow: 5px 5px #888888;
+  box-shadow: 3px 3px #888888;
   margin-top: 30px;
 }
 .btn-pink:hover {

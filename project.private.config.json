@@ -74,8 +74,6 @@
                     "name": "edit page",
                     "pathName": "pages/profile-page/edit-page",
                     "query": "",
-                    "scene": null,
-                    "launchMode": "default"
 
                 }
             ]

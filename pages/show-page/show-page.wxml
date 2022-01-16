@@ -1,35 +1,37 @@
-<view class="card-trip">
-  <view class="card-trip-infos">
-    <view class="name_gender">
-            <view class="h2">{{ pet.pet_name }}</view>
-            <view class="gender">
-              <image class="gender-icon" src="/icons/male.png" src="{{pet.gender === 'male'?'/icons/male.png' : '/icons/female.png' }}"/>
-            </view>
-          </view>  
-  </view>
-  <image class= "image" src="{{ pet.url }}" mode="aspectFill"/>
-</view>
-
-<view class="card-trip-infos">
-  <view class="card-trip-title">
-    <view class="h2">Description:</view>
-      <button class='share' id="shareBtn" open-type="share" type="primary" hover-class="other-button-hover">Share</button>
-   
+<view class="container">
+  <view class="card-trip">
+    <view class="card-trip-infos">
+      <view class="name_gender">
+              <view class="h2">{{ pet.pet_name }}</view>
+              <view class="gender">
+                <image class="gender-icon" src="/icons/male.png" src="{{pet.gender === 'male'?'/icons/male.png' : '/icons/female.png' }}"/>
+              </view>
+      </view>  
     </view>
-
-  <view class="p">{{ pet.description }}</view>
-  <view class="location">
-    <image class="location-icon" src="/icons/location.png"/>
-    <view class="location-font">{{ pet.location }}</view>
+    <image class= "image" src="{{ pet.url }}" mode="aspectFill"/>
   </view>
-</view>   
 
-<view class="section">
-  <picker mode="date" value="{{date}}" start="2022-01-16" end="2022-12-31" bindchange="bindDateChange" data-id = "{{ pet.id }}">
-    <btn  class="btn-pink">
-      Book now {{date}}
-    </btn>
-  </picker>
+  <view class="card-trip-infos">
+    <view class="card-trip-title">
+      <view class="h2">Description:</view>
+        <button class='share' id="shareBtn" open-type="share" type="primary" hover-class="other-button-hover">Share</button>
+    
+      </view>
+
+    <view class="p">{{ pet.description }}</view>
+    <view class="location">
+      <image class="location-icon" src="/icons/location.png"/>
+      <view class="location-font">{{ pet.location }}</view>
+    </view>
+  </view>   
+
+  <view class="section">
+    <picker mode="date" value="{{date}}" start="2022-01-16" end="2022-12-31" bindchange="bindDateChange" data-id = "{{ pet.id }}">
+      <btn  class="btn-pink">
+        Book now {{date}}
+      </btn>
+    </picker>
+  </view>
 </view>
 
 

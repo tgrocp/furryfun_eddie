@@ -32,16 +32,17 @@
     <swiper current="{{currentData}}" class='swiper' bindchange="bindchange">
         <swiper-item><view class="card-pet" wx:for="{{ pets }}" wx:for-item="pet" data-id = "{{ pet.id }}">
             <view class="pet-info">
-            <image mode="aspectFill" class="model-photo" src="{{ pet.url }}"/>
-                <!-- <image class="model-photo" scr="/images/Bulldog.jpg"/> -->
-                    <view class="info">
+                <view class="info">
+                    <image mode="aspectFill" class="model-photo" src="{{ pet.url }}"/>
                         <view class="h2">{{ pet.pet_name }}</view>  
                             <view class="gender">
                             <image class="gender-icon" src="/icons/male.png" src="{{pet.gender === 'male'?'/icons/male.png' : '/icons/female.png' }}"/>
                                  <button class="mini-btn" type="warn" size="mini" bindtap = "editFunction" data-id = "{{ pet.id }}" src="/icons/edit">edit</button>
                                  <button class="mini-btn" type="warn" size="mini" bindtap = "editFunction" data-id = "{{ pet.id }}" src="/icons/delete">delete</button>
                         </view>
-                    </view>
+                 </view>
+                <!-- <image class="model-photo" scr="/images/Bulldog.jpg"/> -->
+                <button class="mini-btn" type="warn" size="mini" bindtap = "editFunction" data-id = "{{ pet.id }}">edit</button>
             </view>
             <text class="description">
                 {{ pet.title }}
