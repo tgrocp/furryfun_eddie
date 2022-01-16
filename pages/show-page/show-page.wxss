@@ -1,44 +1,57 @@
 .card-trip {
     overflow: hidden;
     background: white;
-    padding-bottom: 72rpx;
+    padding-bottom: 10rpx;
+    padding-top: 20rpx;
   }
 
   .name_gender {
     display: flex;
 }
   .gender-icon {
-    width: 12px;
-    height: 12px;
-    padding-left: 6px;
+    width: 15px;
+    height: 15px;
+    padding-left: 10rpx;
+}
+
+.h1 {
+  color: rgba(234,179,171,1.0);
+  font-size: 22px;
+  font-family: Ruluko;
+  padding-left: 50rpx;
+  padding-bottom: 20rpx;
+
 }
 
   .h2 {
     color: rgba(234,179,171,1.0);
-    font-size: 18px;
-    font-weight: bold;
-    font-family:sans-serif
+    font-size: 20px;
+    font-family: Ruluko;
+    padding-left: 5rpx;
   }
   
   .p {
     color: #34342B;
-    font-weight: bold;
-    font-family: monospace;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family:sans-serif
+    font-family: sans-serif;
+    justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 20px;
   }
   
   .card-trip-infos {
-    padding: 16rpx;
+    padding-left: 20rpx;
     position: relative;
-    
+    justify-content: space-between;
   }
 
   .card-trip-title{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:center;
+    margin: 10rpx;
+    padding-left: 40rpx;
+    padding-right: 40rpx;
+    padding-top: 30rpx;
   }
   
   .image{
@@ -55,8 +68,16 @@
     border: #34342B;
   }
  
-.container {
-  margin-bottom: 100rpx; 
+.container1 {
+  margin-bottom: 50rpx; 
+  margin-left: 50rpx;
+  margin-right: 50rpx;
+}
+
+.container2{
+  margin-right: 50rpx;
+  margin-left: 45rpx;
+  display: flex;
 }
 
 .location {
@@ -64,7 +85,7 @@
   padding-top: 5px;
 }
 .location-font {
-  font-size: 10px;
+  font-size: 14px;
   font-family:sans-serif;
   font-weight: bold;
   color: #34342B;
@@ -81,8 +102,8 @@
   margin: auto;
   color: #FFFFFF;
   border-radius: 25px;
-  width: 155px;
-  height: 50px;
+  width: 150px;
+  height: 40px;
   align-items: center;
   justify-content: center; 
   font-size: 20px;
@@ -91,7 +112,7 @@
   border: 1px solid;
   padding: 10px;
   box-shadow: 3px 3px #888888;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .btn-pink:hover {
   background-color:  rgba(234,179,171,1.0);
@@ -105,7 +126,7 @@
   width: auto !important;
   font-family:sans-serif;
   font-size: small;
-  font-weight: 200;
+  font-weight: 200rpx;
   box-shadow: 1px 1px 5px #9999;
   margin-right: 8rpx !important;
 }
@@ -116,6 +137,6 @@
   width: auto !important;
   font-size: small;
   font-weight: 200;
-  box-shadow: 1px 1px 5px #9999;
+  box-shadow: 1px 1px 4px rgba(189, 186, 186, 0.6);
   margin-right: 8rpx !important;
 }

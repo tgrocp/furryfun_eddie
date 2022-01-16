@@ -1,5 +1,4 @@
 {
-  "setting": {},
   "condition": {
     "plugin": {
       "list": []
@@ -30,7 +29,6 @@
           "query": "",
           "scene": null
         },
-
         {
           "name": "show",
           "pathName": "pages/show-page/show-page",
@@ -38,45 +36,10 @@
           "scene": null
         },
         {
-          "name": "create-page",
-          "pathName": "pages/homepage/create-page",
+          "name": "",
+          "pathName": "pages/category-modelling/category-modelling",
           "query": "",
           "scene": null
-
-        "miniprogram": {
-            "list": [
-                {
-                    "name": "profile page",
-                    "pathName": "pages/profile-page/profile-page",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "booking",
-                    "pathName": "pages/show-page/successfully-booked",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "show-page",
-                    "pathName": "pages/show-page/show-page",
-                    "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "show",
-                    "pathName": "pages/show-page/show-page",
-                    "query": "",
-                    "launchMode": "default",
-                    "scene": null
-                },
-                {
-                    "name": "edit page",
-                    "pathName": "pages/profile-page/edit-page",
-                    "query": "",
-
-                }
-            ]
         }
       ]
     }

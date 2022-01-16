@@ -99,18 +99,18 @@
     font-size: 18px;
     font-weight: bold;
     color: white;
-    font-family: fantasy;
+    font-family: Ruluko;
 }
 .p {
-    font-size: 12px;
+    font-size: 10px;
     color: #34342B;
     font-weight: bold;
-    font-family: serif;
+    font-family: sans-serif;
 }
 
 .location {
-    display: flex;
-    padding-top: 5px;
+    padding: 25rpx;
+    padding-left: 20rpx;
 }
 .location-font {
     font-size: 10px;
@@ -120,7 +120,7 @@
 .location-icon {
     width: 14px;
     height: 14px;
-    padding-right: 5px;
+    padding-top: 10rpx;
 }
 
 .gender-icon {
