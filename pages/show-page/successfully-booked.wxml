@@ -13,6 +13,7 @@
 <view class="container3">
 <view class="h3">Date:{{date}}</view>
 </view>
+
 </view>
 
 

@@ -8,6 +8,7 @@ input {
   font-size: 40rpx;
   color: #F3D4D0;
   font-weight: bold;
+  font-family: 'Ruluko';
 }
 
 .title {
@@ -26,13 +27,15 @@ input {
 }
 
 .section1{
-  padding: 10%;
+  padding: 7%;
   font-size: 30rpx;
+  font-family: 'Ruluko';
 }
 
 .section2{
-  padding: 10%;
+  padding: 7%;
   font-size: 30rpx;
+  font-family: 'Ruluko';
 }
 
 .h2 button {
@@ -40,4 +43,12 @@ input {
   font-size: 40rpx;
   width: 600rpx !important;
   border-radius: 20rpx;
+  font-family: 'Ruluko';
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+}
+
+.icon{
+  margin-left: 80px;
 }

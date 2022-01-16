@@ -17,5 +17,10 @@
     <view class="h2">
         <button formType="submit">Confirm</button>  
     </view>
+
+    <image class="icon" src="/images/cat1.jpg" mode="aspectFill"/>
+
+
+
 </form>
 
