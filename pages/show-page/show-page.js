@@ -32,8 +32,6 @@ Page({
    
 
 
-    
-
   bindDateChange: function(e) {
     console.log(e)
     console.log(e.detail.value)
