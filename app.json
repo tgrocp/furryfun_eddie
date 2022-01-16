@@ -7,7 +7,8 @@
     "pages/show-page/confirmation",
     "pages/show-page/successfully-booked",
     "pages/homepage/create-page",
-    "pages/profile-page/profile-page"
+    "pages/profile-page/profile-page",
+    "pages/profile-page/edit-page"
   ],
   "window": {
     "backgroundTextStyle": "light",

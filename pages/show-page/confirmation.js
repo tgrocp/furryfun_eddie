@@ -9,11 +9,12 @@ Page({
         const name = res.data.user_name
         const phone = res.data.phone_number
         const id = res.data.id
-        
+        const bookId = options.bookId
         page.setData({
           name: name,
           phone: phone,
-          id: id
+          id: id,
+          bookId
         }) 
     },
   })
@@ -39,7 +40,7 @@ Page({
     //   url: `${getApp().globalData.baseUrl}/users/${id}`,
     //   method: 'GET',
     // })
-
+    const bookId = this.data.bookId;
     if ( name && phone ) {
       console.log('all have values')
       wx.request({
@@ -48,7 +49,7 @@ Page({
         data: {user},
         success() {
           wx.redirectTo({
-            url: '/pages/show-page/successfully-booked'
+            url: `/pages/show-page/successfully-booked?bookId=${bookId}`
           });
         }
       })

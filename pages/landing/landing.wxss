@@ -32,19 +32,20 @@
   justify-content: center; 
   margin-left: 65px;
   font-size: 22px;
-  font-family: 'Open Sans';
+  font-family: 'Ruluko';
   font-weight: bolder;
   box-shadow: 1px 1px 5px #9999;
 }
 .btn-pink:hover {
   background-color:  rgba(234,179,171,1.0);
-  color: #9999;
+  color: rgb(255, 255, 255);
+  font-family: 'Ruluko';
 }
 
 .h1 {
   font-size: 44px;
   font-weight: bold;
-  font-family: monospace;
+  font-family: 'Ruluko';
 }
 
 .p {

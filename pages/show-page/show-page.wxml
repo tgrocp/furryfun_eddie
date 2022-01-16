@@ -7,7 +7,7 @@
             </view>
           </view>  
   </view>
-  <image class= "image" src="{{ pet.url }}"/>
+  <image class= "image" src="{{ pet.url }}" mode="aspectFill"/>
 </view>
 
 <view class="card-trip-infos">
@@ -25,9 +25,9 @@
 </view>   
 
 <view class="section">
-  <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange" data-id = "{{ pet.id }}">
+  <picker mode="date" value="{{date}}" start="2022-01-16" end="2022-12-31" bindchange="bindDateChange" data-id = "{{ pet.id }}">
     <btn  class="btn-pink">
-      Booking now {{date}}
+      Book now {{date}}
     </btn>
   </picker>
 </view>

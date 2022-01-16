@@ -16,6 +16,10 @@ font-size: small;
 padding: 16rpx;
 }
 
+.userNickName{
+    padding: 32rpx;
+}
+
 .userinfo-avatar {
 overflow:hidden;  
 border: 1px solid #000000;
@@ -33,7 +37,6 @@ top: 144px;
     height: 2rpx;
     
    }
-
 
 
 .topTabSwiper{
@@ -104,11 +107,13 @@ top: 144px;
     background: #F3D4D0;
     border-radius: 15px;
     margin-bottom: 8px;
+    
 }
 
 .pet-info {
     display: flex;  
-    flex-direction: row;  
+    flex-direction: column;  
+    vertical-align: auto;
     padding-left: 12rpx;
 }
 
