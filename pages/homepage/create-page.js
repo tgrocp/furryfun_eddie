@@ -1,6 +1,8 @@
 // pages/homepage/create-page.js
-Page({
+let app = getApp()
 
+Page({
+  
   data: {
     city: false,
     region: ['', '', ''],
@@ -17,9 +19,9 @@ Page({
   },
 
   bindRegionChange: function (e) {
-    console.log('picker发送选择改变，携带值为', e.detail.value)
+    console.log(e.detail.value)
     this.setData({
-      region: e.detail.value,
+      region: e.detail.value.join("-"),
       city: true
     })
   },
@@ -42,6 +44,12 @@ Page({
   formSubmit: function (e) {
     console.log(e)
     let pet = e.detail.value
+    const userId = app.globalData.user.id
+    pet = {...pet, 
+      location: this.data.region, 
+      user_id: userId
+    }
+    console.log(pet)
     const headers = wx.getStorageSync('headers')
     console.log(pet)
 
