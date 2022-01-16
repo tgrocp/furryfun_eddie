@@ -16,21 +16,18 @@
                     "name": "profile page",
                     "pathName": "pages/profile-page/profile-page",
                     "query": "",
-                    "launchMode": "default",
                     "scene": null
                 },
                 {
                     "name": "booking",
                     "pathName": "pages/show-page/successfully-booked",
                     "query": "",
-                    "launchMode": "default",
                     "scene": null
                 },
                 {
                     "name": "show-page",
                     "pathName": "pages/show-page/show-page",
                     "query": "",
-                    "launchMode": "default",
                     "scene": null
                 },
                 {
@@ -46,6 +43,7 @@
                     "query": "",
                     "scene": null,
                     "launchMode": "default"
+
                 }
             ]
         }
