@@ -81,6 +81,14 @@ Page({
         })
       }
     },
+
+    editFunction: function(e){
+      console.log(e.target.dataset.id)
+      const petId = e.target.dataset.id
+      wx.redirectTo({
+        url: `/pages/profile-page/edit-page?petId=${petId}`,
+      })
+    },
     /**
      * 生命周期函数--监听页面显示
      */
