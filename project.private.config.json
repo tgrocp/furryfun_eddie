@@ -34,19 +34,16 @@
                     "name": "show",
                     "pathName": "pages/show-page/show-page",
                     "query": "",
+                    "launchMode": "default",
                     "scene": null
                 },
                 {
-                    "name": "pages/show-page/confirmation",
-                    "pathName": "pages/show-page/confirmation",
+                    "name": "edit page",
+                    "pathName": "pages/profile-page/edit-page",
                     "query": "",
-                    "scene": null
-                },
-                {
-                    "name": "pages/show-page/successfully-booked",
-                    "pathName": "pages/show-page/successfully-booked",
-                    "query": "",
-                    "scene": null
+                    "scene": null,
+                    "launchMode": "default"
+
                 }
             ]
         }

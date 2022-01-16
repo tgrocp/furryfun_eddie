@@ -1,0 +1,90 @@
+<view class="create_page">
+  <form bindsubmit="formSubmit">
+    <view class="header">
+        <view class="header-text">
+          <view class="h3">Create Your Service </view>
+          <view class="text">with simple stpes</view>
+        </view>
+        <view class="userinfo">
+          <view class="userinfo-avatar">
+            <open-data  type="userAvatarUrl"></open-data>
+            <open-data type="userNickName"></open-data>
+          </view>
+        </view>
+        <image class="header-icon" src="/icons/puddle_dog.png"/> 
+    </view>
+
+
+    <view class="content">
+      <view class="title_name">1. Pet's name</view>
+        <view class="name_input_box" style="margin: 22rpx 0">
+            <input class="name-input" name="pet_name" style="padding-left: 8px"/>
+        </view>
+
+      <view class="title_name">2. Pet's title</view>
+        <view class="name_input_box" style="margin: 22rpx 0">
+            <input class="name-input" name="title" placeholder="Please write your pet's title here" style="padding-left: 8px"/>
+        </view>
+
+      <radio-group name="category" bindchange="radioChange">
+        <view class="title_name" style="margin: 22rpx 0">3. Category</view>
+          <view class="selection">
+            <label class="modeling"><radio value="modelling" checked="true" color="#F3D4D0"/>Modeling</label>
+            <label class="therapy"><radio value="therapy" color="#F3D4D0"/>Therapy</label>
+            <label class="dailyCare"><radio value="dailyCare" color="#F3D4D0"/>Dailycare</label> 
+            <label class="boarding"><radio value="boarding" color="#F3D4D0"/>Boarding</label>
+          </view>
+      </radio-group>
+ 
+      <view class="section">
+        <view class="title_name" style="margin: 22rpx 0">4. Location</view>
+          <picker name="location" mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+            <view class="name-input" class="location-picker" color="#F3D4D0">
+              Your Location: {{region[0]}}  {{region[1]}}  {{region[2]}}
+            </view>
+          </picker>
+      </view>
+
+      <radio-group name="gender" bindchange="radioChange" style="margin: 30rpx 0">
+        <view class="title_name" style="padding-bottom: 12rpx;">5. Gender</view>
+          <view class="selection">
+            <label class="radio"><radio value="male" checked="true" color="#F3D4D0"/>Male</label>
+            <label class="radio"><radio value="female" color="#F3D4D0" style="padding-left: 10px;"/>Female</label>
+          </view>
+      </radio-group>
+ 
+      <radio-group name="pet_type" bindchange="radioChange" style="margin: 30rpx 0">
+        <view class="title_name" style="padding-bottom: 12rpx;">6. Pet Type</view>
+          <view class="selection">
+            <label class="radio"><radio value="dog" color="#F3D4D0" checked="true"/>Dog</label>
+            <label class="radio"><radio value="Cat" color="#F3D4D0" style="padding-left: 10px;"/>Cat</label>
+            <label class="radio"><radio value="others" color="#F3D4D0" style="padding-left: 10px;"/>others</label>
+          </view>
+      </radio-group>
+    
+        <view class="title_name" style="padding-bottom: 12rpx;">
+            7. Upload Image
+        <view class="btn-upload" style="padding-top: 12rpx;">
+          <view bindtap="chooseImageTap" >Click to upload</view>
+        </view>
+        <view class="image-url">{{uploadedImage}}</view>
+      </view>
+      
+      <view class="title_name">
+        8. Description
+        <view class="section_title">
+          <input name="description" placeholder="Please write your pet's description here" style="padding-left: 8px"/>
+        </view>
+        <button class="btn-pink" formType="submit">Submit</button>
+        <view class="footer">....................................................................................................</view>
+        <view class="footer">....................................................................................................</view>
+        <view class="footer">....................................................................................................</view>
+      </view> 
+      
+    </view>
+    
+    
+  </form>
+  
+</view>
+
