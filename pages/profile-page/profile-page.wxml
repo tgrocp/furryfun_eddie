@@ -37,12 +37,14 @@
                         <view class="h2">{{ pet.pet_name }}</view>  
                             <view class="gender">
                             <image class="gender-icon" src="/icons/male.png" src="{{pet.gender === 'male'?'/icons/male.png' : '/icons/female.png' }}"/>
-                                 <button class="mini-btn" type="warn" size="mini" bindtap = "editFunction" data-id = "{{ pet.id }}" src="/icons/edit.png">edit</button>
-                                 <button class="mini-btn" type="warn" size="mini" bindtap = "editFunction" data-id = "{{ pet.id }}" src="/icons/delete.png">delete</button>
                         </view>
                  </view>
-                <!-- <image class="model-photo" scr="/images/Bulldog.jpg"/> -->
-                <button class="mini-btn" type="warn" size="mini" bindtap = "editFunction" data-id = "{{ pet.id }}">edit</button>
+                
+                <view class="btns">
+                    <image class="mini-btn" mode="aspectFit" bindtap = "editFunction" data-id = "{{ pet.id }}" src="/icons/edit.png">edit</image>
+                    <image class="mini-btn" mode="aspectFit"  bindtap = "editFunction" data-id = "{{ pet.id }}" src="/icons/delete.png">delete</image>
+                </view>
+                <!-- <button class="mini-btn" type="warn" size="mini" bindtap = "editFunction" data-id = "{{ pet.id }}">edit</button> -->
             </view>
             <text class="description">
                 {{ pet.title }}

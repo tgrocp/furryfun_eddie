@@ -141,16 +141,40 @@ top: 144px;
 }
 
 .mini-btn{
-        color: #FFFFFF;
+        display: flex;
+        justify-content: center; 
         border-radius: 25px;
-        width: 36px !important;
-        height: 24px;
+        padding-right: 8px;
+        width: 55px !important;
+        height: 15px;
         font-size: 10px !important ;
-        font-weight: bold;
         font-family:sans-serif;
         border: 1px solid;
-        box-shadow: 3px 3px #888888;
-        padding-left: 8px !important;
-        right: 28px;
-        bottom: 8px;
+        box-shadow: 1px 1px #888888;
+        margin: 3px;
+        font-weight: bold;
+        align-items: center;
+
+}
+
+.mini-btn:hover{
+    color: grey;
+    display: flex;
+    justify-content: center; 
+    border-radius: 25px;
+    width: 55px !important;
+    height: 15px;
+    font-size: 10px !important ;
+    font-family:sans-serif;
+    border: 1px solid;
+    box-shadow: 1px 1px #888888;
+    margin: 3px;
+    align-items: center;
+}
+
+
+.btns{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
