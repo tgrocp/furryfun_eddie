@@ -41,6 +41,7 @@ Page({
       })
     }
   },
+
   formSubmit: function (e) {
     console.log(e)
     let pet = e.detail.value
@@ -52,19 +53,40 @@ Page({
     console.log(pet)
     const headers = wx.getStorageSync('headers')
     console.log(pet)
-
+    console.log(this.data.tempFilePaths)
+    const photoFile = this.data.tempFilePaths
+    const upImgs = this.upImgs
+    console.log(upImgs)
     wx.request({
-      url: `${getApp().globalData.baseUrl}/pets`,
+      url: `${getApp().globalData.baseUrl}/users/${userId}/pets`,
       method: 'POST',
       header: headers,
       data: { pet: pet },
-      success() {
+      success(res) {
+        console.log(res)
+        const petId = res.data.pet.id
+        
+        wx.uploadFile({
+          url: `${app.globalData.baseUrl}/update_photo`,
+          filePath: photoFile,
+          name: 'petPhoto',
+          success(res) {
+            // console.log(res.data)
+            wx.showToast({
+              title: 'uploaded',
+              icon: 'success'
+            })
+          }, fail(e){ 
+            console.log(e)
+          }
+        })
+        console.log("end")
         wx.switchTab({
           url: '/pages/category-modelling/category-modelling'
         });
       }
-    });
-  },
+  });
+ },
 
   radioChange: function (e) {
     let gender = e.detail.value
@@ -96,57 +118,64 @@ Page({
   },
 
   //选择图片tap
-  chooseImageTap: function () {
-    var that = this;
-    wx.showActionSheet({
-      itemList: ['Choose from the album'],
-      itemColor: "#00000",
-      success: function (res) {
-        if (!res.cancel) {
-          if (res.tapIndex == 0) {
-            that.chooseWxImage('album')
-          } else if (res.tapIndex == 1) {
-            that.chooseWxImage('camera')
-          }
-        }
-      }
-    })
-  },
-  //选择图片
-  chooseWxImage: function (type) {
-    var that = this;
-    var imgsPaths = that.data.imgs;
+  chooseImageTap() {
+    const page = this 
     wx.chooseImage({
+      count: 1,
       sizeType: ['original', 'compressed'],
-      sourceType: [type],
-      success: function (res) {
-        that.setData({uploadedImage: res.tempFilePaths[0]})
-        console.log(res.tempFilePaths[0]);
-        console.log(res)
-        that.upImgs(res.tempFilePaths[0], 0) //调用上传方法
+      sourceType: ['album', 'camera'],
+      success(res) {
+        const tempFilePaths = res.tempFilePaths[0]
+        page.setData({tempFilePaths})
+        // console.log(tempFilePaths)
       }
     })
   },
+  // chooseImageTap: function () {
+  //   var that = this;
+  //   wx.showActionSheet({
+  //     itemList: ['Choose from the album'],
+  //     itemColor: "#00000",
+  //     success: function (res) {
+  //       if (!res.cancel) {
+  //         if (res.tapIndex == 0) {
+  //           that.chooseWxImage('album')
+  //         } else if (res.tapIndex == 1) {
+  //           that.chooseWxImage('camera')
+  //         }
+  //       }
+  //     }
+  //   })
+  // },
+  //选择图片
+  // chooseWxImage: function (type) {
+  //   var that = this;
+  //   var imgsPaths = that.data.imgs;
+  //   wx.chooseImage({
+  //     sizeType: ['original', 'compressed'],
+  //     sourceType: [type],
+  //     success: function (res) {
+  //       that.setData({uploadedImage: res.tempFilePaths[0]})
+  //       console.log(res.tempFilePaths[0]);
+  //       console.log(res)
+  //       that.upImgs(res.tempFilePaths[0], 0) //调用上传方法
+  //     }
+  //   })
+  // },
 
   //上传服务器
-  upImgs: function (imgurl, index) {
-    var that = this;
+  upImgs(imgurl, id) {
+    console.log("update Status")
     wx.uploadFile({
-      url: 'https://xxxxxxxxxxxxxxxxxxxxxxxxxxxx',//
+      url: `${app.globalData.baseUrl}/pets/${id}/update_photo`,
       filePath: imgurl,
-      name: 'file',
-      header: {
-        'content-type': 'multipart/form-data'
-      },
-      formData: null,
-      success: function (res) {
-        console.log(res) //接口返回网络路径
-        var data = JSON.parse(res.data)
-        that.data.picPaths.push(data['msg'])
-        that.setData({
-          picPaths: that.data.picPaths
+      name: 'petPhoto',
+      success(res) {
+        console.log(res.data)
+        wx.showToast({
+          title: 'uploaded',
+          icon: 'success'
         })
-        console.log(that.data.picPaths)
       }
     })
   },

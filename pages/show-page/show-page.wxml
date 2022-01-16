@@ -5,10 +5,10 @@
             <view class="gender">
               <image class="gender-icon" src="/icons/male.png" src="{{pet.gender === 'male'?'/icons/male.png' : '/icons/female.png' }}"/>
             </view>
-          </view>  
-  </view>
-  <image class= "image" src="{{ pet.url }}" mode="aspectFill"/>
-</view>
+          </view> 
+  </view> 
+    <image class= "image" src="{{ pet.url }}" mode="aspectFill"/>
+ </view>
 
 <view class="card-trip-infos">
   <view class="card-trip-title">
@@ -23,14 +23,14 @@
     <image class="location-icon" src="/icons/location.png"/>
     <view class="location-font">{{ pet.location }}</view>
   </view>
-</view>   
+</view>
 
-<view class="section">
-  <picker mode="date" value="{{date}}" start="2022-01-16" end="2022-12-31" bindchange="bindDateChange" data-id = "{{ pet.id }}">
-    <btn  class="btn-pink">
-      Book now {{date}}
-    </btn>
-  </picker>
+  <view class="section">
+    <picker mode="date" value="{{date}}" start="2022-01-16" end="2022-12-31" bindchange="bindDateChange" data-id = "{{ pet.id }}">
+      <btn  class="btn-pink">
+        Book now {{date}}
+      </btn>
+    </picker>
 </view>
 
 

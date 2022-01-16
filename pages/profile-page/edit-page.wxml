@@ -18,12 +18,12 @@
     <view class="content">
       <view class="title_name">1. Pet's name</view>
         <view class="name_input_box" style="margin: 22rpx 0">
-            <input class="name-input" name="pet_name" style="padding-left: 8px"/>
+            <input class="name-input" name="pet_name" value = "{{ pets.pet_name }}" style="padding-left: 8px"/>
         </view>
 
       <view class="title_name">2. Pet's title</view>
         <view class="name_input_box" style="margin: 22rpx 0">
-            <input class="name-input" name="title" placeholder="Please write your pet's title here" style="padding-left: 8px"/>
+            <input class="name-input" name="title" value = "{{ pets.title }}"  style="padding-left: 8px"/>
         </view>
 
       <radio-group name="category" bindchange="radioChange">
@@ -38,7 +38,7 @@
  
       <view class="section">
         <view class="title_name" style="margin: 22rpx 0">4. Location</view>
-          <picker name="location" mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+          <picker name="location" mode="region" bindchange="bindRegionChange" value="{{pets.location}}" custom-item="{{customItem}}">
             <view class="name-input" class="location-picker" color="#F3D4D0">
               Your Location: {{region[0]}}  {{region[1]}}  {{region[2]}}
             </view>
@@ -47,7 +47,7 @@
 
       <radio-group name="gender" bindchange="radioChange" style="margin: 30rpx 0">
         <view class="title_name" style="padding-bottom: 12rpx;">5. Gender</view>
-          <view class="selection">
+          <view class="selection" value = "{{ pets.gender }}" >
             <label class="radio"><radio value="male" checked="true" color="#F3D4D0"/>Male</label>
             <label class="radio"><radio value="female" color="#F3D4D0" style="padding-left: 10px;"/>Female</label>
           </view>
@@ -55,7 +55,7 @@
  
       <radio-group name="pet_type" bindchange="radioChange" style="margin: 30rpx 0">
         <view class="title_name" style="padding-bottom: 12rpx;">6. Pet Type</view>
-          <view class="selection">
+          <view class="selection" value = "{{ pets.pet_type }}">
             <label class="radio"><radio value="dog" color="#F3D4D0" checked="true"/>Dog</label>
             <label class="radio"><radio value="Cat" color="#F3D4D0" style="padding-left: 10px;"/>Cat</label>
             <label class="radio"><radio value="others" color="#F3D4D0" style="padding-left: 10px;"/>others</label>
@@ -73,7 +73,7 @@
       <view class="title_name">
         8. Description
         <view class="section_title">
-          <input name="description" placeholder="Please write your pet's description here" style="padding-left: 8px"/>
+          <input name="description" value = "{{ pets.description }}" style="padding-left: 8px"/>
         </view>
         <button class="btn-pink" formType="submit">Submit</button>
         <view class="footer">....................................................................................................</view>
