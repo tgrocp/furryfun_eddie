@@ -63,9 +63,6 @@ Page({
     },
 
     bindchange:function(e){
-        wx.redirectTo({
-          url: '/pages/profile-page/edit-page',
-        })
         const that  = this;
         that.setData({
           currentData: e.detail.current

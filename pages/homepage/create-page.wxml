@@ -67,7 +67,7 @@
         <view class="btn-upload" style="padding-top: 12rpx;">
           <view bindtap="chooseImageTap" >Click to upload</view>
         </view>
-        <view class="image-url">{{uploadedImage}}</view>
+        <!-- <view class="image-url">{{uploadedImage}}</view> -->
       </view>
       
       <view class="title_name">
