@@ -18,11 +18,11 @@ Page({
         }
         let animalList 
         if (animal==="dog"){ 
-            animalList = pets.filter((pet)=> pet.pet_type === "dog") 
+            animalList = pets.filter((pet)=> pet.pet_type === "Dog") 
         } else if (animal==="cat") {
-            animalList = pets.filter((pet)=> pet.pet_type === "cat")
+            animalList = pets.filter((pet)=> pet.pet_type === "Cat")
         } else {
-            animalList = pets.filter((pet)=> pet.pet_type === "others")
+            animalList = pets.filter((pet)=> pet.pet_type === "Others")
         }
         this.setData({ animalList, isFilter:true, animalMark:animal })
     },

@@ -55,7 +55,7 @@
  
       <radio-group name="pet_type" bindchange="radioChange" style="margin: 30rpx 0">
         <view class="title_name" style="padding-bottom: 12rpx;">6. Pet Type</view>
-          <view class="selection" value = "{{ pets.pet_type }}">
+          <view class="selection">
             <label class="radio"><radio value="Dog" color="#F3D4D0" checked="true"/>Dog</label>
             <label class="radio"><radio value="Cat" color="#F3D4D0" style="padding-left: 10px;"/>Cat</label>
             <label class="radio"><radio value="Others" color="#F3D4D0" style="padding-left: 10px;"/>others</label>

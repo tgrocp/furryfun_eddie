@@ -121,6 +121,36 @@ Page({
 
     },
 
+    deleteFunction: function(e){
+      const page = this;
+      console.log(e)
+      const petId = e.currentTarget.dataset.id;
+      const userId = this.data.id;
+      wx.request({
+        url: `${getApp().globalData.baseUrl}/users/${userId}/pets/${petId}`,
+        method: 'DELETE',
+        success(){
+          wx.reLaunch({
+            url: '/pages/profile-page/profile-page',
+          })
+        },
+      })
+    },
+
+    deleteFunction2: function(e){
+      const page = this;
+      console.log(e)
+      const bookingId =  e.currentTarget.dataset.id;
+      wx.request({
+        url: `${getApp().globalData.baseUrl}/bookings/${bookingId}`,
+        method: 'DELETE',
+        success(){
+          wx.reLaunch({
+            url: '/pages/profile-page/profile-page',
+          })
+        },
+      })
+    },
     /**
      * 页面相关事件处理函数--监听用户下拉动作
      */
