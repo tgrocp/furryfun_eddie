@@ -25,16 +25,6 @@
         <view class="name_input_box" style="margin: 22rpx 0">
             <input class="name-input" name="title" placeholder="Please write your pet's title here" style="padding-left: 8px"/>
         </view>
-
-      <!-- <radio-group name="category" bindchange="radioChange">
-        <view class="title_name" style="margin: 22rpx 0">3. Category</view>
-          <view class="selection">
-            <label class="modeling"><radio value="modelling" checked="true" color="#F3D4D0"/>Modeling</label>
-            <label class="therapy"><radio value="therapy" color="#F3D4D0"/>Therapy</label>
-            <label class="dailyCare"><radio value="dailyCare" color="#F3D4D0"/>Dailycare</label> 
-            <label class="boarding"><radio value="boarding" color="#F3D4D0"/>Boarding</label>
-          </view>
-      </radio-group> -->
  
       <view class="section">
         <view class="title_name" style="margin: 22rpx 0">4. Location</view>
@@ -76,7 +66,6 @@
           <input name="description" placeholder="Please write your pet's description here" style="padding-left: 8px"/>
         </view>
         <button class="btn-pink" formType="submit">Submit</button>
-        <view class="footer">....................................................................................................</view>
         <view class="footer">....................................................................................................</view>
         <view class="footer">....................................................................................................</view>
       </view>     

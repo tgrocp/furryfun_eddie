@@ -82,12 +82,7 @@
 
 .name_gender {
     display: flex;
-    /* justify-content: space-between;  */
 }
-
-/* .container { */
-/* width:fit-content */
- 
 
 .model-photo{
     width: 160px;

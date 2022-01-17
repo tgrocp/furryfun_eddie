@@ -1,4 +1,4 @@
-/* pages/homepage/create-page.wxss */
+
 .header{
   border: #695b59;
   display: flex;

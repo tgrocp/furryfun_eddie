@@ -8,9 +8,7 @@ Page({
     },
 
     filterAnimal: function (e) {
-        // console.log(e.mark.animal)
         const animal = e.mark.animal
-        // console.log(animal)
         const pets = this.data.pets
         if (animal===this.data.animalMark) {
            this.setData({ isFilter:false }) 
@@ -29,8 +27,6 @@ Page({
 
     onShow() {
         const page = this;
-        // let images = getApp().globalData.modelling_services
-        // page.setData({ images: images })
         wx.request({
           url: `${getApp().globalData.baseUrl}/pets`,
           method: 'GET',

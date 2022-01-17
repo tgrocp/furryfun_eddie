@@ -20,15 +20,6 @@
             <button class='tab  {{currentData == 1 ? "tabBorer" : ""}}'  data-current = "1" bindtap='checkCurrent'>My Bookings</button>
         </view>
 
-    <!-- <view wx:for="{{pets}}" wx:for-item="pet" class="petInfo">
-        <view class="card-pet">
-        <view class="h2">{{pet.name}}</view>  
-        <text class="p">
-            {{pet.description}}
-        </text>
-        </view>
-    </view> -->
-
     <swiper current="{{currentData}}" class='swiper' bindchange="bindchange">
         <swiper-item><view class="card-pet" wx:for="{{ pets }}" wx:for-item="pet">
             <view class="pet-info">
@@ -41,7 +32,6 @@
                                  <button class="mini-btn" type="warn" size="mini" bindtap = "editFunction" data-id = "{{ pet.id }}" src="/icons/delete.png">delete</button>
                         </view>
                  </view>
-                <!-- <image class="model-photo" scr="/images/Bulldog.jpg"/> -->
                 <button class="mini-btn" type="warn" size="mini" bindtap = "editFunction" data-id = "{{ pet.id }}">edit</button>
             </view>
             <text class="description">

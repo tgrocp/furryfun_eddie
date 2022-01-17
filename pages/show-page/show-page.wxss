@@ -50,7 +50,6 @@
     align-content: center;
     margin: auto;
     display: block;
-    /* padding-bottom: 24rpx; */
     width: 249px;
     height: 189px;
     left: 26px;

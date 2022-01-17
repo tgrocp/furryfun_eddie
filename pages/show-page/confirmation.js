@@ -24,7 +24,6 @@ Page({
   formSubmit: function (e) {
     console.log(e.detail.value)
     console.log(this.data.id)
-    // console.log('form发生了submit事件，携带数据为：', e.detail.value);
     let name = e.detail.value.name;
     let phone = parseInt(e.detail.value.phone);
     let id = this.data.id;
@@ -36,10 +35,6 @@ Page({
     }
     console.log(user)
 
-    // wx.request({
-    //   url: `${getApp().globalData.baseUrl}/users/${id}`,
-    //   method: 'GET',
-    // })
     const bookId = this.data.bookId;
     if ( name && phone ) {
       console.log('all have values')

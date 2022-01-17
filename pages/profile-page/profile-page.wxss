@@ -129,8 +129,6 @@ top: 144px;
     font-weight: normal;
     font-size: 13px;
     line-height: 20px;
-    /* padding-top: 30rpx;
-    padding-left: 0rpx; */
     padding-left: 24rpx;
 }
 

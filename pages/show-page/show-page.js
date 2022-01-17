@@ -30,10 +30,6 @@ Page({
       }
     },
    
-
-
-    
-
   bindDateChange: function(e) {
     console.log(e)
     console.log(e.detail.value)
@@ -54,7 +50,6 @@ Page({
           console.log(res.data.booking)
           if(res.data.booking) {
           const bookId = res.data.booking.id;
-          // redirect to index page when done
           wx.redirectTo({
             url: `/pages/show-page/confirmation?bookId=${bookId}`,
           })
@@ -70,13 +65,6 @@ Page({
     onReady: function () {
 
     },
-
-    // buttonClicked: function(e) {
-    //   console.log(e)
-    //   wx.navigateTo ({
-    //     url: '/pages/service-page/service-page'
-    //   })
-    // },
 
     onShow: function () {
 
@@ -99,8 +87,6 @@ Page({
 
     },
 
- 
-    
     onShareAppMessage: function () {
 
     } 
