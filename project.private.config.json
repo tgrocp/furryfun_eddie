@@ -1,47 +1,69 @@
 {
-  "condition": {
-    "plugin": {
-      "list": []
-    },
-    "game": {
-      "list": []
-    },
-    "gamePlugin": {
-      "list": []
-    },
-    "miniprogram": {
-      "list": [
-        {
-          "name": "profile page",
-          "pathName": "pages/profile-page/profile-page",
-          "query": "",
-          "scene": null
+    "setting": {},
+    "condition": {
+        "plugin": {
+            "list": []
         },
-        {
-          "name": "booking",
-          "pathName": "pages/show-page/successfully-booked",
-          "query": "",
-          "scene": null
+        "game": {
+            "list": []
         },
-        {
-          "name": "show-page",
-          "pathName": "pages/show-page/show-page",
-          "query": "",
-          "scene": null
+        "gamePlugin": {
+            "list": []
         },
-        {
-          "name": "show",
-          "pathName": "pages/show-page/show-page",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "",
-          "pathName": "pages/category-modelling/category-modelling",
-          "query": "",
-          "scene": null
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "profile page",
+                    "pathName": "pages/profile-page/profile-page",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "booking",
+                    "pathName": "pages/show-page/successfully-booked",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "show-page",
+                    "pathName": "pages/show-page/show-page",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "show",
+                    "pathName": "pages/show-page/show-page",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/category-modelling/category-modelling",
+                    "query": "",
+                    "scene": null
+                },
+                {
+                    "name": "landing",
+                    "pathName": "pages/landing/landing",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "successfully-booked",
+                    "pathName": "pages/show-page/successfully-booked",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "successfully - booked",
+                    "pathName": "pages/show-page/successfully-booked",
+                    "query": "",
+                    "scene": null,
+                    "launchMode": "default"
+                }
+            ]
         }
-      ]
     }
-  }
 }
