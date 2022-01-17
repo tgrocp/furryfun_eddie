@@ -1,7 +1,6 @@
 {
   "pages": [
     "pages/landing/landing",
-    "pages/homepage/homepage",
     "pages/category-modelling/category-modelling",
     "pages/show-page/show-page",
     "pages/show-page/confirmation",

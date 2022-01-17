@@ -141,6 +141,7 @@ Page({
       const page = this;
       console.log(e)
       const bookingId =  e.currentTarget.dataset.id;
+      const userId = this.data.id;
       wx.request({
         url: `${getApp().globalData.baseUrl}/bookings/${bookingId}`,
         method: 'DELETE',
