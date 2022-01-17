@@ -20,7 +20,9 @@
 
 .h3{
   background-color: #F3D4D0;
+  color: rgb(3, 3, 3);
   padding: 3%;
+  font-weight: bold;
   font-size: 37rpx;
   border-radius: 20rpx;
   font-family: 'Ruluko';
@@ -32,23 +34,35 @@
 }
 
 .container2{
-  padding: 10%;
-  padding-top: 5%;
+  padding-top: 1%;
   font-size: 40rpx;
   border-radius: 20rpx;
+  box-shadow: 3px 5px #888888;
+  border: 1px solid;
 }
 
 .container3{
-  padding: 10%;
+  margin-top: 10%;
   font-size: 40rpx;
-  border-radius: 10rpx;
-  padding-top: 1%;
+  border-radius: 20rpx;
+  box-shadow: 3px 5px #888888;
+  border: 1px solid;
 }
 
 .container4{
-  padding: 15%;
-  padding-top: 10%;
-  font-size: 40rpx;
+  padding: 10%;
   padding-top: 1%;
+  font-size: 40rpx;
+  margin-left: 60rpx;
+  margin-right: 60rpx;
 }
 
+.imge {
+  align-content: center;
+  display: block;
+  width: 249px;
+  height: 189px;
+  left: 26px;
+  border-radius: 20px;
+  object-fit: aspectfill;
+}
