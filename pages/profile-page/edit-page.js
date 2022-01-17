@@ -92,9 +92,9 @@ Page({
               }
             })
             console.log("end")
-            // wx.switchTab({
-            // //   url: '/pages/category-modelling/category-modelling'
-            // });
+            wx.switchTab({
+              url: '/pages/category-modelling/category-modelling'
+            });
         }
       });
     },

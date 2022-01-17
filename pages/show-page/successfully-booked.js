@@ -36,6 +36,9 @@ Page({
         success (res) {
           console.log(res)
           page.setData({ pet: res.data.bookings.pet, date: res.data.bookings.date })
+          // // wx.reLaunch({
+          // //   url: '/pages/show-page/successfully-booked',
+          // })
         }
       })
     },
