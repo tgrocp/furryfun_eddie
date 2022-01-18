@@ -160,7 +160,7 @@ padding-top: 16rpx;
   justify-content: center; 
   margin-left: 95px;
   font-size: 18px;
-  font-family: 'Open Sans';
+  font-family: serif;
   font-weight: bold;
   box-shadow: 1px 1px 5px #9999;
   margin-top: 8px;

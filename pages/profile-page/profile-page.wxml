@@ -57,7 +57,9 @@
                     <view class="info">
                         <image mode="aspectFill" class="model-photo" src="{{ booking.url }}"/>
                         <view class="h2">{{ booking.pet_name }}</view>  
-                        <view class="h2">...</view>
+                          <view class="gender">
+                            <image class="gender-icon" src="/icons/male.png" src="{{pet.gender === 'male'?'/icons/male.png' : '/icons/female.png' }}"/>
+                          </view>
                     </view>
                     <view class="btns"> 
                     <image class="mini-btn" mode="aspectFit"  bindtap = "deleteFunction2" data-id = "{{ booking.id }}" src="/icons/delete.png">delete</image>
