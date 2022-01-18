@@ -36,10 +36,6 @@ Page({
     }
     console.log(user)
 
-    // wx.request({
-    //   url: `${getApp().globalData.baseUrl}/users/${id}`,
-    //   method: 'GET',
-    // })
     const bookId = this.data.bookId;
     if ( name && phone ) {
       console.log('all have values')

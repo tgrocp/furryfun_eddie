@@ -1,19 +1,22 @@
 <!--pages/show-page/sucessfully-booked.wxml-->
 
 <view class="container1">
- <view class="h2">Hi</view>
- <view class="h1">You have successfully booked the service</view >
+  <view class="h2">Hi {{ user_name }},</view>
+  <view class="h1">You have successfully booked the service!</view >
 </view>
 
 <view class="container4"> 
-<view class="container2">
-<view class="h3">Pet Name:{{ pet }}</view>
-</view>
+  <view class="container2">
+    <view class="h3">Pet Name: {{ pet }}</view>
+  </view>
 
-<view class="container3">
+  <view class="container3">
     <view class="h3">Date: {{date}}</view>
-</view>
+  </view>
+  <view class="btn-pink" bindtap="goToProfile">Check your Services</view>  
+  <view class="btn-pink" bindtap="goToModelling">Find Models</view>  
 
+  <image src="/images/cat2.jpeg" mode="aspectFit"/>
 </view>
 
 

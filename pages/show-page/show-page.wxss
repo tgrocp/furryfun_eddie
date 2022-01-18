@@ -32,13 +32,15 @@
     font-size: 20px;
     font-family: sans-serif;
     padding-left: 5rpx;
+    padding-bottom: 5px;
+    padding-top: 10px;
   }
   
   .p {
     color: #34342B;
     font-family: sans-serif;
     justify-content: space-between;
-    padding-top: 12px;
+    padding-top: 10px;
     padding-bottom: 20px;
   }
   
@@ -107,7 +109,7 @@
   font-family: serif;
   font-weight: bold;
   box-shadow: 1px 1px 5px #9999;
-  margin-top: 8px;
+  margin-top: 40px;
 }
 .btn-pink:hover {
   background-color:  rgba(234,179,171,1.0);
