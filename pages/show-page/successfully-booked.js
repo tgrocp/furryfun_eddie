@@ -6,6 +6,7 @@ Page({
   },
 
   onLoad: function (options) {
+    let page = this;
     wx.getStorage({
       key: "user",
       success: (res) => {
@@ -22,7 +23,7 @@ Page({
   });
   
     console.log(options)
-    let page = this;
+    
 
       wx.request({
         url: `${getApp().globalData.baseUrl}/bookings/${options.bookId}`,

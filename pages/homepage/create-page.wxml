@@ -76,6 +76,8 @@
           <input name="description" placeholder="Please write your pet's description here" style="padding-left: 8px"/>
         </view>
         <button class="btn-pink" formType="submit">Submit</button>
+        <text>\n</text>
+        <text>\n</text>
         <view class="footer">....................................................................................................</view>
         <view class="footer">....................................................................................................</view>
         <view class="footer">....................................................................................................</view>
