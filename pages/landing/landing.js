@@ -5,32 +5,32 @@ Page({
     hasUserInfo: false
   },
 
-  getUserProfile(){
-    const page = this
-    wx.getUserProfile({
-      desc:'show the users information',
-      success:(res)=>{
-        console.log(res)
-        const userId = app.globalData.user.id
-        wx.request({
-          url: `${app.globalData.baseUrl}/users/${userId}`,
-          method: 'PUT',
-          data:{
-            userInfo: res.userInfo
-          },
-          success: (res) => {
-            console.log(res)
-            page.setData({
-              user:res.data.currentUser,
-              hasUserInfo: true
-            }
-            )
-          }
-        })
-        this.goToModelling()
-    }
-  })
-},
+//   getUserProfile(){
+//     const page = this
+//     wx.getUserProfile({
+//       desc:'show the users information',
+//       success:(res)=>{
+//         console.log(res)
+//         const userId = app.globalData.user.id
+//         wx.request({
+//           url: `${app.globalData.baseUrl}/users/${userId}`,
+//           method: 'PUT',
+//           data:{
+//             userInfo: res.userInfo
+//           },
+//           success: (res) => {
+//             console.log(res)
+//             page.setData({
+//               user:res.data.currentUser,
+//               hasUserInfo: true
+//             }
+//             )
+//           }
+//         })
+//         this.goToModelling()
+//     }
+//   })
+// },
 
   goToModelling() {
     wx.switchTab({

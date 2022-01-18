@@ -74,6 +74,10 @@ top: 144px;
     box-shadow: 1px 1px 5px #9999;
 }
 
+.gender{
+    display: flex;
+    align-items: center;
+}
 
 .gender-icon {
     width: 13px;
@@ -136,14 +140,14 @@ top: 144px;
 
 .mini-btn{
         display: flex;
-        border-radius: 25px;
+        /* border-radius: 25px; */
         padding-right: 8px;
         width: 55px !important;
         height: 15px;
         font-size: 10px !important ;
         font-family:sans-serif;
-        border: 0.5px solid;
-        box-shadow: 1px 1px 1px #888888;
+        /* border: 0.5px solid; */
+        /* box-shadow: 1px 1px 1px #888888; */
         margin: 3px;
         font-weight: bold;
         align-items: center;
@@ -166,6 +170,6 @@ top: 144px;
 
 .btns{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: row;
 }

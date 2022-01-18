@@ -42,8 +42,38 @@ Page({
     }
   },
 
+  getUserProfile(){
+    if (wx.getStorageSync('user_name')==="微信用户"){
+    const page = this
+    wx.getUserProfile({
+      desc:'show the users information',
+      success:(res)=>{
+        console.log(res)
+        wx.setStorageSync('user_name', res.userInfo.user_name)
+        const userId = app.globalData.user.id
+        wx.request({
+          url: `${app.globalData.baseUrl}/users/${userId}`,
+          method: 'PUT',
+          data:{
+            userInfo: res.userInfo
+          },
+          success: (res) => {
+            console.log(res)
+            page.setData({
+              user:res.data.currentUser,
+              hasUserInfo: true
+            }
+            )
+          }
+        })
+    }
+    })
+  }
+  },
+
   formSubmit: function (e) {
     console.log(e)
+    this.getUserProfile()
     let pet = e.detail.value
     const userId = app.globalData.user.id
     pet = {...pet, 
