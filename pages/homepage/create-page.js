@@ -130,37 +130,6 @@ Page({
       }
     })
   },
-  // chooseImageTap: function () {
-  //   var that = this;
-  //   wx.showActionSheet({
-  //     itemList: ['Choose from the album'],
-  //     itemColor: "#00000",
-  //     success: function (res) {
-  //       if (!res.cancel) {
-  //         if (res.tapIndex == 0) {
-  //           that.chooseWxImage('album')
-  //         } else if (res.tapIndex == 1) {
-  //           that.chooseWxImage('camera')
-  //         }
-  //       }
-  //     }
-  //   })
-  // },
-  //选择图片
-  // chooseWxImage: function (type) {
-  //   var that = this;
-  //   var imgsPaths = that.data.imgs;
-  //   wx.chooseImage({
-  //     sizeType: ['original', 'compressed'],
-  //     sourceType: [type],
-  //     success: function (res) {
-  //       that.setData({uploadedImage: res.tempFilePaths[0]})
-  //       console.log(res.tempFilePaths[0]);
-  //       console.log(res)
-  //       that.upImgs(res.tempFilePaths[0], 0) //调用上传方法
-  //     }
-  //   })
-  // },
 
   //上传服务器
   upImgs(imgurl, id) {
