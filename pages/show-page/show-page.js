@@ -13,25 +13,23 @@ Page({
        })
     },
 
-    onShareAppMessage: function (res) {
-      if (res.from === 'button') {
-        // 来自页面内转发按钮
-        console.log(res.target)
-      }
-      return {
-        title: '自定义转发标题',
-        path: 'pages/show-page/show-page',
-        success: function(res) {
-          // 转发成功
-        },
-        fail: function(res) {
-          // 转发失败
-        }
-      }
-    },
+    // onShareAppMessage: function (res) {
+    //   if (res.from === 'button') {
+    //     // 来自页面内转发按钮
+    //     console.log(res.target)
+    //   }
+    //   return {
+    //     title: '自定义转发标题',
+    //     path: 'pages/show-page/show-page',
+    //     success: function(res) {
+    //       // 转发成功
+    //     },
+    //     fail: function(res) {
+    //       // 转发失败
+    //     }
+    //   }
+    // },
    
-
-
   bindDateChange: function(e) {
     console.log(e)
     console.log(e.detail.value)
