@@ -107,14 +107,18 @@ Page({
               title: 'uploaded',
               icon: 'success'
             })
+            wx.reLaunch({
+              url: '/pages/category-modelling/category-modelling',
+            })
           }, fail(e){ 
             console.log(e)
           }
         })
         console.log("end")
-        wx.switchTab({
-          url: '/pages/profile-page/profile-page'
-        });
+        // wx.switchTab({
+          // url: '/pages/profile-page/profile-page'
+          // url: '/pages/category-modelling/category-modelling'
+        // });
       }
   });
  },
