@@ -1,7 +1,7 @@
 <!--pages/show-page/confirmation.wxml-->
 <form catchsubmit="formSubmit">
     <view class="container">
-        <view class="h1">Please Confirm Your Info</view >
+        <view class="h1">Please Confirm Your Information</view >
     </view>
 
     <view class="section2">

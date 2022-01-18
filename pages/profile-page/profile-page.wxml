@@ -25,21 +25,28 @@
             <view class="pet-info">
                 <view class="info">
                     <image mode="aspectFill" class="model-photo" src="{{ pet.url }}"/>
-                        <view class="h2">{{ pet.pet_name }}</view>  
-                            <view class="gender">
+                        <view class="h1">{{ pet.pet_name }}</view>  
+                            <view class="gender1">
                             <image class="gender-icon" src="/icons/male.png" src="{{pet.gender === 'male'?'/icons/male.png' : '/icons/female.png' }}"/>
                         </view>
                  </view>
-                
-                <view class="btns">
-                    <image class="mini-btn" mode="aspectFit" bindtap = "editFunction" data-id = "{{ pet.id }}" src="/icons/edit.png">Edit</image>
-                    <image class="mini-btn" mode="aspectFit"  bindtap = "deleteFunction" data-id = "{{ pet.id }}" src="/icons/delete.png">Delete</image>
-                </view>
-                <!-- <button class="mini-btn" type="warn" size="mini" bindtap = "editFunction" data-id = "{{ pet.id }}">edit</button> -->
+
+                    <view class="edit">
+                        <image class="mini-btn" mode="aspectFit" bindtap = "editFunction" data-id = "{{ pet.id }}" src="/icons/edit.png">Edit</image>
+                    </view>
             </view>
+                
+               
+                <!-- <button class="mini-btn" type="warn" size="mini" bindtap = "editFunction" data-id = "{{ pet.id }}">edit</button> -->
+            
             <text class="description">
                 {{ pet.title }}
             </text>
+                    
+                <view class="delete1">
+                    <image class="mini-btn" mode="aspectFit"  bindtap = "deleteFunction" data-id = "{{ pet.id }}" src="/icons/delete.png">Delete</image>
+                </view>
+
         </view>
         </swiper-item>
 
@@ -47,21 +54,25 @@
             <view class="pet-info">
                     <view class="info">
                         <image mode="aspectFill" class="model-photo" src="{{ booking.url }}"/>
-                        <view class="h2">{{ booking.pet_name }} 
-                          <view class="gender">
+                        <view class="h1">{{ booking.pet_name }} 
+                          <view class="gender2">
                             <image class="gender-icon" src="/icons/male.png" src="{{pet.gender === 'male'?'/icons/male.png' : '/icons/female.png' }}"/></view>
-                        </view> 
+                         </view> 
+                        </view>
                     </view>
-                    <view class="btns"> 
+
+                <text class="description">
+                    Booking time: {{ booking.time }}
+                </text>
+
+                <view class="btns">
+                    <view class="delete2">
                         <image class="mini-btn" mode="aspectFit"  bindtap = "deleteFunction2" data-id = "{{ booking.id }}" src="/icons/delete.png">Delete</image>
+                    </view>
                 </view>
-            </view>
-            <text class="description">
-                Booking time: {{ booking.time }}
-            </text>
-            </view>
-            
+            </view>   
         </swiper-item>
+
     </swiper>
     <text>\n</text>
     <text>\n</text>

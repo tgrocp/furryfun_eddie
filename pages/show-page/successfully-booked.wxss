@@ -21,7 +21,7 @@
   color: rgb(3, 3, 3);
   padding: 3%;
   font-weight: bold;
-  font-size: 37rpx;
+  font-size: 30rpx;
   border-radius: 20rpx;
   font-family: sans-serif;
 }
@@ -63,7 +63,7 @@
   align-items: center; 
   justify-content: center; 
   margin-left: 65px;
-  font-size: 16px;
+  font-size: 14px;
   font-family: serif;
   font-weight: bold;
   box-shadow: 1px 1px 5px #9999;
