@@ -56,7 +56,7 @@ Page({
           })
         } else {
           wx.showToast({
-            title: 'time unavailable',
+            title: 'Time unavailable, please choose another time!',
           })
         }
       }

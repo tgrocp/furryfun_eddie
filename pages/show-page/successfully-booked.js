@@ -30,10 +30,18 @@ Page({
         success (res) {
           console.log(res)
           page.setData({ pet: res.data.bookings.pet, date: res.data.bookings.date })
-          // // wx.reLaunch({
-          // //   url: '/pages/show-page/successfully-booked',
-          // })
         }
+      })
+    },
+
+    goToModelling() {
+      wx.switchTab({
+        url: '/pages/category-modelling/category-modelling',
+      })
+    },
+    goToProfile() {
+      wx.switchTab({
+        url: '/pages/profile-page/profile-page',
       })
     },
 

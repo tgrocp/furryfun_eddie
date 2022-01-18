@@ -6,63 +6,76 @@
   color: #F3D4D0;
   font-weight: bold;
   text-align: center;
-  font-family: 'Ruluko';
+  font-family: sans-serif;
 }
 
 .h2 {
   font-size: 40rpx;
-  font-family: Sen;
   color: #F3D4D0;
   font-weight: bold;
-  padding-bottom: 8%;
-  font-family: 'Ruluko';
+  padding-bottom: 6%;
+  font-family: sans-serif;
 }
 
 .h3{
-  background-color: #F3D4D0;
   color: rgb(3, 3, 3);
   padding: 3%;
   font-weight: bold;
   font-size: 37rpx;
   border-radius: 20rpx;
-  font-family: 'Ruluko';
+  font-family: sans-serif;
 }
 
 .container1{
-  padding: 10%;
+  padding: 8%;
   font-size: 40rpx;
 }
 
 .container2{
-  padding-top: 1%;
   font-size: 40rpx;
   border-radius: 20rpx;
-  box-shadow: 3px 5px #888888;
+  box-shadow: 2px 2px 1px #888888;
   border: 1px solid;
 }
 
 .container3{
   margin-top: 10%;
+  margin-bottom: 10%;
   font-size: 40rpx;
   border-radius: 20rpx;
-  box-shadow: 3px 5px #888888;
+  box-shadow: 2px 2px 1px #888888;
   border: 1px solid;
 }
 
 .container4{
-  padding: 10%;
-  padding-top: 1%;
-  font-size: 40rpx;
-  margin-left: 60rpx;
-  margin-right: 60rpx;
+  font-size: 30rpx;
+  margin-left: 70rpx;
+  margin-right: 70rpx;
 }
 
-.imge {
+.btn-pink {
+  display: flex;
+  background-color:  rgba(234,179,171,0.8);
+  color: #FFFFFF;
+  border-radius: 25px;
+  width: 160px;
+  height: 42px;
+  align-items: center; 
+  justify-content: center; 
+  margin-left: 65px;
+  font-size: 16px;
+  font-family: serif;
+  font-weight: bold;
+  box-shadow: 1px 1px 5px #9999;
+  margin-top: 8px;
+}
+.btn-pink:hover {
+  background-color:  rgba(234,179,171,1.0);
+  color: #9999;
+}
+
+image {
   align-content: center;
-  display: block;
-  width: 249px;
-  height: 189px;
-  left: 26px;
-  border-radius: 20px;
-  object-fit: aspectfill;
+  width: 280px;
+  height: 190px;
 }
