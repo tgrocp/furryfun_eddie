@@ -3,6 +3,11 @@
     justify-content: space-around;
 }
 
+.container{
+    height: 100rpx;
+    margin-bottom: 100rpx;
+}
+
 .filter {
     display: flex;
     background-color:  #F9F7F8;

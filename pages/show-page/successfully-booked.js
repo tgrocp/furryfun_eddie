@@ -29,7 +29,7 @@ Page({
         method: 'GET', 
         success (res) {
           console.log(res)
-          page.setData({ pet: res.data.bookings.pet, date: res.data.bookings.date })
+          page.setData({ pet: res.data.bookings.pet, date: res.data.bookings.time })
         }
       })
     },

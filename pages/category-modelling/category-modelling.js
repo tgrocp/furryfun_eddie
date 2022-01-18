@@ -1,4 +1,9 @@
+let app = getApp()
 Page({ 
+    onShow(){
+            
+    },
+
     goToShow: function (e) {
         console.log(e)
         const id = e.currentTarget.dataset.id
@@ -27,7 +32,7 @@ Page({
         this.setData({ animalList, isFilter:true, animalMark:animal })
     },
 
-    onShow() {
+    onLoad() {
         const page = this;
         // let images = getApp().globalData.modelling_services
         // page.setData({ images: images })
