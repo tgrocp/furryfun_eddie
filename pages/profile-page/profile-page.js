@@ -1,5 +1,10 @@
 // pages/profile-page/profile-page.js
 Page({
+  goToCreate() {
+    wx.navigateTo({
+      url: '/pages/homepage/create-page',
+    })
+  },
 
     goToShow: function (e) {
         console.log(e)

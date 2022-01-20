@@ -1,5 +1,6 @@
 .container{
     padding-left: 20rpx;
+    height: auto;
 }
 
 .user-info{
@@ -97,7 +98,8 @@ padding-bottom: 50px;
 }
 
 .swiper {
-    height: 100vh;
+    height: 1000px;
+    /* height: auto; */
     align-items: center;
 }
 

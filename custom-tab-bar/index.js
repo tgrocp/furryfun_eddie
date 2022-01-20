@@ -7,11 +7,13 @@ Component({
       "pagePath": "pages/category-modelling/category-modelling",
       "iconPath": "/icons/home.png",
       "selectedIconPath": "/icons/home.png"
-    }, {
-      "pagePath": "pages/homepage/create-page",
-      "iconPath": "/icons/plus.png",
-      "selectedIconPath": "/icons/plus.png"
-    }, {
+    }, 
+    // {
+    //   "pagePath": "pages/homepage/create-page",
+    //   "iconPath": "/icons/plus.png",
+    //   "selectedIconPath": "/icons/plus.png"
+    // }, 
+    {
       "pagePath": "pages/profile-page/profile-page",
       "iconPath": "/icons/user.png",
       "selectedIconPath": "/icons/user.png" 
