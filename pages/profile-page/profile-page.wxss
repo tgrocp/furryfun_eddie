@@ -152,7 +152,7 @@ padding-bottom: 50px;
 .mini-btn{
         display: flex;
         /* border-radius: 25px; */
-        padding-right: 8px;
+        padding-right: 6px;
         width: 55px !important;
         height: 15px;
         font-size: 10px !important ;
@@ -181,7 +181,7 @@ padding-bottom: 50px;
 
 .delete1{
     position: absolute;
-    margin-top: 80px;
+    margin-top: 33px;
     right:2%;
 }
 

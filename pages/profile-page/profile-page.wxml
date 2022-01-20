@@ -33,7 +33,7 @@
                  </view>
 
                     <view class="edit">
-                        <image class="mini-btn" mode="aspectFit" bindtap = "editFunction" data-id = "{{ pet.id }}" src="/icons/edit.png">Edit</image>
+                        <image class="mini-btn" mode="aspectFit" bindtap = "editFunction" data-id = "{{ pet.id }}" src="/icons/edit.png"></image>
                     </view>
             </view>
                 
@@ -45,7 +45,7 @@
             </text>
                     
                 <view class="delete1">
-                    <image class="mini-btn" mode="aspectFit"  bindtap = "deleteFunction" data-id = "{{ pet.id }}" src="/icons/delete.png">Delete</image>
+                    <image class="mini-btn" mode="aspectFit"  bindtap = "deleteFunction" data-id = "{{ pet.id }}" src="/icons/delete.png"></image>
                 </view>
 
         </view>
@@ -68,7 +68,7 @@
 
                 <view class="btns">
                     <view class="delete2">
-                        <image class="mini-btn" mode="aspectFit"  bindtap = "deleteFunction2" data-id = "{{ booking.id }}" src="/icons/delete.png">Delete</image>
+                        <image class="mini-btn" mode="aspectFit"  bindtap = "deleteFunction2" data-id = "{{ booking.id }}" src="/icons/delete.png"></image>
                     </view>
                 </view>
             </view>   
