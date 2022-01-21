@@ -63,7 +63,8 @@
     left: 26px;
     top: 119px;
     border-radius: 20px; 
-    object-fit:aspectfill;
+    /* object-fit:aspectfill; */
+    object-fit: cover;
     border: #34342B;
   }
  
