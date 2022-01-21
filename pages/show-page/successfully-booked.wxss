@@ -49,8 +49,12 @@
 
 .container4{
   font-size: 30rpx;
-  margin-left: 70rpx;
-  margin-right: 70rpx;
+  margin-left: 75rpx;
+  margin-right: 75rpx;
+}
+.container5{
+  display: flex;
+  justify-content: center;
 }
 
 .btn-pink {
@@ -58,12 +62,11 @@
   background-color:  rgba(234,179,171,0.8);
   color: #FFFFFF;
   border-radius: 25px;
-  width: 160px;
+  width: 165px;
   height: 42px;
   align-items: center; 
   justify-content: center; 
-  margin-left: 65px;
-  font-size: 14px;
+  font-size: 15px;
   font-family: serif;
   font-weight: bold;
   box-shadow: 1px 1px 5px #9999;
@@ -76,6 +79,8 @@
 
 image {
   align-content: center;
-  width: 280px;
-  height: 190px;
+  width: 290px;
+  height: 200px;
+  padding-left: 30px;
+  padding-top: 20px;
 }
