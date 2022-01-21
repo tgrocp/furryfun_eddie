@@ -1,79 +1,62 @@
-
-<view class="container">
-
-        <view class="user-info">
-            <view class="userinfo-avatar">
-                <open-data  type="userAvatarUrl"></open-data>
-                <open-data type="userNickName"></open-data>
-            </view>
-
-            <view class="userNickName">
-                <open-data type="userNickName"></open-data>
-            </view>
-                <!-- <view>{{users.location}}</view> -->
-
-<view class="divLine"></view>
+<view class="container1">
+    <view class="user-info">
+        <view class="userinfo-avatar">
+            <open-data  type="userAvatarUrl"></open-data>
+            <open-data type="userNickName"></open-data>
         </view>
-
-        <view class='topTabSwiper'>
-            <view class='tab' bindtap='goToCreate'>Create Pet</view>
-            <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}'  data-current = "0" bindtap='checkCurrent'>My Pets</view>
-            <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}'  data-current = "1" bindtap='checkCurrent'>My Bookings</view>
+        <view class="userNickName">
+            <open-data type="userNickName"></open-data>
         </view>
+    <view class="divLine"></view>
+    </view>
+
+    <view class='topTabSwiper'>
+        <view class='tab' bindtap='goToCreate'>Create Pet</view>
+        <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}'  data-current = "0" bindtap='checkCurrent'>My Pets</view>
+        <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}'  data-current = "1" bindtap='checkCurrent'>My Bookings</view>
+    </view>
 
     <swiper current="{{currentData}}" class='swiper' bindchange="bindchange">
-        <swiper-item><view class="card-pet" wx:for="{{ pets }}" wx:for-item="pet">
-            <view class="pet-info">
-                <view class="info">
-                    <image mode="aspectFill" class="model-photo" src="{{ pet.url }}"/>
-                        <view class="h1">{{ pet.pet_name }}</view>  
-                            <view class="gender1">
-                            <image class="gender-icon" src="/icons/male.png" src="{{pet.gender === 'male'?'/icons/male.png' : '/icons/female.png' }}"/>
-                        </view>
-                 </view>
-
-                    <view class="edit">
-                        <image class="mini-btn" mode="aspectFit" bindtap = "editFunction" data-id = "{{ pet.id }}" src="/icons/edit.png"></image>
+        <swiper-item>
+            <view class="card-pet" wx:for="{{ pets }}" wx:for-item="pet">
+                <view class="pet-info">
+                    <view class="container3">
+                        <image mode="aspectFill" class="model-photo" src="{{ pet.url }}"/>
                     </view>
-            </view>
-                
-               
-                <!-- <button class="mini-btn" type="warn" size="mini" bindtap = "editFunction" data-id = "{{ pet.id }}">edit</button> -->
-            
-            <text class="description">
-                {{ pet.title }}
-            </text>
-                    
-                <view class="delete1">
+                    <view class="info">  
+                        <view class="pet-name">        
+                            <view class="h1">{{ pet.pet_name }}
+                            <image class="gender-icon" src="/icons/male.png" src="{{pet.gender === 'male'?'/icons/male.png' : '/icons/female.png' }}"/></view>
+                        </view>  
+                        <view class="description">{{ pet.title }}</view>
+                    </view>
+                </view>                     
+                <view class="button">
+                    <image class="mini-btn" mode="aspectFit" bindtap = "editFunction" data-id = "{{ pet.id }}" src="/icons/edit.png"></image>
                     <image class="mini-btn" mode="aspectFit"  bindtap = "deleteFunction" data-id = "{{ pet.id }}" src="/icons/delete.png"></image>
                 </view>
-
-        </view>
+            </view>
         </swiper-item>
 
-        <swiper-item><view class="card-pet" wx:for="{{ bookings }}" wx:for-item="booking">
-            <view class="pet-info">
-                    <view class="info">
-                        <image mode="aspectFill" class="model-photo" src="{{ booking.url }}"/>
+        <swiper-item>
+          <view class="card-pet" wx:for="{{ bookings }}" wx:for-item="booking">
+            <view class="pet-info"> 
+                <view class="container3">
+                    <image mode="aspectFill" class="model-photo" src="{{ booking.url }}"/>
+                </view>  
+                <view class="info">
+                    <view class="pet-name">
                         <view class="h1">{{ booking.pet_name }} 
-                          <view class="gender2">
-                            <image class="gender-icon" src="/icons/male.png" src="{{pet.gender === 'male'?'/icons/male.png' : '/icons/female.png' }}"/></view>
-                         </view> 
-                        </view>
-                    </view>
-
-                <text class="description">
-                    Booking time: {{ booking.time }}
-                </text>
-
-                <view class="btns">
-                    <view class="delete2">
-                        <image class="mini-btn" mode="aspectFit"  bindtap = "deleteFunction2" data-id = "{{ booking.id }}" src="/icons/delete.png"></image>
-                    </view>
-                </view>
-            </view>   
+                        <image class="gender-icon" src="/icons/male.png" src="{{pet.gender === 'male'?'/icons/male.png' : '/icons/female.png' }}"/></view>
+                    </view> 
+                    <view class="description">Booking time: {{ booking.time }}</view>
+                </view> 
+            </view> 
+            <view class="button">
+                <image class="mini-btn" mode="aspectFit"  bindtap = "deleteFunction2" data-id = "{{ booking.id }}" src="/icons/delete.png"></image>
+            </view> 
+          </view> 
         </swiper-item>
-
     </swiper>
     <text>\n</text>
     <text>\n</text>

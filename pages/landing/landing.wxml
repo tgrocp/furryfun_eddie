@@ -5,6 +5,6 @@
     <view class="p">Let your pet be a super star</view>
   </view>
   <view class="container2">
-    <view class="btn-pink" bindtap="getUserProfile">Let's Start</view>
+    <view class="btn-pink" bindtap="goToModelling">Let's Start</view>
   </view>
 </view>

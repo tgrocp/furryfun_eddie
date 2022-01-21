@@ -1,6 +1,6 @@
-.container{
+.container1{
     padding-left: 20rpx;
-    height: auto;
+    padding-right: 20rpx;
 }
 
 .user-info{
@@ -74,15 +74,11 @@ top: 144px;
     box-shadow: 1px 1px 5px #9999;
 }
 
-.gender2{
-    display: flex;
-    align-items: center;
-}
-
 .h1{
 display: flex;
 flex-direction: row;
-padding-bottom: 50px;
+padding-bottom: 10px;
+font-weight: bolder;
 }
 .gender-icon {
     width: 13px;
@@ -91,47 +87,37 @@ padding-bottom: 50px;
 }
 
 .model-photo {
-    align-self: auto;
     width: 70px;
     height: 70px;
-    border-radius: 50px; 
+    border-radius: 40px; 
+    object-fit: cover;
 }
 
 .swiper {
     height: 1000px;
-    /* height: auto; */
     align-items: center;
 }
 
 .card-pet{
-    display: flex;
-    align-items: center;
-    width: 370px;
-    height: 110px;
-    top: 455px;
-    padding: 8px, 10px;
+    width: auto;
+    height: 100px; 
+    padding: 8px; 
     background: #F3D4D0;
     border-radius: 20px;
-    margin-bottom: 8px;   
+    margin-bottom: 10px;   
     box-shadow: 1px 1px 3px #9999;
 }
 
 .pet-info {
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
-    vertical-align: auto;
-    padding-left: 12rpx;
+    align-items: center;
+    padding: 2px;
 }
 
 .info {
-    display: flex;
-    flex-direction: row;
+    margin-left: 20px;
 }
-
-.gender{
-    padding-bottom: 90rpx;
-}
-
 
 .description{
     font-family:sans-serif;  
@@ -139,7 +125,6 @@ padding-bottom: 50px;
     font-weight: normal;
     font-size: 13px;
     line-height: 20px;
-    padding-left: 24rpx;
 }
 
 .h2{
@@ -150,43 +135,32 @@ padding-bottom: 50px;
 }
 
 .mini-btn{
-        display: flex;
-        /* border-radius: 25px; */
-        padding-right: 6px;
-        width: 55px !important;
+        width: 15px;
         height: 15px;
-        font-size: 10px !important ;
-        font-family:sans-serif;
+        /* font-family:sans-serif; */
         /* border: 0.5px solid; */
         /* box-shadow: 1px 1px 1px #888888; */
-        margin: 3px;
-        font-weight: bold;
-        align-items: center;
+        /* font-weight: bold; */
+        padding-right: 10px;
 }
 
 .mini-btn:hover{
     color: grey;
-    display: flex;
-    justify-content: center; 
-    border-radius: 25px;
-    width: 55px !important;
+    width: 15px;
     height: 15px;
-    font-size: 10px !important ;
-    font-family:sans-serif;
-    border: 1px solid;
-    box-shadow: 1px 1px #888888;
-    margin: 3px;
+}
+
+.card-pet .button{
+  padding-left: 278px;
+  padding-top: 5px;
+}
+
+.container2{ 
+    display: flex;
+}
+
+.container3 {
+    display: flex;
     align-items: center;
-}
-
-.delete1{
-    position: absolute;
-    margin-top: 33px;
-    right:2%;
-}
-
-.delete2{
-    position: absolute;
-    margin-top: 30px;
-    right:2%;
+    justify-items: center;
 }
