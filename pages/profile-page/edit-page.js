@@ -142,21 +142,6 @@ Page({
             }
         })
     },
-    //选择图片
-    // chooseWxImage: function (type) {
-    //   var that = this;
-    //   var imgsPaths = that.data.imgs;
-    //   wx.chooseImage({
-    //     sizeType: ['original', 'compressed'],
-    //     sourceType: [type],
-    //     success: function (res) {
-    //       that.setData({uploadedImage: res.tempFilePaths[0]})
-    //       console.log(res.tempFilePaths[0]);
-    //       console.log(res)
-    //       that.upImgs(res.tempFilePaths[0], 0) //调用上传方法
-    //     }
-    //   })
-    // },
   
     //上传服务器
     upImgs: function (imgurl, index) {
