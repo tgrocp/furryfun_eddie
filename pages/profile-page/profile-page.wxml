@@ -11,8 +11,8 @@
     </view>
 
     <view class='topTabSwiper'>
-        <view class='tab' bindtap='goToCreate'>Create Pet</view>
         <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}'  data-current = "0" bindtap='checkCurrent'>My Pets</view>
+        <view class='tab' bindtap='goToCreate'>C*Pet</view>
         <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}'  data-current = "1" bindtap='checkCurrent'>My Bookings</view>
     </view>
 

@@ -11,16 +11,11 @@ Page({
         const id = e.currentTarget.dataset.id
         
     },
-    /**
-     * 页面的初始数据
-     */
+ 
     data: {
         currentData : 0,
     },
 
-    /**
-     * 生命周期函数--监听页面加载
-     */
     onLoad: function (options) {
         const page = this;
         // let images = getApp().globalData.modelling_services
@@ -60,9 +55,6 @@ Page({
         });  
     },
 
-    /**
-     * 生命周期函数--监听页面初次渲染完成
-     */
     onReady: function () {
 
     },
@@ -73,7 +65,7 @@ Page({
           currentData: e.detail.current
         })
     },
-    //点击切换，滑块index赋值
+    
     checkCurrent:function(e){
       const that = this;
    
@@ -94,34 +86,16 @@ Page({
         url: `/pages/profile-page/edit-page?petId=${petId}`,
       })
     },
-    /**
-     * 生命周期函数--监听页面显示
-     */
+ 
     onShow: function () {
-        // const page = this;
-        // // let images = getApp().globalData.modelling_services
-        // // page.setData({ images: images })
-        // let id = this.data.id;
-        // wx.request({
-        //     url: `${getApp().globalData.baseUrl}/users/${id}/bookings`,
-        //     method: 'GET',
-        //     success(res) {
-        //         console.log(res.data)
-        //         page.setData({bookings: res.data.bookings})
-        //       }
-        // })  
+  
     },
 
-    /**
-     * 生命周期函数--监听页面隐藏
-     */
+ 
     onHide: function () {
 
     },
 
-    /**
-     * 生命周期函数--监听页面卸载
-     */
     onUnload: function () {
 
     },
